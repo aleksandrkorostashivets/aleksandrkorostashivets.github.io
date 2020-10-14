@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ремонт компьютеров и ноутбуков в Могилеве</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <!---START HEADER-->
+    <header class="header">
+        <nav class="header-navigation">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="">
+                    <p>РЕМОНТ ПК</p>
+                </a>
+            </div>
+            <div class="btn-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="header-navigation__menu">
+                <li>
+                    <select class="header-town" name="city" id="choose-city">
+                        <option value="Москва">Москва</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Москва">Москва</option>
+                      </select>
+                </li>
+                <li class="navigation-list__item">
+                    <a href="#priceList">Цены</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a href="#servicesKind">              Виды ремонта 
+                    </a>
+                </li>
+                <li class="navigation-list__item">
+                    <a href="#clientsRewiews">Отзывы</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a href="#contact">Контакты</a>
+                </li>
+                <li class="header-phone">
+                    <a href="tel:88126026000">
+                        <img src="./img/phone1.svg" alt="">
+                        <span>8 (812) 602-60-00</span>
+                    </a>
+                </li>
+                <li class="header-btn">
+                    <a href="#">
+                        <span>Заказать звонок</span>
+                        <img src="./img/diagonal-arrow.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <div class="header-container">
+                <div class="header-container__image">
+                    <img src="./img/header-pc.png" alt="">
+                </div>
+                <div class="header-form">
+                    <h1 class="header-form__title">
+                        Устраним ЛЮБЫЕ НЕИСПРАВНОСТИ
+                    </h1>
+                    <p class="header-form__subtitle">
+                        Компьютеров и ноутбуков в Могилеве
+                    </p>
+                    <p class="form-title">Выезд и диагностика бесплатно</p>
+                    <form action="#" id="header-form">
+                        <span>
+                            <input type="text" placeholder="Укажите Ваш номер телефона" name="clientPhone" id="clientPhone" required class="client-info">
+                        </span>
+                        <button type="submit" class="btn-submit">Вызвать мастера домой</button>
+                    </form>
+                    <p class="form-subtitle">
+                        Нажимая кнопку “Получить консльтацию”, вы соглашаетесь на обработку Ваших персональных данных.
+                    </p>
+                </div>
+            </div>
+            <div class="header-description" id="advantages">
+                <div class="header-description__item">
+                    <div class="header-description__item-text">
+                        <p class="item-title">
+                            Доставка курьером
+                        </p>
+                        <p class="item-text">
+                            Заберем у вас сломанную технику и привезем назад после ремонта
+                        </p>
+                    </div>
+                    <div class="header-description__item-image">
+                        <img src="./img/car.png" alt="">
+                    </div>
+                </div>
+                <div class="header-description__item">
+                    <div class="header-description__item-text">
+                        <p class="item-title">
+                            Исправляем любые поломки
+                        </p>
+                        <p class="item-text">
+                            Отремонтируем ноутбук после залития, заменим разъемы и не только
+                        </p>
+                    </div>
+                    <div class="header-description__item-image">
+                        <img src="./img/laptop.png" alt="">
+                    </div>
+                </div>
+                <div class="header-description__item">
+                    <div class="header-description__item-text">
+                        <p class="item-title">
+                            Прозрачные цены </p>
+                        <p class="item-text">
+                            Сначала мы проводим диагностику, озвучиваем цену и после ее согласования приступаем к ремонту
+                        </p>
+                    </div>
+                    <div class="header-description__item-image">
+                        <img src="./img/cost.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!---END HEADER-->
+    <div class="wrapper">
+        <!---START SERVICES-->
+        <section class="services" id="servicesKind">
+            <div class="services-container">
+                <div class="services-item" style="background-image: url(./img/windows-bg.jpg);">
+                    <svg>
+                            <use xlink:href="#terminal"></use>
+                    </svg>
+                    <h2 class="services-item__title">
+                        ПРЕДУСТАНОВКА WINDOWS
+                    </h2>
+                    <p class="services-item__text">
+                        Установим и настроим Windows любой версии
+                    </p>
+                    <a href="#" class="services-item__link">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="services-item-sale">
+                    <p class="services-item__title-sale">
+                        до -20%
+                    </p>
+                    <p class="services-item__text-sale">
+                        на комлексные услуги
+                    </p>
+                </div>
+            </div>
+            <div class="services-item" style="background-image: url(./img/programmer-bg.jpg);">
+                <svg>
+                    <use xlink:href="#programmer"></use>
+                </svg>
+                <p class="services-item__title">
+                    УСТАНОВКА ПРОГРАММ
+                </p>
+                <p class="services-item__text">
+                    Устанавливаем только сертефицированные драйвера с сайта производителя,от этого зависит стабильность,а порой даже скорость работы компьютера,что очень важно.
+                </p>
+                <a href="#" class="services-item__link">
+                    Подробнее
+                </a>
+            </div>
+            <div class="services-item" style="background-image: url(./img/hdd-bg.jpg);">
+                <svg>
+                    <use xlink:href="#hdd"></use>
+                </svg>
+                <p class="services-item__title">
+                    Замена комплектующих
+                </p>
+                <p class="services-item__text">
+                    Ремонтируем или заменяем на новые любые комплектующие: материнские платы, жесткие диски, видеокарты и др.
+                </p>
+                <a href="#" class="services-item__link">
+                    Подробнее
+                </a>
+            </div>
+            <div class="services-item" style="background-image: url(./img/router-bg.jpg);">
+                <svg>
+                <use xlink:href="#router"></use>
+               </svg>
+                <p class="services-item__title">
+                    НАСТРОЙКА РОУТЕРОВ И СЕТЕЙ
+                </p>
+                <p class="services-item__text">
+                    Установим роутер в вашей квартире или офисе, настроим интернет-подключение, соединим несколько компьютеров в сеть с помощью Wi-Fi моста.
+                </p>
+                <a href="#" class="services-item__link">
+                    Подробнее
+                </a>
+            </div>
+            <div class="services-item" style="background-image: url(./img/pc-bg.jpg);">
+                <svg>
+                    <use xlink:href="#pc"></use>
+                </svg>
+                <p class="services-item__title">
+                    АППАРАТНЫЙ РЕМОНТ
+                </p>
+                <p class="services-item__text">
+                    Наши мастера с многолетним опытом обладают необходимыми знаниями и навыками работы на уровне схемотехники.
+                </p>
+                <a href="#" class="services-item__link">
+                    Подробнее
+                </a>
+            </div>
+            <div class="services-item__horizontal" style="background-image: url(./img/driver-bg.jpg);">
+                <svg>
+                    <use xlink:href="#pc"></use>
+                </svg>
+                <p class="services-item__title">
+                    УСТАНОВКА ДРАЙВЕРОВ
+                </p>
+                <p class="services-item__text">
+                    От использования корректных драйверов зависит стабильность и скорость работы ПК, поэтому мы устанавливаем исключительно сертифицированные драйверы с официальных сайтов производителей устройств.
+                </p>
+                <a href="#" class="services-item__link">
+                    Подробнее
+                </a>
+            </div>
+        </section>
+        <!---END SERVICES-->
+        <!---START PRICE-->
+        <section class="price" id="priceList">
+            <h2 class="price-title">
+                <span>Прайс-лист</span> на услуги ремонт
+            </h2>
+            <p class="price-subtitle">
+                Чтобы узнать окончательную стоимость работ / услуг ивремя их выполнения просто оставьте заявку. Мы проконсультируем Вас в течение 7 минут!
+            </p>
+
+            <div class="price-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <td class="table-name">Услуга</td>
+                            <td class="table-time">Время работы</td>
+                            <td class="table-cost">Стоимость</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-name">Наименование услуги</td>
+                            <td class="table-time">Около 1 часа</td>
+                            <td class="table-cost">
+                                <a href="#">2 500 руб.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-name">Наименование услуги</td>
+                            <td class="table-time">От 30 минут</td>
+                            <td class="table-cost">
+                                <a href="#">2 500 руб.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-name">Наименование услуги</td>
+                            <td class="table-time">От 5 минут</td>
+                            <td class="table-cost">
+                                <a href="#">2 500 руб.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-name">Наименование услуги</td>
+                            <td class="table-time">От 30 минут</td>
+                            <td class="table-cost">
+                                <a href="#">2 500 руб.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-name">Наименование услуги</td>
+                            <td class="table-time">20 минут</td>
+                            <td class="table-cost">
+                                <a href="#">2 500 руб.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-name">Наименование услуги</td>
+                            <td class="table-time">-</td>
+                            <td class="table-cost">
+                                <a href="#">2 500 руб.</a>
+                            </td>
+                        </tr>
+                        <tr id="dots"></tr>
+                        <tbody id="more">
+                            <tr>
+                                <td class="table-name">Наименование услуги</td>
+                                <td class="table-time">-</td>
+                                <td class="table-cost">
+                                    <a href="#">2 500 руб.</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-name">Наименование услуги</td>
+                                <td class="table-time">-</td>
+                                <td class="table-cost">
+                                    <a href="#">2 500 руб.</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-name">Наименование услуги</td>
+                                <td class="table-time">-</td>
+                                <td class="table-cost">
+                                    <a href="#">2 500 руб.</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="payment-container">
+                <button class="more-services" id="btn" onclick="readMore()">Увидеть все возможные поломки</button>
+                <div class="payment">
+                    <p class="payment-text">Возможность безналичной оплаты</p>
+                    <div class="payment-kind">
+                        <img src="./img/yandex.png" alt="">
+                        <img src="./img/mastercard.png" alt="">
+                        <img src="./img/visa.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---END PRICE-->
+    </div>
+    <!---START CONTACT FORM-->
+    <section class="contact-form">
+        <div class="wrapper">
+            <div class="contact-form__container">
+                <div class="form-container__text">
+                    <h2 class="form-container__text-title">
+                        <span>ОСТАВЬТЕ ЗАЯВКУ</span> СЕЙЧАС И УЗНАЙТЕ СТОИМОСТЬ
+                    </h2>
+                    <p class="form-container__text-subtitle">
+                        Мы сообщим Вам окончательную цену и сроки проведения ремонтных работ в течение 7 минут!
+                    </p>
+                </div>
+                <div class="form-container">
+                    <p class="form-title">
+                        Заполните форму
+                    </p>
+                    <form action="#" id="form-contact">
+                        <span>
+                            <input type="tel" placeholder="Ваш телефон" class="clientInfo" id="phone" required>
+                        </span>
+                        <span>
+                            <input type="text" placeholder="Комментарий" class="clientInfo" required>
+                        </span>
+                        <br>
+                        <span>
+                            <button type="submit"  class="btn-submit">Отправить</button>
+                        </span>
+                    </form>
+                    <p class="form-subtitle">
+                        Нажимая кнопку “Отправить” вы соглашаетесь на обработку ваших персональных данных
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---END CONTACT FORM-->
+    <!---START REWIEWS-->
+    <section class="rewiews" id="clientsRewiews">
+        <h2 class="rewiews-title">Отзывы</h2>
+        <div class="wrapper">
+            <div class="slider">
+                <div class="slider-item">
+                    <div class="client-info">
+                        <div class="client-info__photo" style="background-image: url(./img/slide4.jpg);"></div>
+                        <div class="client-info__text">
+                            <div class="name">
+                                Валерия Судакова
+                            </div>
+                            <div class="date">
+                                21.08.2019
+                            </div>
+                        </div>
+                    </div>
+                    <p class="slider-item__text">
+                        Вызывала мастера для установки программ и переустановки Windows 10. Работой довольна — специалист все установил, работал добросовестно, по деньгам вышло недорого и по времени намного быстрее, чем я рассчитывала — минут за 40 все сделал и еще показал,
+                        как программами пользоваться. Буду советовать вас друзьям!
+                    </p>
+                </div>
+                <div class="slider-item">
+                    <div class="client-info">
+                        <div class="client-info__photo" style="background-image: url(./img/slide1.jpg);"></div>
+                        <div class="client-info__text">
+                            <div class="name">
+                                Михаил Москвин
+                            </div>
+                            <div class="date">
+                                1.02.2020
+                            </div>
+                        </div>
+                    </div>
+                    <p class="slider-item__text">
+                        После перепада напряжения, комп не включался. Позвонили в ваш сервис, договорились о времени прихода мастера. На диагностике оказалось, сгорел блок питания. Забрали в мастерскую на ремонт и уже на следующее утро назад привезли. Вот это оперативность!
+                        Отлично работаете, так держать!
+                    </p>
+                </div>
+                <div class="slider-item">
+                    <div class="client-info">
+                        <div class="client-info__photo" style="background-image: url(./img/slide5.jpg);"></div>
+                        <div class="client-info__text">
+                            <div class="name">
+                                Анна Сергеева
+                            </div>
+                            <div class="date">
+                                18.04.2019
+                            </div>
+                        </div>
+                    </div>
+                    <p class="slider-item__text">
+                        Сбились настройки роутера – пропал интернет. Мастер приехал через полчаса после заявки и через 15 минут все было готово. Слов нет, как я вам благодарна! Без инета как без рук! Буду только к вам обращаться, если что.
+                    </p>
+                </div>
+                <div class="slider-item">
+                    <div class="client-info">
+                        <div class="client-info__photo" style="background-image: url(./img/slide6.jpg);"></div>
+                        <div class="client-info__text">
+                            <div class="name">
+                                Зоя Волкова
+                            </div>
+                            <div class="date">
+                                08.06.2019
+                            </div>
+                        </div>
+                    </div>
+                    <p class="slider-item__text">
+                        Приглашала компьютерного мастера, чтобы почистил систему от вирусов. Приехал быстро, все вирусы удалил, посоветовал, какой лучше антивирус и поставил его, еще и систему почистил от мусора, теперь Винда не тормозит. Спасибо мастеру Михаилу за качественную
+                        работу и полезные советы.
+                    </p>
+                </div>
+                <div class="slider-item">
+                    <div class="client-info">
+                        <div class="client-info__photo" style="background-image: url(./img/slide2.jpg);"></div>
+                        <div class="client-info__text">
+                            <div class="name">
+                                Федор Хабаров
+                            </div>
+                            <div class="date">
+                                04.07.2019
+                            </div>
+                        </div>
+                    </div>
+                    <p class="slider-item__text">
+                        Не запускалась система, при загрузке ноута появлялись ошибки. Приехал мастер, провел диагностику, выяснил, что виноват жесткий диск. Определились с ценой нового диска, и сколько за работу, меня устроило, диск мастер заменил на новый, я работу оплатил.
+                        По цене нормально вышло, не накладно, а выезд и диагностика бесплатно, что тоже плюс. Нормальный сервис, рекомендую.
+                    </p>
+                </div>
+                <div class="slider-item">
+                    <div class="client-info">
+                        <div class="client-info__photo" style="background-image: url(./img/slide3.jpg);"></div>
+                        <div class="client-info__text">
+                            <div class="name">
+                                Олег Громов
+                            </div>
+                            <div class="date">
+                                24.05.2019
+                            </div>
+                        </div>
+                    </div>
+                    <p class="slider-item__text">
+                        Ноут Asus стал сильно греться и постоянно зависать. Обратился в ваш СЦ. Мастера прислали в этот же день, он почистил ноут от пыли, там ее как оказалось накопилось порядком, теперь мой Asus работает как часы, лучше чем новый! Спасибо вам за качественный
+                        сервис!
+                    </p>
+                </div>
+                <div class="slider-item">
+                    <div class="client-info">
+                        <div class="client-info__photo" style="background-image: url(./img/slide7.jpg);"></div>
+                        <div class="client-info__text">
+                            <div class="name">
+                                Артем Трубников
+                            </div>
+                            <div class="date">
+                                21.10.2019
+                            </div>
+                        </div>
+                    </div>
+                    <p class="slider-item__text">
+                        Уже обращался в этот СЦ раньше, отличный сервисный центр, работают быстро и с ценами не мухлюют, как некоторые другие. И в этот раз тоже без проблем поменяли сгоревшую видяху, выписали гарантию. Мастера ребята грамотные, могут дать дельные рекомендации.
+                        Спасибо за работу!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="link-container">
+            <!-- <button class="more-rewiews" disabled>Все отзывы</button>--->
+            <button class="leave-rewiews" id="rewiews-btn">Оставить свой отзыв</button>
+        </div>
+    </section>
+    <!---END REWIEWS-->
+    <!---START QUESTION-->
+    <section class="question">
+        <h2 class="question-title">ЧАСТЫЕ ВОПРОСЫ</h2>
+        <div class="wrapper">
+            <div class="single-question">
+                <button class="accordion">Почему ноутбук или компьютер медленно работает?</button>
+                <div class="panel">
+                    <p>Причиной того, что ваш настольный или переносной компьютер тормозит может быть и заражение вирусами, и забитый лишними файлами системный диск, и нехватка оперативной памяти. Замедление работы может произойти от перегрева, вызванного
+                        скоплением пыли внутри корпуса устройства, а возможно ваш компьютер уже не соответствует современным требованиям и нуждается в модернизации. Мы можем помочь вам во всех этих случаях. Вызовите мастера на дом, и он оперативно определит
+                        причину медленной работы вашего ПК и предложит решение..
+                    </p>
+                </div>
+            </div>
+            <div class="single-question">
+                <button class="accordion">Не включается ноутбук или компьютер?</button>
+                <div class="panel">
+                    <p>Наиболее очевидный ответ на вопрос, почему ноутбук или настольный ПК не включается после нажатия на кнопку Power кроется в перебоях с электропитанием — следует проверить исправен ли блок питания и насколько надежны его контакты. Также
+                        причиной поломки может стать короткое замыкание в южном или северном мосте или повреждение BIOS. В любом случае выяснить точную причину сможет только специалист при проведении диагностики. Выезд и определение неисправности у нас
+                        бесплатны. Чем раньше вы сделаете заявку, тем быстрее мы сможем вернуть ваш компьютер в строй.
+                    </p>
+                </div>
+            </div>
+            <div class="single-question">
+                <button class="accordion">Проблемы с интернетом?</button>
+                <div class="panel">
+                    <p>У вас периодически пропадает соединение, медленно скачиваются файлы или долго открываются веб-страницы? Однозначно ответить на вопрос, почему это происходит, не проведя диагностику компьютера невозможно. Виной тому могут быть сбои
+                        сетевого оборудования, а также неправильная настройка роутера, неполадки в операционной системе или заражение компьютера вирусами. А возможно у вас просто сбились настройки интернета, тогда нужно заново настроить сетевой адаптер
+                        или роутер. Наши специалисты имеют большой опыт работы с самым разнообразным сетевым оборудованием и могут сделать это быстро и надежно.
+                    </p>
+                </div>
+            </div>
+            <div class="single-question">
+                <button class="accordion">Нет изображение на экране?</button>
+                <div class="panel">
+                    <p>Проблемы с отсутствием изображения на экране можно разделить на программные и аппаратные. В первом случае причиной сбоя могут быть проблемы с драйверами или операционной системой, во втором — изображение могло исчезнуть из-за выхода
+                        из строя видеокарты, оперативной памяти либо материнской платы или же монитора вашего ПК. Обратитесь в наш сервисный центр, и мы гарантируем, что найдем причину и решим вашу проблему в кратчайшие сроки!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---END QUESTION-->
+    <!---START MAP-->
+    <section class="map">
+        <h2 class="map-title">здесь есть наши мастера</h2>
+        <div class="map-image"></div>
+    </section>
+    <!---END MAP-->
+    <!---START FOOTER-->
+    <footer class="footer" id="contact">
+        <div class="wrapper">
+            <div class="footer-nav">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/logo.svg" alt="">
+                        <p>РЕМОНТ ПК</p>
+                    </a>
+                </div>
+                <ul class="footer-navigation__list">
+                    <li class="footer-navigation__list-item">
+                        <a href="#">Кто мы?</a>
+                    </li>
+                    <li class="footer-navigation__list-item">
+                        <a href="#priceList">Стоимость работ</a>
+                    </li>
+                    <li class="footer-navigation__list-item">
+                        <a href="#advantages">Преимущества</a>
+                    </li>
+                    <li class="footer-navigation__list-item">
+                        <a href="#clientsRewies">Отзывы</a>
+                    </li>
+                    <li class="footer-navigation__list-item">
+                        <a href="#contact">Контакты</a>
+                    </li>
+                    <li>
+                        <button class="footer-contact__btn">Связаться с нами</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <a href="#" class="footer-info__link">
+                    Политика конфиденциальности
+                </a>
+                <div class="footer-phone">
+                    <a href="tel:88126026000">
+                        <img src="./img/phone1.svg" alt="">
+                        <span>8 (812) 602-60-00</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!---END FOOTER-->
+    <!---START MODAL-->
+    <!--START HEADER POPUP-->
+    <div class="header-popup">
+        <div class="header-popup__dialog">
+            <div class="header-popup__content">
+                <button class="header-popup__close">&times;</button>
+                <h4 class="header-popup__title">Связь с нами</h4>
+                <p class="header-popup__subtitle">Заполните поля ниже и мы перезвоним Вам за 5 минут!</p>
+                <form class="header-popup__form" id="header-popup__form">
+                    <input class="clientInfo" type="text" placeholder="Ваше имя" required name="headerPopupName" id="name">
+                    <br>
+                    <input class="clientInfo" type="tel" placeholder="Ваш телефон" required name="headerPopupPhone" id="headerPhone">
+                    <br>
+                    <button class="header-popup__btn">
+                        <span>Перезвоните мне</span>
+                        <img src="./img/diagonal-arrow.png" alt="">
+                    </button>
+                </form>
+                <p class="header-popup__form-subtitle">Нажимая кнопку “Перезвоните мне” Вы соглашаетесь на обработку Ваших данных.</p>
+            </div>
+            <div class="header-popup__thanks">
+                <button class="header-popup__close">&times;</button>
+                <h4 class="header-popup__title">Спасибо</h4>
+                <p class="header-popup__subtitle">Мы перезвоним Вам за 5 минут!</p>
+                <button class="header-popup__btn">
+                    <span>Хорошо</span>
+                    <img src="./img/diagonal-arrow.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--END HEADER POPUP-->
+    <!--START HEADER FORM POPUP-->
+    <div class="header-popup_thanks">
+        <div class="header-popup__dialog">
+            <div class="header-form__popup">
+                <button class="header-popup__close">&times;</button>
+                <h4 class="header-popup__title">Спасибо</h4>
+                <p class="header-popup__subtitle">Мы перезвоним Вам за 5 минут!</p>
+                <button class="header-popup__btn-thanks">
+                    <span>Хорошо</span>
+                    <img src="./img/diagonal-arrow.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--END HEADER FORM POPUP-->
+    <!--START CONTACT FORM POPUP-->
+    <div class="contact-form__popup">
+        <div class="contact-popup__dialog">
+            <div class="form__popup">
+                <button class="form-popup__close">&times;</button>
+                <h4 class="form-popup__title">Спасибо</h4>
+                <p class="form-popup__subtitle">Мы перезвоним Вам за 5 минут!</p>
+                <button class="form-popup__btn-thanks">
+                <span>Хорошо</span>
+                <img src="./img/diagonal-arrow.png" alt="">
+            </button>
+            </div>
+        </div>
+    </div>
+    <!--END CONTACT FORM POPUP-->
+    <!--START REWIEWS POPUP-->
+    <div class="rewsiews-popup">
+        <div class="rewiews-popup__dialog">
+            <div class="rewiews-popup__content">
+                <button class="rewiews-popup__close">&times;</button>
+                <h4 class="rewiews-popup__title">Связь с нами</h4>
+                <p class="rewiews-popup__subtitle">Заполните поля ниже и мы перезвоним Вам за 5 минут!</p>
+                <form class="rewiews-popup__form" id="rewiews__form">
+                    <input class="clientInfo" type="text" placeholder="Ваше имя" required name="headerPopupName" id="rewiewsName">
+                    <br>
+                    <input class="clientInfo" type="tel" placeholder="Ваш телефон" required name="headerPopupPhone" id="rewiewsPhone">
+                    <br>
+                    <textarea class="clientInfo" placeholder="Ваш коментарий" required name="headerPopupPhone" id="rewiewsComment"></textarea>
+                    <br>
+                    <button class="rewiews-popup__btn">
+                        <span>Отправить</span>
+                        <img src="./img/diagonal-arrow.png" alt="">
+                    </button>
+                </form>
+                <p class="rewiews-popup__form-subtitle">Нажимая кнопку “Отправить” Вы соглашаетесь на обработку Ваших данных.</p>
+            </div>
+            <div class="rewiews-popup__thanks">
+                <button class="rewiews-popup__close">&times;</button>
+                <h4 class="rewiews-popup__title">Спасибо</h4>
+                <p class="rewiews-popup__subtitle">Мы перезвоним Вам за 5 минут!</p>
+                <button class="rewiews-popup__btn">
+                    <span>Хорошо</span>
+                    <img src="./img/diagonal-arrow.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--END REWIEWS POPUP-->
+    <!--START FOOTER POPUP-->
+    <div class="footer-popup">
+        <div class="footer-popup__dialog">
+            <div class="footer-popup__content">
+                <button class="footer-popup__close">&times;</button>
+                <h4 class="footer-popup__title">Связь с нами</h4>
+                <p class="footer-popup__subtitle">Заполните поля ниже и мы перезвоним Вам за 5 минут!</p>
+                <form class="footer-popup__form" id="footer-popup__form">
+                    <input class="clientInfo" type="text" placeholder="Ваше имя" required name="footerPopupName" id="footerName">
+                    <br>
+                    <input class="clientInfo" type="tel" placeholder="Ваш телефон" required name="footerPopupPhone" id="footerPhone">
+                    <br>
+                    <button class="footer-popup__btn">
+                        <span>Перезвоните мне</span>
+                        <img src="./img/diagonal-arrow.png" alt="">
+                    </button>
+                </form>
+                <p class="footer-popup__form-subtitle">Нажимая кнопку “Перезвоните мне” Вы соглашаетесь на обработку Ваших данных.</p>
+            </div>
+            <div class="footer-popup__thanks">
+                <button class="footer-popup__close">&times;</button>
+                <h4 class="footer-popup__title">Спасибо</h4>
+                <p class="footer-popup__subtitle">Мы перезвоним Вам за 5 минут!</p>
+                <button class="footer-popup__btn">
+                    <span>Хорошо</span>
+                    <img src="./img/diagonal-arrow.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--END FOOTER POPUP-->
+    <!--END MODAL-->
+
+    <!--svg-->
+    <svg display="none">
+        <symbol id="terminal" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path d="M495.304,61.217H16.696C7.475,61.217,0,68.693,0,77.913v356.174c0,9.22,7.475,16.696,16.696,16.696h478.609
+                        c9.22,0,16.696-7.475,16.696-16.696V77.913C512,68.693,504.525,61.217,495.304,61.217z M478.609,417.391H33.391V194.424h445.217
+                        V417.391z M478.609,161.033H33.391V94.609h445.217V161.033z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M443.568,103.247c-12.275,0-22.261,9.986-22.261,22.261c0,12.275,9.985,22.261,22.261,22.261
+                        c12.275,0,22.261-9.986,22.261-22.261C465.829,113.233,455.843,103.247,443.568,103.247z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M382.926,103.247c-12.275,0-22.261,9.986-22.261,22.261c0,12.275,9.986,22.261,22.261,22.261s22.261-9.986,22.261-22.261
+                        C405.187,113.233,395.201,103.247,382.926,103.247z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M322.285,103.247c-12.275,0-22.261,9.986-22.261,22.261c0,12.275,9.985,22.261,22.261,22.261
+                        c12.275,0,22.261-9.986,22.261-22.261C344.546,113.233,334.56,103.247,322.285,103.247z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M235.45,293.193l-54.653-46.504c-7.022-5.976-17.559-5.128-23.535,1.896c-5.976,7.022-5.127,17.559,1.896,23.535
+                        l39.709,33.789l-39.709,33.789c-7.023,5.976-7.871,16.512-1.896,23.535c5.975,7.022,16.512,7.871,23.535,1.896l54.653-46.504
+                        C243.28,311.962,243.28,299.854,235.45,293.193z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M342.022,335.716h-65.954c-9.22,0-16.696,7.475-16.696,16.696s7.475,16.696,16.696,16.696h65.954
+                        c9.22,0,16.696-7.475,16.696-16.696S351.242,335.716,342.022,335.716z"/>
+                </g>
+            </g>
+        </symbol>
+        <symbol id="programmer" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path d="M505.752,6.248C501.75,2.247,496.324,0,490.667,0L21.332,0.03C9.55,0.03,0,9.581,0,21.363v469.303
+                        C0,502.448,9.552,512,21.333,512h469.333c11.782,0,21.333-9.552,21.333-21.333V21.333C512,15.676,509.753,10.249,505.752,6.248z
+                         M469.333,469.333H42.667V42.695l426.667-0.027V469.333z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M179.52,274.645c-9.055,0-15.606,5.552-16.687,14.157c-1.041,8.357-1.67,13.4-14.562,13.4
+                        c-12.487,0-16.701-4.449-16.701-17.628v-57.331c0-14.591,5.852-17.445,15.963-17.445c10.419,0,14.831,3.534,15.231,12.201
+                        c0.004,0.098,0.01,0.198,0.018,0.296c0.533,7.219,5.918,14.502,16.741,14.502c5.043,0,16.772-1.761,16.772-18.064
+                        c0-20.649-16.75-41.553-48.761-41.553c-30.538,0-49.509,19.183-49.509,50.061v57.331c-0.003,31.462,18.297,50.244,48.947,50.244
+                        c32.378,0,49.32-21.089,49.32-41.921C196.292,276.423,184.563,274.645,179.52,274.645z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M290.495,239.972H277.12v-13.373c0-8.535-7.192-15.477-16.03-15.477c-8.69,0-16.031,7.087-16.031,15.477v13.373h-13.744
+                        c-8.472,0-15.108,7.121-15.108,16.211c0,9.035,6.494,15.849,15.108,15.849h13.744v13.746c0,8.469,7.041,15.103,16.031,15.103
+                        c8.988,0,16.03-6.635,16.03-15.103v-13.746h13.375c8.533,0,15.475-7.11,15.475-15.849
+                        C305.97,247.243,299.028,239.972,290.495,239.972z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M398.505,239.972h-13.375v-13.373c0-8.535-7.192-15.477-16.031-15.477c-8.688,0-16.03,7.087-16.03,15.477v13.373h-13.747
+                        c-8.472,0-15.108,7.121-15.108,16.211c0,9.035,6.497,15.849,15.108,15.849h13.747v13.746c0,8.469,7.041,15.103,16.03,15.103
+                        c8.988,0,16.031-6.635,16.031-15.103v-13.746h13.375c8.532,0,15.472-7.11,15.472-15.849
+                        C413.978,247.243,407.037,239.972,398.505,239.972z"/>
+                </g>
+            </g>
+        </symbol>
+        <symbol id="hdd" viewBox="0 0 512 512">
+            <path d="m336 400c-8.836 0-16 7.164-16 16v32c0 8.836 7.164 16 16 16s16-7.164 16-16v-32c0-8.836-7.164-16-16-16z"/><path d="m288 400c-8.836 0-16 7.164-16 16v32c0 8.836 7.164 16 16 16s16-7.164 16-16v-32c0-8.836-7.164-16-16-16z"/><path d="m240 400c-8.836 0-16 7.164-16 16v32c0 8.836 7.164 16 16 16s16-7.164 16-16v-32c0-8.836-7.164-16-16-16z"/><circle cx="400" cy="432" r="16"/><circle cx="400" cy="80" r="16"/><circle cx="112" cy="80" r="16"/><path d="m432 0h-352c-26.467 0-48 21.533-48 48v416c0 26.467 21.533 48 48 48h352c26.467 0 48-21.533 48-48v-416c0-26.467-21.533-48-48-48zm-352 480c-8.822 0-16-7.178-16-16v-64h27.568l68.432 41.059v38.941zm368-16c0 8.822-7.178 16-16 16h-240v-48c0-5.62-2.949-10.828-7.768-13.72l-32.428-19.457 32.043-32.043c105.642 53.604 232.153-23.424 232.153-142.78 0-88.224-71.776-160-160-160s-160 71.776-160 160c0 50.562 23.581 95.714 60.317 125.056l-32.797 32.797c-20.17-12.102-21.652-13.853-27.52-13.853h-32v-320c0-8.822 7.178-16 16-16h352c8.822 0 16 7.178 16 16zm-228.687-155.313c-6.248-6.249-16.379-6.249-22.627 0l-17.578 17.578c-31.017-23.38-51.108-60.519-51.108-102.265 0-70.58 57.42-128 128-128s128 57.42 128 128c0 90.958-92.478 152.577-176.018 118.645l11.331-11.331c6.249-6.249 6.249-16.379 0-22.627z"/><path d="m272 144c0-8.836-7.164-16-16-16-52.935 0-96 43.065-96 96 0 8.836 7.164 16 16 16s16-7.164 16-16c0-35.29 28.71-64 64-64 8.836 0 16-7.164 16-16z"/><path d="m240 304c0 8.836 7.164 16 16 16 52.935 0 96-43.065 96-96 0-8.836-7.164-16-16-16s-16 7.164-16 16c0 35.29-28.71 64-64 64-8.836 0-16 7.164-16 16z"/><path d="m224 224c0 17.645 14.355 32 32 32s32-14.355 32-32-14.355-32-32-32-32 14.355-32 32z"/>
+        </symbol>
+        <symbol id="router" viewBox="0 0 496 496">
+            <path d="m448 297.469h-300v-145c0-8.837-7.163-16-16-16s-16 7.163-16 16v145h-68c-26.468 0-48 21.532-48 48v82c0 26.468 21.532 48 48 48h400c26.468 0 48-21.532 48-48v-82c0-26.468-21.532-48-48-48zm16 130c0 8.822-7.178 16-16 16h-400c-8.822 0-16-7.178-16-16v-82c0-8.822 7.178-16 16-16h400c8.822 0 16 7.178 16 16zm-376-65c-13.233 0-24 10.767-24 24s10.767 24 24 24 24-10.767 24-24-10.767-24-24-24zm72 0c-13.233 0-24 10.767-24 24s10.767 24 24 24 24-10.767 24-24-10.767-24-24-24zm72 0c-13.233 0-24 10.767-24 24s10.767 24 24 24 24-10.767 24-24-10.767-24-24-24zm200 24c0 8.837-7.163 16-16 16h-87c-8.837 0-16-7.163-16-16s7.163-16 16-16h87c8.837 0 16 7.163 16 16zm-263.785-216.979c12.372-26.328-6.799-57.021-36.215-57.021-29.438 0-48.58 30.707-36.215 57.021 3.758 7.998.32 17.528-7.677 21.286-7.996 3.758-17.527.32-21.286-7.677-22.267-47.391 12.223-102.63 65.178-102.63 52.966 0 87.444 55.24 65.178 102.63-3.756 7.993-13.282 11.436-21.286 7.677-7.997-3.758-11.435-13.288-7.677-21.286zm-129.553 76.317c-51.467-51.467-51.467-135.209 0-186.676s135.209-51.467 186.676 0 51.467 135.209 0 186.676c-3.124 3.124-7.219 4.687-11.313 4.687-14.124 0-21.424-17.205-11.313-27.313 38.99-38.99 38.99-102.432 0-141.422-39.08-39.08-102.336-39.085-141.422 0-38.99 38.99-38.99 102.432 0 141.422 6.249 6.248 6.249 16.379 0 22.627-6.249 6.247-16.38 6.247-22.628-.001z"/>
+        </symbol>
+        <symbol id="pc" viewBox="0 -61 512 512">
+            <path d="m279 100h-244c-19.300781 0-35 15.699219-35 35v160c0 19.300781 15.699219 35 35 35h77v30h-15c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h120c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-15v-30h77c19.300781 0 35-15.699219 35-35v-160c0-19.300781-15.699219-35-35-35zm-107 260h-30v-30h30zm112-65c0 2.757812-2.242188 5-5 5h-244c-2.757812 0-5-2.242188-5-5v-160c0-2.757812 2.242188-5 5-5h244c2.757812 0 5 2.242188 5 5zm0 0"/><path d="m497 0h-138c-8.285156 0-15 6.714844-15 15v360c0 8.285156 6.714844 15 15 15h138c8.285156 0 15-6.714844 15-15v-360c0-8.285156-6.714844-15-15-15zm-123 30h108v30h-108zm0 330v-270h108v270zm0 0"/><path d="m443 315c0 8.285156-6.714844 15-15 15s-15-6.714844-15-15 6.714844-15 15-15 15 6.714844 15 15zm0 0"/>
+        </symbol>
+        <symbol id="4wd" viewBox="0 0 512 512">
+            <path d="m512 120v-120h-160v120h60v101.363281c-6.066406 3.511719-11.125 8.570313-14.636719 14.636719h-84.804687c-8.253906-23.277344-30.484375-40-56.558594-40s-48.304688 16.722656-56.558594 40h-84.804687c-3.320313-5.730469-8.011719-10.566406-13.636719-14.042969v-101.957031h59v-120h-160v120h61v100.792969c-12.503906 6.765625-21 19.992187-21 35.207031s8.496094 28.441406 21 35.207031v100.792969h-61v120h160v-120h-59v-101.957031c5.625-3.476563 10.316406-8.3125 13.636719-14.042969h84.804687c8.253906 23.277344 30.484375 40 56.558594 40s48.304688-16.722656 56.558594-40h84.804687c3.511719 6.066406 8.570313 11.125 14.636719 14.636719v101.363281h-60v120h160v-120h-60v-101.363281c11.953125-6.917969 20-19.832031 20-34.636719s-8.046875-27.71875-20-34.636719v-101.363281zm-472-80h80v40h-80zm80 432h-80v-40h80zm352 0h-80v-40h80zm-216-196c-11.027344 0-20-8.972656-20-20s8.972656-20 20-20 20 8.972656 20 20-8.972656 20-20 20zm136-236h80v40h-80zm0 0"/>
+        </symbol>
+    </svg>
+    <!--SCRIPTS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>RemTv</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <!--START MAIN CONTAINER-->
+    <main class="wrapper">
+        <!--START HEADER-->
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/logo.svg" alt="">
+                        <p>rem<span>tv</span></p>
+                    </a>
+                </div>
+                <div class="header-container__select">
+                    <select name="town" id="choiceTown">
+                        <option value="moskow">
+                            Москва
+                        </option>
+                        <option value="moskow">
+                            Москва
+                        </option>
+                        <option value="moskow">
+                            Москва
+                        </option>
+                        <option value="moskow">
+                            Москва
+                        </option>
+                    </select>
+                </div>
+                <div class="header-container__phone">
+                    <a href="tel:+89999994547">
+                        <img src="./img/phone.svg" alt="">
+                        <span>8 (999) 999-45-47</span>
+                    </a>
+                </div>
+                <div class="header-container__btn">
+                    <a href="#" class="js-button-campaign">Связаться с нами</a>
+                </div>
+                <div class="btn-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <nav class="header-navigation">
+                <div class="navigation-container">
+                    <ul class="header-navigation__list">
+                        <li class="header-navigation__list-item">
+                            <a href="#appliances" class="list-item__link">Техника по брендам</a>
+                        </li>
+                        <li class="header-navigation__list-item">
+                            <a href="#services">Услуги</a>
+                        </li>
+                        <li class="header-navigation__list-item">
+                            <a href="#how-we-work">Как мы работаем</a>
+                        </li>
+                        <li class="header-navigation__list-item">
+                            <a href="#our-rewiews">Отзывы</a>
+                        </li>
+                        <li class="header-navigation__list-item">
+                            <a href="#section-contact">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <h1 class="header-title">Починим Ваш телевизор Сегодня!</h1>
+            <div class="header-subtitle">98% поломок техники исправляем в день вашего обращения</div>
+            <p class="header-text">Хотите Получить Бесплатную Диагностику Специалиста?</p>
+            <div class="header-sale">
+                <a href="#" class="header-sale__link js-button-campaign">Получить консультацию сейчас</a>
+                <span>Акция действует до 19.10.2019</span>
+            </div>
+            <div class="description-container">
+                <div class="description-item">
+                    <img src="./img/shield_1.svg" alt="" class="description-item__image">
+                    <p class="description-item__text">Оригинальные запчасти </p>
+                </div>
+                <div class="description-item">
+                    <img src="./img/guarantee.svg" alt="" class="description-item__image">
+                    <p class="description-item__text">Гарантия до-3х- лет!</p>
+                </div>
+                <div class="description-item">
+                    <img src="./img/car_1.svg" alt="" class="description-item__image">
+                    <p class="description-item__text">Выезд мастера за 30 минут</p>
+                </div>
+            </div>
+            <div class="overlay js-overlay-campaign">
+                <div class="popup js-popup-campaign">
+                    <div class="popup-form">
+                        <h2>Заполните форму и мы свяжемся с Вами!</h2>
+                        <form action="#">
+                            <input type="text" id="name" placeholder="Ваше имя" required>
+                            <input type="tel" placeholder="Ваш телефон" id="popupPhone" required>
+                            <br>
+                            <button type="submit" class="send">Отправить</button>
+                        </form>
+                        <p class="popup-subtitle">Нажимая кнопку отправить Вы соглашаетесь с обработкой Вашех персональных данных</p>
+                    </div>
+                    <div class="popup-final">
+                        <h2>Спасибо!</h2>
+                        <p>В ближайшее время наш оператор свяжется с Вами!</p>
+                        <button type="submit" class="close">Подтвердить</button>
+                    </div>
+                    <div class="close-popup js-close-campaign"></div>
+                </div>
+            </div>
+
+        </header>
+        <div class="menu">
+            <div class="btn-close"></div>
+            <div class="menu-list">
+                <ul>
+                    <li><a href="#appliances" class="menu__links-item">Техника по брендам</a></li>
+                    <li><a href="#services" class="menu__links-item">Услуги</a></li>
+                    <li><a href="#how-we-work" class="menu__links-item">Как мы работаем</a></li>
+                    <li><a href="#our-rewiews" class="menu__links-item">Отзывы</a></li>
+                    <li><a href="#section-contact" class="menu__links-item">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--END HEADER-->
+        <!--START SECTION SALE-->
+        <section class="sale">
+            <div class="sale-container">
+                <h2 class="sale-title">Акция на бесплатную диагностику <br> до конца дня</h2>
+                <div class="sale-btn">
+                    <a href="#" class="js-button-campaign">Запросить диагностику</a>
+                </div>
+                <div class="sale-image">
+                    <img src="./img/master.png" alt="">
+                </div>
+                <div class="sale-arrow">
+                    <img src="./img/sale-arrow.png" alt="">
+                </div>
+            </div>
+
+        </section>
+        <!--END SECTION SALE-->
+        <!--START SECTION WORK-->
+        <section class="work" id="services">
+            <div class="container">
+                <h2 class="work-title">Самые востребованные работы</h2>
+                <h3 class="work-subtitle">Нашего центра</h3>
+                <div class="holder-container">
+                    <div class="holder-item">
+                        <div class="holder-title">
+                            <img src="./img/computer.svg" alt="">
+                            <span>Ремонт экранов</span>
+                        </div>
+                        <div class="service-row__title">
+                            <div class="service-name__title">Услуга</div>
+                            <div class="service-cost__title">Стоимость работ</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-name">Сборка компьютеров</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row__white">
+                            <div class="service-name">Модернизация компьютеров</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-name">Диагностика компьютеров</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row__white">
+                            <div class="service-name">Восстановление данных</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-name">Установка программ</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="holder-item__tv">
+                            <img src="./img/tv.png" alt="">
+                        </div>
+                    </div>
+                    <div class="holder-item">
+                        <div class="holder-title">
+                            <img src="./img/led-lighting.svg" alt="">
+                            <span>Замена подсветки</span>
+                        </div>
+                        <div class="service-row__title">
+                            <div class="service-name__title">Услуга</div>
+                            <div class="service-cost__title">Стоимость работ</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-name">Чистка ноутбука</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row__white">
+                            <div class="service-name">Ремонт после залития</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-name">Замена экрана на ноутбуке</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row__white">
+                            <div class="service-name">Диагностика ноутбука</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-name">Замена разъемов</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row__white">
+                            <div class="service-name">Замена видеочипов и мостов</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="holder-item__led">
+                            <img src="./img/led.png" alt="">
+                        </div>
+                    </div>
+                    <div class="holder-item">
+                        <div class="holder-title">
+                            <img src="./img/programmable.svg" alt="">
+                            <span>Замена материнской платы</span>
+                        </div>
+                        <div class="service-row__title">
+                            <div class="service-name__title">Услуга</div>
+                            <div class="service-cost__title">Стоимость работ</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-name">Установка WINDOWS XP, Vista, 7, 8, <br> 10
+                            </div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row__white">
+                            <div class="service-name">Переустановка WINDOWS XP, Vista,
+                                <br> 7, 8, 10</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-name">Восстановление WINDOWS</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row__white">
+                            <div class="service-name">Настройка WINDOWS</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="holder-item__mat">
+                            <img src="./img/mat.png" alt="">
+                        </div>
+                    </div>
+                    <div class="holder-item">
+                        <div class="holder-title">
+                            <img src="./img/internet.svg" alt="">
+                            <span>Прошивка</span>
+                        </div>
+                        <div class="service-row__title">
+                            <div class="service-name__title">Услуга</div>
+                            <div class="service-cost__title">Стоимость работ</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-name">Настройка роутера</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row__white">
+                            <div class="service-name">Настройка Wi-Fi</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-name">Точка Wi-Fi "под ключ"</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row__white">
+                            <div class="service-name">Диагностика ноутбука</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+
+                        </div>
+                        <div class="service-row">
+                            <div class="service-name">Монтаж и настройка сети</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row__white">
+                            <div class="service-name">Настройка WINDOWS SERVER</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-name">Настройка LINUX SERVER</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="service-row__white">
+                            <div class="service-name">Подключение Интернет</div>
+                            <div class="service-cost">от 990 Руб.</div>
+                            <div class="btn-order">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="holder-item__router">
+                            <img src="./img/router.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="holder-item__horizontal">
+                        <div class="horizontal-item__text">
+                            <div class="holder-title">
+                                <img src="./img/no-television.svg" alt="">
+                                <span>Восстановление связи</span>
+                            </div>
+                            <div class="service-row__title">
+                                <div class="service-name__title">Услуга</div>
+                                <div class="service-cost__title">Стоимость работ</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-name">Удаление вирусов</div>
+                                <div class="service-cost">от 990 Руб.</div>
+                                <div class="btn-order">
+                                    <a href="#">Заказать</a>
+                                </div>
+                            </div>
+                            <div class="service-row__white">
+                                <div class="service-name">Удаление баннеров</div>
+                                <div class="service-cost">от 990 Руб.</div>
+                                <div class="btn-order">
+                                    <a href="#">Заказать</a>
+                                </div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-name">Удаление блокировщиков</div>
+                                <div class="service-cost">от 990 Руб.</div>
+                                <div class="btn-order">
+                                    <a href="#">Заказать</a>
+                                </div>
+                            </div>
+                            <div class="service-row__white">
+                                <div class="service-name">Установка любого антивируса</div>
+                                <div class="service-cost">от 990 Руб.</div>
+                                <div class="btn-order">
+                                    <a href="#">Заказать</a>
+                                </div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-name">Настройка FIREWALL</div>
+                                <div class="service-cost">от 990 Руб.</div>
+                                <div class="btn-order">
+                                    <a href="#">Заказать</a>
+                                </div>
+                            </div>
+                            <div class="service-row__white">
+                                <div class="service-name">Безопасный доступ в Интернет</div>
+                                <div class="service-cost">от 990 Руб.</div>
+                                <div class="btn-order">
+                                    <a href="#">Заказать</a>
+                                </div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-name">Родительский контроль</div>
+                                <div class="service-cost">от 990 Руб.</div>
+                                <div class="btn-order">
+                                    <a href="#">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horizontal-item__photo">
+                            <img src="./img/sesion-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--END SECTION WORK-->
+        <!--START SECTION SALE FORM-->
+        <section class="sale-form">
+            <div class="container">
+                <div class="container-text">
+                    <h2 class="container-text__title">
+                        СКИДКА 20% на РЕМОНТ <br> матрицы
+                    </h2>
+                    <h3 class="container-text__subtitle">
+                        При заказе с сайта <span>до конца текущего месяца</span>
+                    </h3>
+                    <form action="#" id="sale-contact__form" class="container-text__form">
+                        <div class="container-text__form-title">Оставьте заявку, чтобы успеть сэкономить</div>
+                        <span>
+                            <input type="tel" id="salePhone" required placeholder="Ваш телефон">
+                        </span>
+                        <span>
+                           <button type="submit" class="take-sale">Получить скидку</button>
+                        </span>
+                        <div class="container-text__form-subtitle">Нажимая на кнопку “Получить скидку” - вы даете согласие на обработку персональных данных</div>
+                    </form>
+                </div>
+                <div class="sale-container__image">
+                    <img src="./img/sale-tv.png" alt="">
+                </div>
+            </div>
+            <div class="overlay-sale">
+                <div class="popup-sale">
+                    <div class="popup-final">
+                        <h2>Спасибо!</h2>
+                        <p>В ближайшее время наш оператор свяжется с Вами!</p>
+                        <button type="submit" class="close">Подтвердить</button>
+                    </div>
+                    <div class="close-popup"></div>
+                </div>
+            </div>
+        </section>
+        <!--END SECTION SALE FORM-->
+        <!--START SECTION REWIEWS-->
+        <section class="rewiews" id="our-rewiews">
+            <div class="container">
+                <h2 class="rewiews-title">
+                    За последний месяц
+                </h2>
+                <h3 class="rewiews-subtitle">
+                    мы починили
+                </h3>
+                <div class="rewiews-container">
+                    <div class="container-item">
+                        <div class="container-item__title">453 телевизора</div>
+                        <div class="container-item__image-tv">
+                            <img src="./img/rewiews-tv.png" alt="">
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="container-item__title">2 Гарантийных обращения</div>
+                        <div class="container-item__image">
+                            <img src="./img/talon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <h2 class="rewiews-title">
+                    Отзывы
+                </h2>
+                <h3 class="rewiews-subtitle">
+                    наших клиентов
+                </h3>
+                <div class="rewiews-slider">
+                    <div class="single-rewiews">
+                        <p class="single-rewiew__title">Ирина Коган <span>32 года</span></p>
+                        <p class="single-rewiw__text">Воспользовалась услугами этой фирмы и осталась очень довольна. Отремонтировали мой телек в первый же день. Повезло, что нужная запчасть была в наличии. Теперь телевизор работает, как часы. Спасибо, Вам.</p>
+                    </div>
+                    <div class="single-rewiews">
+                        <p class="single-rewiew__title">Ирина Коган <span>32 года</span></p>
+                        <p class="single-rewiw__text">Воспользовалась услугами этой фирмы и осталась очень довольна. Отремонтировали мой телек в первый же день. Повезло, что нужная запчасть была в наличии. Теперь телевизор работает, как часы. Спасибо, Вам.</p>
+                    </div>
+                    <div class="single-rewiews">
+                        <p class="single-rewiew__title">Ирина Коган <span>32 года</span></p>
+                        <p class="single-rewiw__text">Воспользовалась услугами этой фирмы и осталась очень довольна. Отремонтировали мой телек в первый же день. Повезло, что нужная запчасть была в наличии. Теперь телевизор работает, как часы. Спасибо, Вам.</p>
+                    </div>
+                    <div class="single-rewiews">
+                        <p class="single-rewiew__title">Ирина Коган <span>32 года</span></p>
+                        <p class="single-rewiw__text">Воспользовалась услугами этой фирмы и осталась очень довольна. Отремонтировали мой телек в первый же день. Повезло, что нужная запчасть была в наличии. Теперь телевизор работает, как часы. Спасибо, Вам.</p>
+                    </div>
+                </div>
+                <div class="rewiews-btn">
+                    <a href="#">Оставить мой отзыв</a>
+                </div>
+            </div>
+        </section>
+        <!--END SECTION REWIEWS-->
+        <!--START SECTION MASTER-->
+        <section class="master">
+            <div class="content-container">
+                <h2 class="master-title">
+                    только проверенные, дипломированные мастера
+                </h2>
+                <div class="master-description">
+                    <div class="master-description__image">
+                        <img src="./img/user.svg" alt="">
+                    </div>
+                    <div class="master-description__text">
+                        Опыт работы каждого мастера в it не менее 4х лет. Все мастера граждане РФ с высшим образованием.
+                    </div>
+                </div>
+                <h3 class="master-subtitle">
+                    Лучшие специалисты по итогам предыдущего месяца:
+                </h3>
+                <div class="worker-container">
+                    <div class="single-worker">
+                        <div class="single-worker__image">
+                            <img src="./img/worker-1.png" alt="">
+                        </div>
+                        <p class="single-worker__title">
+                            Коваленко Дмитрий
+                        </p>
+                        <div class="single-worker__description">
+                            <p>Стаж работы - с 2012г.</p>
+                            <p>Образование - высшее</p>
+                        </div>
+                    </div>
+                    <div class="single-worker">
+                        <div class="single-worker__image">
+                            <img src="./img/worker-2.png" alt="">
+                        </div>
+                        <p class="single-worker__title">
+                            Дмитриев Борис
+                        </p>
+                        <div class="single-worker__description">
+                            <p>Стаж работы - с 2012г.</p>
+                            <p>Образование - высшее</p>
+                        </div>
+                    </div>
+                    <div class="single-worker">
+                        <div class="single-worker__image">
+                            <img src="./img/worker-3.png" alt="">
+                        </div>
+                        <p class="single-worker__title">
+                            Смирнов Николай
+                        </p>
+                        <div class="single-worker__description">
+                            <p>Стаж работы - с 2012г.</p>
+                            <p>Образование - высшее</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END SECTION MASTER-->
+        <!--START SECTION REPAIRS-->
+        <section class="repairs" id="appliances">
+            <div class="repairs-container">
+                <h2 class="repairs-title">
+                    Уже знаете, что не так с вашим тв?
+                </h2>
+                <h3 class="repairs-subtitle">Узнайте стоимость устранения неисправности у нас</h3>
+                <form action="#" class="repairs-form" id="repairs-contact__form">
+                    <span><textarea name="" name="repairsText"  placeholder="Опишите Вашу проблему" required></textarea>
+                    </span>
+                    <div class="form-group">
+                        <span><select name="repairsTv" required>
+                            <option selected disabled >Выберите бренд телевизора</option>
+                            <option  value="Samsung">Samsung</option><
+                            <option value="Lg">Lg</option>
+                        </select></span>
+                        <span><input type="tel" placeholder="Ваш телефон" name="repairsPhone" id="repairsPhone" required>
+                        </span>
+                        <div class="btn-container">
+                            <button type="submit" class="btn-sale">Позвонить мне</button>
+                            <span class="btn-subtitle">Нажимая на кнопку “Позвонить мне” - вы даете согласие 
+                            на обработку персональных данных</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="overlay-repairs">
+                <div class="popup-repairs">
+                    <div class="popup-final">
+                        <h2>Спасибо!</h2>
+                        <p>В ближайшее время наш оператор свяжется с Вами!</p>
+                        <button type="submit" class="close">Подтвердить</button>
+                    </div>
+                    <div class="close-popup__repairs"></div>
+                </div>
+            </div>
+        </section>
+        <!--END SECTION REPAIRS-->
+        <!--START SECTION LIST CONTAINER-->
+        <section class="list-container" id="how-we-work">
+            <div class="single-item">
+                <h2 class="single-item__title">Отвечаем за свою работу!</h2>
+                <h3 class="single-item__subtitle">Даем гарантию на работы и запчасти</h3>
+                <ul class="single-item__list">
+                    <li class="single-item__list-item">
+                        <img src="./img/support_2.svg" alt="">
+                        <span>
+                            За многие годы работы работы фирмы мы ни разу не сталкивались с проблемой телевизора, которую не смогли бы устранить.
+                        </span>
+
+                    </li>
+                    <li class="single-item__list-item">
+                        <img src="./img/support_2.svg" alt="">
+                        <span>
+                            Используем проверенные и оригинальные запчасти, поэтому не боимся гарантировать качество ремонта</span>
+                    </li>
+                    <li class="single-item__list-item">
+                        <img src="./img/support_2.svg" alt="">
+                        <span>
+                            Менее 2% гарантийных обращений – риск повторного возникновения проблемы минимален</span>
+                    </li>
+                </ul>
+                <div class="single-item__image">
+                    <img src="./img/list-tv1.png" alt="">
+                </div>
+            </div>
+            <div class="single-item">
+                <h2 class="single-item__title">Оригинальные запчасти для телевизоров</h2>
+                <h3 class="single-item__subtitle">всегда в наличии на складе в центре Санкт-Петербурга</h3>
+                <ul class="single-item__list">
+                    <li class="single-item__list-item">
+                        <img src="./img/gear.svg" alt="">
+                        <span>170 квадратных метров стеллажей и коробок – на нашем складе всегда есть все «ходовые» комплектующие для любого телевизора</span>
+                    </li>
+                    <li class="single-item__list-item">
+                        <img src="./img/gear.svg" alt="">
+                        <span>В случае отсутствия запчасти у нас – быстро найдем её у одного из наших партнерских сервисов, которых больше двадцати.</span>
+                    </li>
+                    <li class="single-item__list-item">
+                        <img src="./img/gear.svg" alt="">
+                        <span>Решаем любые проблемы софта в день обращения. Устраняем серьёзную аппартаную поломку за 2 дня. Выписываем официальную гарантию на все работы.</span>
+                    </li>
+                </ul>
+                <div class="single-item__image">
+                    <img src="./img/list-tv2.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!--END SECTION LIST CONTAINER-->
+        <!--START SECTION FOOTER FORM-->
+        <section class="footer-form">
+            <div class="form-container">
+                <h2 class="form-container__title">
+                    Остались вопросы?
+                </h2>
+                <h3 class="form-container__subtitle">
+                    Задайте их прямо сейчас и получите ответ через 2 минуты!
+                </h3>
+                <form action="#" id="footer-contact__form">
+                    <span><input type="text" id="footerName" required placeholder="Ваше имя"></span>
+                    <span><input type="tel" id="footerPhone" required placeholder="Ваш телефон"></span>
+                    <br>
+                    <span><textarea name="footerComment"  required placeholder="Ваш вопрос"></textarea></span>
+                    <div class="btn-container">
+                        <button type="submit" class="footer-submit">Получить ответ</button>
+                        <span class="btn-subtitle">Нажимая на кнопку “Получить ответ” - вы даете согласие на обработку персональных данных</span>
+                    </div>
+                </form>
+            </div>
+            <div class="overlay-footer">
+                <div class="popup-footer">
+                    <div class="popup-final">
+                        <h2>Спасибо!</h2>
+                        <p>В ближайшее время наш оператор свяжется с Вами!</p>
+                        <button type="submit" class="close">Подтвердить</button>
+                    </div>
+                    <div class="close-popup"></div>
+                </div>
+            </div>
+        </section>
+        <!--END SECTION FOOTER FORM-->
+        <!--START SECTION CONTACT-->
+        <section class="contact" id="section-contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8289.798995487254!2d46.02599484699104!3d51.523649180075175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4114c7c1b6eec13d%3A0x5d1485e86d623d83!2z0KHQsNGA0LDRgtC-0LLRgdC60LjQuSDRhdGD0LTQvtC20LXRgdGC0LLQtdC90L3Ri9C5INC80YPQt9C10Lkg0LjQvNC10L3QuCDQkC4g0J0uINCg0LDQtNC40YnQtdCy0LA!5e0!3m2!1sru!2sua!4v1585477155810!5m2!1sru!2sua"
+                style="border:0;" allowfullscreen="" tabindex="0">
+            </iframe>
+            <div class="content-container">
+                <div class="contact-container">
+                    <div class="contact-container__text">
+                        <h2 class="contact-container__text-title">
+                            Контакты
+                        </h2>
+                        <h3 class="contact-container__text-subtitle">
+                            Срочный ремонт телевизоров
+                        </h3>
+                    </div>
+                    <div class="contact-container__description">
+                        <div class="contact-container__description-phone">
+                            <img src="./img/contact-phone.svg" alt="">
+                            <span>8 (999) 999-45-47  /  8 (921) 784-98-56</span>
+                        </div>
+                        <div class="contact-container__description-text">
+                            Мастера <strong>Срочный ремонт телевизоров</strong> для вашего удобства готовы БЕСПЛАТНО выехать в любой район города *Санкт-Петербурга* для диагностики неполодки
+                        </div>
+                    </div>
+                </div>
+                <div class="content-container__text">
+                    Выезд мастера по городу и до 7 км от границы города - бесплатно. От 7км до 30км выезд мастера - 300 руб.
+                </div>
+            </div>
+        </section>
+        <!--END SECTION CONTACT-->
+        <!--START FOOTER-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-info">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./img/logo.svg" alt="">
+                            <p>rem<span>tv</span></p>
+                        </a>
+                    </div>
+                    <div class="footer-info__link">
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-container__phone">
+                        <a href="tel:+89999994547">
+                            <img src="./img/phone.svg" alt="">
+                            <span>8 (999) 999-45-47</span>
+                        </a>
+                    </div>
+                    <div class="footer-container__btn">
+                        <a href="#" class="js-button-campaign">Связаться с нами</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--END FOOTER-->
+    </main>
+    <!--END MAIN CONTAINER-->
+    <!--SCRIPTS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/maskedinput.min.js"></script>
+
+</body>
+
+</html>
