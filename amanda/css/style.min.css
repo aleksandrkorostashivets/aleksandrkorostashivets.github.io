@@ -109,7 +109,7 @@ button {
   position: relative;
   z-index: 1;
   min-height: 100vh;
-  background-image: url("../img/img.png");
+  background-image: url("../img/img.png"); /* change background image*/
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat
@@ -208,7 +208,7 @@ button {
 .header__title {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  font-size: calc(35px + 95 * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(35px + 95 * ((100vw - 320px) / (1920 - 320))); /* 320px  min-width mobile window, 1920px - width fullscreen*/
   line-height: 1;
   color: #fff
 }
@@ -216,7 +216,7 @@ button {
 .header__text {
   max-width: 635px;
   font-family: "Raleway", sans-serif;
-  font-size: calc(12px + 6 * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(12px + 6 * ((100vw - 320px) / (1920 - 320))); /* 320px  min-width mobile window, 1920px - width fullscreen*/
   line-height: 2;
   color: #fff
 }
