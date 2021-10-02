@@ -1,362 +1,497 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name='freelancehunt' content='7a8a8a1d11cc189' />
-    <title>Oleksandr Korostshivers - front-end developer</title>
-    <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Futziball</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <header class="header" id="home">
-        <div class="wrapper">
-            <div class="header__text">
-                <p class="header-title">
-                    hello, I`m
-                </p>
-                <h1 class="header-headline">
-                    Oleksandr Korostashivets
-                </h1>
-                <p class="header-subtitle " id="type-text"></p>
-                <div class="cv-link">
-                    <a href="./cv/CV_Korostashivets_Oleksandr.pdf" download>Download CV</a>
-                </div>
+  <div class="site-container">
+    <header class="header" id="header">
+      <div class="header__body container"><a href="./index.html" class="header__logo"><img src="./img/logo.svg"
+            alt="Futziball" title="Futziball"></a>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__item"><a href="about.html" class="header__link">Про нас</a></li>
+            <li class="header__item"><a href="group.html" class="header__link">Вікові групи</a></li>
+            <li class="header__item"><a href="schedule.html" class="header__link">Розклад</a></li>
+            <li class="header__item"><a href="price.html" class="header__link">Вартість</a></li>
+            <li class="header__item"><a href="store.html" class="header__link">Магазини</a></li>
+            <li class="header__item"><a href="contact.html" class="header__link">Локації</a></li>
+            <li class="header__phone"><a href="tel:380994822273" class="header__phone-item">+38 (099) 482-22-73</a></li>
+          </ul>
+          <div class="header__contact">
+            <h3 class="header__contact-title">Контакти</h3><a href="tel:380994822273" class="header__contact-link">+38
+              (099) 482-22-73</a> <a href="mailto:futziball.office@gmail.com"
+              class="header__contact-link">futziball.office@gmail.com</a>
+            <div class="header__social">
+              <div class="header__col"><a href="" class="header__social-link">Instagram</a> <a href=""
+                  class="header__social-link">Facebook</a></div>
+              <div class="header__col"><a href="" class="header__social-link">Telegram</a> <a href=""
+                  class="header__social-link">Viber</a></div>
             </div>
-        </div>
-
-    </header>
-    <arcticle class="navigation">
-        <nav class="nav">
-            <div class="logo">
-                <a href="./index.html">
-                    <img src="./img/logo.png" alt="">
-                </a>
-            </div>
-            <ul class="nav-list">
-
-                <li class="nav-list__item">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="#about">About</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="#skills">Skills</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-            <div class="btn-menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="menu">
-                <button class="close-menu">&times;</button>
-                <div class="menu__list">
-                    <div class="logo">
-                        <a href="./index.html">
-                            <img src="./img/logo.png" alt="">
-                        </a>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#skills">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
+          </div>
         </nav>
-    </arcticle>
-
-    <section class="about" id="about">
-        <div class="wrapper">
-            <h2 class="about-title title">About me</h2>
-            <div class="about-info">
-                <div class="about-image">
-                    <img src="./img/IMG_7812.JPG" alt="Oleksandr Korostshivers">
-                </div>
-                <div class="about-text">
-                    <div class="about-container">
-                        <div class="col">
-                            <div class="about-item">
-                                <img src="./img/user.svg" alt="">
-                                <div class="about-item__text">
-                                    <p>name</p>
-                                    <p>Oleksandr Korostashivets</p>
-                                </div>
-                            </div>
-                            <div class="about-item">
-                                <img src="./img/phone.svg" alt="">
-                                <div class="about-item__text">
-                                    <p>phone</p>
-                                    <p>
-                                        <a href="tel:380688727420">+380688727420</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="about-item">
-                                <img src="./img/pin.svg" alt="">
-                                <div class="about-item__text">
-                                    <p>Location</p>
-                                    <p>Mykolaiv, ukraine</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="about-item">
-                                <img src="./img/data.svg" alt="">
-                                <div class="about-item__text">
-                                    <p>Date of birthday</p>
-                                    <p>2 March 1993</p>
-                                </div>
-                            </div>
-                            <div class="about-item">
-                                <img src="./img/email.svg" alt="">
-                                <div class="about-item__text">
-                                    <p>Email</p>
-                                    <p>
-                                        <a href="mailto:aleksandr.korostashivets@gmail.com">aleksandr.korostashivets@gmail.com</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="about-item">
-                                <img src="./img/flag.svg" alt="">
-                                <div class="about-item__text">
-                                    <p>Nationality</p>
-                                    <p>Ukrainian</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-social">
-                        <p>social profiles:</p>
-                        <div class="about-social__link">
-                            <a href="https://github.com/aleksandrkorostashivets" target="_blank">
-                                <img src="./img/git.svg" alt="">
-                            </a>
-                            <a href="https://www.facebook.com/profile.php?id=100006708252477" target="_blank">
-                                <img src="./img/fb.svg" alt="">
-                            </a>
-                            <a href="https://www.instagram.com/korostashivets_aleksandr/" target="_blank">
-                                <img src="./img/insta.svg" alt="">
-                            </a>
-                            <a href="https://www.linkedin.com/in/aleksandr-korostashivets/" target="_blank">
-                                <img src="./img/linkedin.svg" alt="">
-                            </a>
-                        </div>
-
-                    </div>
-                    <p class="about-descr__item">In this area, since 2017, from the very beginning of my work, I have been focusing on the timely execution of tasks, the accuracy and purity of writing code. From personal qualities I can single out responsibility, stress resistance,
-                        sociability. Since early childhood I have been engaged in team sports, so I know perfectly well what team work is.
-                    </p>
-                    <p class="about-descr__item">My objectives are increasing my knowledge in computer science fields and new technologies especially, web development field. Always looking forward to learn new technologies and be a part of a huge change in the world.</p>
-                    <p class="about-descr__item">I am a co founder of a charity running club for people with cerebral palsy.</p>
-
-                    <div class="about-signature">
-                        <p>Yours sincerely,</p>
-                        <p class="bold">Oleksandr Korostashivets</p>
-                    </div>
-                </div>
+        <div class="header__burger"><span></span></div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero-slider">
+            <div class="swiper hero__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="hero-slider__image" src="img/hero-slider-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img class="hero-slider__image" src="img/hero-slider-2.jpg" alt=""></div>
+                <div class="swiper-slide"><img class="hero-slider__image" src="img/hero-slider-3.jpg" alt=""></div>
+                <div class="swiper-slide"><img class="hero-slider__image" src="img/hero-slider-4.jpg" alt=""></div>
+                <div class="swiper-slide"><img class="hero-slider__image" src="img/hero-slider-5.jpg" alt=""></div>
+              </div>
+              <div class="hero__swiper-next"><svg>
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg></div>
+              <div class="hero__swiper-prev"><svg>
+                  <use xlink:href="img/sprite.svg#arrow-left"></use>
+                </svg></div>
             </div>
+            <div class="hero-pagination"></div>
+          </div>
+          <div class="hero-info">
+            <div class="hero__top">
+              <div class="hero__descr">
+                <h1 class="hero__title">Школа спорту, розвитку і фану</h1>
+                <p class="hero__subtitle">для маляти, мами й&nbsp;тата!</p>
+              </div>
+            </div>
+            <div class="hero__bottom">
+              <p class="hero__text">Ми&nbsp;хочемо змінити підхід до&nbsp;фізичного виховання і&nbsp;розвитку дітей:
+                змістити фокус із&nbsp;лідерства, чемпіонства, перемоги та&nbsp;конкуренції на&nbsp;розвиток дитини
+                як&nbsp;здорової особистості.</p>
+            </div>
+          </div>
         </div>
-    </section>
-
-
-    <section class="skills" id="skills">
-        <div class="wrapper">
-            <h2 class="skills-title title">Skills</h2>
-            <div class="skills-container">
-                <div class="skills-col">
-                    <h2 class="skills-col__title">
-                        hard skills
-                    </h2>
-                    <div class="skillbar clearfix " data-percent="90%">
-                        <div class="skillbar-title" style="background: #d35400;"><span>html, html5</span></div>
-                        <div class="skillbar-bar" style="background: #e67e22;"></div>
-                        <div class="skill-bar-percent Count">90</div>
-                    </div>
-                    <div class="skillbar clearfix " data-percent="90%">
-                        <div class="skillbar-title" style="background: #2980b9;"><span>css, css3</span></div>
-                        <div class="skillbar-bar" style="background: #3498db;"></div>
-                        <div class="skill-bar-percent Count">90</div>
-                    </div>
-                    <div class="skillbar clearfix " data-percent="70%">
-                        <div class="skillbar-title" style="background: #2c3e50;"><span>javascript, jquery</span></div>
-                        <div class="skillbar-bar" style="background: #2c3e50;"></div>
-                        <div class="skill-bar-percent Count">70</div>
-                    </div>
-                    <div class="skillbar clearfix " data-percent="70%">
-                        <div class="skillbar-title" style="background: #46465e;"><span>Gulp</span></div>
-                        <div class="skillbar-bar" style="background: #5a68a5;"></div>
-                        <div class="skill-bar-percent Count">70</div>
-                    </div>
-                    <div class="skillbar clearfix " data-percent="60%">
-                        <div class="skillbar-title" style="background: #333333;"><span>Photoshop</span></div>
-                        <div class="skillbar-bar" style="background: #525252;"></div>
-                        <div class="skill-bar-percent Count">60</div>
-                    </div>
-                    <div class="skillbar clearfix " data-percent="80%">
-                        <div class="skillbar-title" style="background: #27ae60;"><span>adaptive layout</span></div>
-                        <div class="skillbar-bar" style="background: #2ecc71;"></div>
-                        <div class="skill-bar-percent Single Count">80</div>
-                    </div>
-                </div>
-                <div class="skills-col">
-                    <h2 class="skills-col__title">
-                        soft skills
-                    </h2>
-                    <div class="skillbar clearfix " data-percent="80%">
-                        <div class="skillbar-title" style="background: #d35400;"><span>Communication</span></div>
-                        <div class="skillbar-bar" style="background: #e67e22;"></div>
-                        <div class="skill-bar-percent Count">80</div>
-                    </div>
-                    <div class="skillbar clearfix " data-percent="90%">
-                        <div class="skillbar-title" style="background: #2980b9;"><span>Team Work<span></div>
-                        <div class="skillbar-bar" style="background: #3498db;"></div>
-                        <div class="skill-bar-percent Count">90</div>
-                    </div>
-                    <div class="skillbar clearfix " data-percent="80%">
-                        <div class="skillbar-title" style="background: #2c3e50;"><span>LeaderShip</span></div>
-                        <div class="skillbar-bar" style="background: #2c3e50;"></div>
-                        <div class="skill-bar-percent Count">80</div>
-                    </div>
-                    <div class="skillbar clearfix " data-percent="75%">
-                        <div class="skillbar-title" style="background: #46465e;"><span>Time Management</span></div>
-                        <div class="skillbar-bar" style="background: #5a68a5;"></div>
-                        <div class="skill-bar-percent Count">75</div>
-                    </div>
-                    <div class="skillbar clearfix " data-percent="90%">
-                        <div class="skillbar-title" style="background: #333333;"><span>good mood</span></div>
-                        <div class="skillbar-bar" style="background: #525252;"></div>
-                        <div class="skill-bar-percent Count">90</div>
-                    </div>
-                    <div class="skillbar clearfix " data-percent="85%">
-                        <div class="skillbar-title" style="background: #27ae60;"><span>responsibility</span></div>
-                        <div class="skillbar-bar" style="background: #2ecc71;"></div>
-                        <div class="skill-bar-percent Single Count">85</div>
-                    </div>
-                </div>
+      </section>
+      <section class="lesson">
+        <div class="container">
+          <div class="lesson__info">
+            <h2 class="title lesson__title">Безкоштовне пробне тренування:</h2>
+            <p class="subtitle lesson__subtitle">для хлопчиків та дівчаток</p>
+            <div class="lesson__container">
+              <div class="lesson-features">
+                <ul class="lesson__list">
+                  <li class="lesson__item">Досвід спортивного заняття і пробудження інтересу до спорту.</li>
+                  <li class="lesson__item">Можливість для батьків познайомитись з деякими вправами європейської методики
+                    розвитку і поспілкуватись з тренером.</li>
+                  <li class="lesson__item">Веселощі з іншими малюками, фан і весела музика.</li>
+                  <li class="lesson__item">Отримаєте фото і відео з тренування.</li>
+                  <li class="lesson__item">Безпека під наглядом професійних тренерів.</li>
+                </ul><a href="price.html#questions" class="link lesson__link"><span>Відповіді на запитання</span> <svg>
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg></a>
+              </div>
+              <div class="lesson-form">
+                <form action="" class="lesson-form__body">
+                  <div class="lesson-form__field"><label for="name">Ім’я</label> <input type="text" name="name"></div>
+                  <div class="lesson-form__field"><label for="phone">Телефон</label> <input type="tel" name="phone"
+                      placeholder="+38 068 000 00 00"></div>
+                  <div class="lesson-form__field"><label for="email">E-mail</label> <input type="email" name="email"
+                      placeholder="user@gmail.com"></div>
+                  <div class="lesson-form__field"><label for="age">Вік дитини</label> <input type="text" name="age">
+                  </div>
+                  <p class="lesson-form__text">Заповнюючи форму ви даєте згоду на обробку персональних данних</p><button
+                    class="lesson-form__btn btn-reset btn">Відправити</button>
+                </form>
+              </div>
             </div>
-            <p class="skills-subtitle">
-                *you can see more detailed information in my CV
-            </p>
-            <div class="cv-link skills-link">
-                <a href="./cv/CV_Korostashivets_Oleksandr.pdf" download>Download CV</a>
+          </div>
+        </div><img src="img/lesson-star1.png" alt="" class="lesson-star--first"> <img src="img/lesson-star2.png" alt=""
+          class="lesson-star--second"> <img src="img/lesson-star4.png" alt="" class="lesson__star--fourth"> <img
+          src="img/lesson-star3.png" alt="" class="lesson__star--fifth">
+      </section>
+      <section class="features">
+        <div class="container features__container">
+          <div class="features__wrapper">
+            <h2 class="title features__title">Чому обирають нас</h2>
+            <p class="features__subtitle">Європейська методика допомагає малюкам покращити загальний фізичний розвиток і
+              когнітивні навички, освоїти ази техніки роботи з м'ячем та навчитися вправно керувати своїми рухами і
+              покращити концентрацію уваги</p>
+            <div class="features__list">
+              <div class="features-item">
+                <div class="features-item__number">1</div>
+                <div class="features-item__info">
+                  <h3 class="features-item__title">Створюємо атмосферу</h3>
+                  <p class="features-item__text">Атмосферу радості й невимушеності, адже тільки так, у сприятливому
+                    середовищі дітки та їхні батьки зможуть розкриватися і відкриватися до сприйняття нового досвіду</p>
+                </div>
+              </div>
+              <div class="features-item">
+                <div class="features-item__number">2</div>
+                <div class="features-item__info">
+                  <h3 class="features-item__title">З нами завжди цікаво</h3>
+                  <p class="features-item__text">Ми&nbsp;не&nbsp;лише розвиваємо, а&nbsp;й&nbsp;розвиваємося самі,
+                    ми&nbsp;постійно привносимо щось нове&nbsp;&mdash; нові ідеї, нові формати, нові способи взаємодії.
+                    Ми&nbsp;такі&nbsp;ж непосидючі і&nbsp;допитливі, як&nbsp;і&nbsp;дітки, які до&nbsp;нас приходять</p>
+                </div>
+              </div>
+              <div class="features-item">
+                <div class="features-item__number features-item__number--green">3</div>
+                <div class="features-item__info">
+                  <h3 class="features-item__title">Безпечно, вільно та комфортно</h3>
+                  <p class="features-item__text">З нами не страшно помилитися, зробити щось не так, не ідеально; ми
+                    завжди з розумінням поставимося до будь-яких запитань, зауважень, уточнень</p>
+                </div>
+              </div>
+              <div class="features-item">
+                <div class="features-item__number features-item__number--green">4</div>
+                <div class="features-item__info">
+                  <h3 class="features-item__title">Навчаємо, а не повчаємо</h3>
+                  <p class="features-item__text">Ми не критикуємо, а показуємо шляхи вирішення тих чи інших ситуацій; ми
+                    не убиваємо жагу до всього нового, а навпаки підштовхуємо проявляти інтерес, допитливість та дитяче
+                    (і батьківське) «чомучкання»</p>
+                </div>
+              </div>
             </div>
+          </div><img src="img/features-owl.png" alt="" class="features-owl"> <img src="img/owl-mobile.png" alt=""
+            class="features-owl--mobile"> <img src="img/features-star-1.png" alt="" class="feature-star--first"> <img
+            src="img/features-star-2.png" alt="" class="feature-star--second">
         </div>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-        <div class="wrapper">
-            <h2 class="portfolio-title title">Portfolio</h2>
-            <div class="portfolio-container">
-                <div class="portfolio-item" style="background-image: url(../img/surf.png);">
-                    <a class="portfolio-item__link" href="https://aleksandrkorostashivets.github.io/surfing/" target="_blank">
-web-site link                    </a>
-                    <div class="portfolio-item__inner"></div>
-                </div>
-                <div class="portfolio-item" style="background-image: url(../img/tesla.png);">
-                    <a class="portfolio-item__link" href="https://aleksandrkorostashivets.github.io/tesla/" target="_blank">
-                        web-site link
-                    </a>
-                </div>
-                <div class="portfolio-item" style="background-image: url(../img/futziball.png);">
-                    <a class="portfolio-item__link" href="https://www.futziball.com.ua/" target="_blank">
-web-site link                    </a>
-                </div>
-                <div class="portfolio-item" style="background-image: url(../img/ruka.png);">
-                    <a class="portfolio-item__link" href="https://www.ruka-ob-ruku.com.ua/" target="_blank">
-web-site link                    </a>
-                </div>
-                <div class="portfolio-item" style="background-image: url(../img/fio.png);">
-                    <a class="portfolio-item__link" href="http://football-unlimited.com/" target="_blank">
-web-site link                    </a>
-                </div>
-                <div class="portfolio-item" style="background-image: url(../img/eatery.png);">
-                    <a class="portfolio-item__link" href="https://aleksandrkorostashivets.github.io/eatery/" target="_blank">
-web-site link                    </a>
-                </div>
-                <div class="portfolio-item" style="background-image: url(../img/tv.png);">
-                    <a class="portfolio-item__link" href="https://aleksandrkorostashivets.github.io/tv/" target="_blank">
-web-site link                    </a>
-                </div>
-                <div class="portfolio-item" style="background-image: url(../img/rem.png);">
-                    <a class="portfolio-item__link" href="https://aleksandrkorostashivets.github.io/services" target="_blank">
-web-site link                    </a>
-                </div>
-            </div>
+      </section>
+      <section class="training">
+        <div class="training__top">
+          <div class="container">
+            <h2 class="title training__title">Як проходять наші тренування</h2>
+            <div class="training__container">
+              <div class="training__video"><video src="#" poster="img/ukraine.png" controls></video></div>
+              <div class="training__info">
+                <p class="training__text">Під час занять малюки отримають свій перший досвід роботи з м'ячем, опанують
+                  ази футбольної техніки та розвинуть свободу руху.</p>
+              </div>
+            </div><img src="img/training-star1.png" alt="" class="training-star--first"> <img
+              src="img/training-star2.png" alt="" class="training-star--second"> <img src="img/training-star3.png"
+              alt="" class="training-star--third"> <img src="img/training-star4.png" alt=""
+              class="training-star--fourth">
+          </div>
         </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="wrapper">
-            <h2 class="contact-title title">Contact</h2>
-
-            <div class="contact-container">
-                <a href="tel:380688727420" class="contact-link">
-                    <img src="./img/footer-phone.png" alt="Phone number">
-                    <span>
-                        +38(068) 872-74-20
-                    </span>
-                </a>
-                <a href="mailto:aleksandr.korostashivets@gmail.com" class="contact-link">
-                    <img src="./img/footer-gmail.png" alt="E-mail">
-                    <span>
-                        aleksandr.korostashivets@gmail.com
-                    </span>
-                </a>
-                <a href="skype:live:301875caa78b640a?call" class="contact-link">
-                    <img src="./img/footer-skype.png" alt="Skype">
-                    <span>
-                        Aleksandr Korostashivets
-                    </span>
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100006708252477" class="contact-link" target="_blank">
-                    <img src="./img/footer-fb.png" alt="Facebook">
-                    <span>
-                        Александр Коросташивец
-                    </span>
-                </a>
-                <a href="https://www.linkedin.com/in/aleksandr-korostashivets/" class="contact-link" target="_blank">
-                    <img src="./img/footer-linkedin.png" alt="Linkedin">
-                    <span>
-                        Aleksandr Korostashivets
-                    </span>
-                </a>
-                <a href="https://aleksandrkorostashivets.github.io/" class="contact-link" target="_blank">
-                    <img src="./img/footer-web-site.png" alt="Web-site">
-                    <span>
-                       aleksandrkorostashivets.github.io
-                    </span>
-                </a>
-            </div>
+        <div class="training__bottom"></div>
+      </section>
+      <div class="training-slider__wrapper">
+        <div class="swiper training-slider">
+          <div class="swiper-wrapper training-slider__wrapper">
+            <div class="swiper-slide training-slider__item"><img src="img/training-slider-1.jpg"></div>
+            <div class="swiper-slide training-slider__item"><img src="img/training-slider-2.jpg"></div>
+            <div class="swiper-slide training-slider__item"><img src="img/training-slider-3.jpg"></div>
+            <div class="swiper-slide training-slider__item"><img src="img/training-slider-4.jpg"></div>
+            <div class="swiper-slide training-slider__item"><img src="img/training-slider-5.jpg"></div>
+            <div class="swiper-slide training-slider__item"><img src="img/training-slider-6.jpg"></div>
+            <div class="swiper-slide training-slider__item"><img src="img/training-slider-7.jpg"></div>
+          </div>
         </div>
-    </section>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
+        <div class="training__swiper-next"><svg>
+            <use xlink:href="img/sprite.svg#arrow-right"></use>
+          </svg></div>
+        <div class="training__swiper-prev"><svg>
+            <use xlink:href="img/sprite.svg#arrow-left"></use>
+          </svg></div>
+      </div>
+      <section class="founder">
+        <div class="founder__wrapper">
+          <div class="founder__container">
+            <div class="founder__item">
+              <h2 class="founder__title">Автор методології</h2>
+              <div class="founder__image"><svg width="385" height="395" viewBox="0 0 385 395" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <mask id="mask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="385"
+                    height="395">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M195.327 1.94709C239.973 5.40347 282.308 19.4109 315.91 50.16C352.051 83.2323 383.86 125.455 384.971 175.49C386.1 226.361 354.334 268.894 321.607 306.739C286.383 347.471 247.934 391.663 195.327 394.785C140.778 398.022 90.8723 364.307 53.7546 322.634C18.1065 282.611 -0.290986 230.029 0.00347989 175.49C0.296191 121.275 15.6851 65.2151 55.3347 29.9871C92.8869 -3.37763 146.061 -1.86697 195.327 1.94709Z"
+                      fill="#C4C4C4" />
+                  </mask>
+                  <g mask="url(#mask0)">
+                    <rect x="-5.07715" y="0.564087" width="394.308" height="394.872" fill="url(#pattern0)" />
+                    <image xlink:href="img/wouter.jpg" />
+                  </g>
+                  <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"></pattern>
+                  </defs>
+                </svg></div>
+              <div class="founder-info founder--wouter">
+                <h3 class="founder-info__title">Воутер Ван Брюкен Фок</h3>
+                <p class="founder-info__text">Засновник Voetjebal Nederland та Panasj Nederland.</p>
+                <p class="founder-info__text">Тренер молодіжних команд «Аякс» (Амстердам) та Феєнорд (Роттердам), ADO
+                  Den Haag (Гаага).</p>
+              </div>
+            </div>
+            <div class="founder__item">
+              <h2 class="founder__title">Засновник школи в Україні</h2>
+              <div class="founder__image"><svg width="385" height="395" viewBox="0 0 385 395" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <mask id="mask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="385"
+                    height="395">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M195.327 1.94709C239.973 5.40347 282.308 19.4109 315.91 50.16C352.051 83.2323 383.86 125.455 384.971 175.49C386.1 226.361 354.334 268.894 321.607 306.739C286.383 347.471 247.934 391.663 195.327 394.785C140.778 398.022 90.8723 364.307 53.7546 322.634C18.1065 282.611 -0.290986 230.029 0.00347989 175.49C0.296191 121.275 15.6851 65.2151 55.3347 29.9871C92.8869 -3.37763 146.061 -1.86697 195.327 1.94709Z"
+                      fill="#C4C4C4" />
+                  </mask>
+                  <g mask="url(#mask0)">
+                    <rect x="-5.07715" y="0.564087" width="394.308" height="394.872" fill="url(#pattern0)" />
+                    <image xlink:href="img/maksym.jpg" />
+                  </g>
+                  <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"></pattern>
+                  </defs>
+                </svg></div>
+              <div class="founder-info founder--maksym">
+                <h3 class="founder-info__title">Максим Міхальков</h3>
+                <p class="founder-info__text">Засновник Офісу футбольних інновацій.</p>
+                <p class="founder-info__text">Випускник Johan Cruyff Institute (Амстердам, Нідерланди), програма
+                  Football Business.</p>
+              </div>
+            </div>
+          </div><img src="img/founder-star-first.png" alt="" class="founder-star--first"> <img
+            src="img/founder-star-second.png" alt="" class="founder-star--second"> <img src="img/founder-ball.png"
+            alt="" class="founder-ball">
+        </div>
+      </section>
+      <section class="study">
+        <div class="container">
+          <h2 class="title study-title">Чому малюк навчиться разом з нами</h2>
+        </div>
+        <div class="study__container">
+          <div class="study__row">
+            <div class="study__item">
+              <div class="study__image"><img src="img/study-1.jpg" alt=""></div>
+              <h3 class="study__title">Свобода руху</h3>
+              <p class="study__subtitle">Координація, моторика і баланс</p>
+            </div>
+            <div class="study__item">
+              <div class="study__image"><img src="img/study-2.jpg" alt=""></div>
+              <h3 class="study__title">Футбол</h3>
+              <p class="study__subtitle">Дриблінг, паси і удари м'яча</p>
+            </div>
+            <div class="study__item">
+              <div class="study__image"><img src="img/study-3.jpg" alt=""></div>
+              <h3 class="study__title">Загальні знання</h3>
+              <p class="study__subtitle">Геометричні фігури, кольори, цифри</p>
+            </div>
+          </div><img src="img/study-bear.png" alt="" class="study__bear"> <img src="img/bear-mobile.png" alt=""
+            class="study__bear--mobile"> <img src="img/study-star-1.png" alt="" class="study__star--first"> <img
+            src="img/study-star-2.png" alt="" class="study__star--second"> <img src="img/study-star-3.png" alt=""
+            class="study__star--third">
+        </div>
+      </section>
+      <section class="rewiews">
+        <div class="rewiews__container">
+          <div class="container">
+            <h2 class="title rewiews__title">Відгуки батьків</h2>
+          </div>
+          <div class="rewiews__wrapper">
+            <div class="swiper rewiews-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide rewiews-item">
+                  <div class="rewiews-item__top">
+                    <!-- <div class="rewiews-item__image">
+                <img src="img/rewiews1.png" alt="">
+              </div> -->
+                    <div class="rewiews-item__info">
+                      <p>Ганна, мама Андрія</p>
+                      <p>1.8 років</p>
+                    </div>
+                  </div>
+                  <div class="rewiews-item__bottom">
+                    <p class="rewiews-item__text">Тренування дуже сподобалося, вправи дійсно цікаві і захоплюють увагу
+                      найменших діток - син отримав задоволення. Видно, що тренер Ваня любить свою роботу: викладається
+                      на повну під час заняття))</p>
+                  </div>
+                </div>
+                <div class="swiper-slide rewiews-item">
+                  <div class="rewiews-item__top">
+                    <!-- <div class="rewiews-item__image">
+                <img src="img/rewiews2.png" alt="">
+              </div> -->
+                    <div class="rewiews-item__info">
+                      <p>Валентин, тато Фелікса</p>
+                      <p>2.9 років</p>
+                    </div>
+                  </div>
+                  <div class="rewiews-item__bottom">
+                    <p class="rewiews-item__text">The gym is much better than it was in the previous lesson. The coach
+                      is doing great work as always. Thank you.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide rewiews-item">
+                  <div class="rewiews-item__top">
+                    <!-- <div class="rewiews-item__image">
+                <img src="img/rewiews3.png" alt="">
+              </div> -->
+                    <div class="rewiews-item__info">
+                      <p>Мар'яна, мама Максима</p>
+                      <p>4.9 років</p>
+                    </div>
+                  </div>
+                  <div class="rewiews-item__bottom">
+                    <p class="rewiews-item__text">Були сьогодні з сином на першому занятті з футболу. Прекрасний підхід
+                      тренера Марини до дітей. Чину дуже подобаються різноманітні заняття. Прийдемо знову!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rewiews-pagination"></div>
+          <div class="rewiews__swiper-next"><svg>
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg></div>
+          <div class="rewiews__swiper-prev"><svg>
+              <use xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg></div>
+        </div>
+      </section>
+      <section class="club">
+        <div class="container">
+          <h2 class="title club__title">Футбольні клуби — партнери школи Futziball</h2>
+        </div>
+        <div class="club__wrapper">
+          <div class="container">
+            <div class="club__list">
+              <figure class="club__item"><img src="img/ajax.png" class="club__item-img" alt="">
+                <figcaption class="club__item-info">
+                  <h3 class="club__item-title">Аякс</h3>
+                  <p class="club__item-subtitle">Амстердам</p>
+                </figcaption>
+              </figure>
+              <figure class="club__item"><img src="img/psv.png" class="club__item-img" alt="">
+                <figcaption class="club__item-info club__item-info--right">
+                  <h3 class="club__item-title">ПСВ</h3>
+                  <p class="club__item-subtitle">Ейндховен</p>
+                </figcaption>
+              </figure>
+              <figure class="club__item"><img src="img/den_haag.png" class="club__item-img" alt="">
+                <figcaption class="club__item-info club__item-info--right">
+                  <h3 class="club__item-title">АДО Ден Хааг</h3>
+                  <p class="club__item-subtitle">Гаага</p>
+                </figcaption>
+              </figure>
+              <figure class="club__item"><img src="img/feyenord.png" class="club__item-img" alt="">
+                <figcaption class="club__item-info">
+                  <h3 class="club__item-title">Феєнорд</h3>
+                  <p class="club__item-subtitle">Роттердам</p>
+                </figcaption>
+              </figure>
+              <figure class="club__item"><img src="img/borusia.png" class="club__item-img" alt="">
+                <figcaption class="club__item-info club__item-info--right">
+                  <h3 class="club__item-title">Боруссія</h3>
+                  <p class="club__item-subtitle">Менхенгладбах</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <div class="container form__container">
+          <h2 class="title form__title">Записатись на пробне тренування</h2>
+          <div class="form__wrapper">
+            <form action="" class="form__body">
+              <div class="form__field"><label for="name">Ім’я</label> <input type="text" name="name"></div>
+              <div class="form__field"><label for="phone">Телефон</label> <input type="tel" name="phone"
+                  placeholder="+38 068 000 00 00"></div>
+              <div class="form__field"><label for="email">E-mail</label> <input type="email" name="email"
+                  placeholder="user@gmail.com"></div>
+              <div class="form__field"><label for="age">Вік дитини</label> <input type="text" name="age"></div>
+              <p class="form__text">Заповнюючи форму ви даєте згоду на обробку персональних данних</p><button
+                class="form__btn btn-reset btn">Відправити</button>
+            </form><img src="img/star-1.png" alt="" class="star-first"> <img src="img/star-2.png" alt=""
+              class="star-second">
+          </div>
+        </div>
+      </section>
+      <section class="school">
+        <div class="container">
+          <h2 class="title school__title">Наші школи в Європі</h2>
+          <div class="school__container">
+            <div class="country">
+              <div class="country__col">
+                <div class="country-item">
+                  <h3 class="country__title">Бельгія</h3><img src="img/belgium.png" alt="" class="country__img">
+                </div>
+                <div class="country-item">
+                  <h3 class="country__title">Нідерланди</h3><img src="img/netheserland.png" alt="" class="country__img">
+                </div>
+              </div>
+              <div class="country__col">
+                <div class="country-item">
+                  <h3 class="country__title">Німеччина</h3><img src="img/germany.png" alt="" class="country__img">
+                </div>
+                <div class="country-item">
+                  <h3 class="country__title">Україна</h3><img src="img/ukraine.png" alt="" class="country__img">
+                </div>
+              </div>
+            </div>
+            <div class="count">
+              <div class="count__item">
+                <h3 class="count__title">4</h3>
+                <p class="count__text">країн</p>
+              </div>
+              <div class="count__item">
+                <h3 class="count__title">34</h3>
+                <p class="count__text">міста</p>
+              </div>
+              <div class="count__item">
+                <h3 class="count__title">3000</h3>
+                <p class="count__text">дітей</p>
+              </div>
+            </div>
+          </div><img src="img/lynx-scholl.png" alt="" class="school-lynx"> <img src="img/school-star-1.png" alt=""
+            class="school-star-1"> <img src="img/school-star-2.png" alt="" class="school-star-2">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__col">
+          <h2 class="footer__title">Контакти</h2><a href="tel:+380994822273" class="footer__link">+38 (099)
+            482-22-73</a> <a href="mailto:futziball.office@gmail.com"
+            class="footer__link">futziball.office@gmail.com</a>
+          <div class="footer__bottom footer-hide">
+            <div class="footer-hide__col"><a href="#" target="_blank" class="footer__link">Instagram</a> <a href="#"
+                target="_blank" class="footer__link">Facebook</a></div>
+            <div class="footer-hide__col"><a href="#" target="_blank" class="footer__link">Telegram</a> <a href="#"
+                target="_blank" class="footer__link">Viber</a></div>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h2 class="footer__title">Партнери</h2>
+          <div class="footer__top"><a href="#" target="_blank" class="footer__link">Futziball (Німеччина)</a> <a
+              href="#" target="_blank" class="footer__link">Futziball (Нідерланди)</a></div>
+          <div class="footer__bottom footer-none"><a href="#" target="_blank" class="footer__link">Політика
+              конфіденційності</a></div>
+        </div>
+        <div class="footer__col">
+          <h2 class="footer__title">Розсилка новин</h2>
+          <div class="footer__top">
+            <form class="footer__form"><input type="email" placeholder="Введіть ваш e-mail" required></form>
+          </div>
+          <div class="footer__bottom footer-none"><a href="#" target="_blank" class="footer__link">Instagram</a> <a
+              href="#" target="_blank" class="footer__link">Facebook</a> <a href="#" target="_blank"
+              class="footer__link">Telegram</a> <a href="#" target="_blank" class="footer__link">Viber</a></div>
+        </div>
+        <div class="footer__col">
+          <h2 class="footer__title">Способи оплати</h2><img src="img/visa.png" alt="Visa" class="footer__img"> <img
+            src="img/mastercard.png" alt="MasterCard" class="footer__img">
+          <div class="footer__bottom footer-hide"><a href="#" target="_blank" class="footer__link">Політика
+              конфіденційності</a></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
