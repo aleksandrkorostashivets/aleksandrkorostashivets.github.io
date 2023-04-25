@@ -567,6 +567,12 @@
   font-size: calc(22px + 8 * ((100vw - 320px)/ 960));
 }
 
+@media screen and (max-width:1050px) {
+  .tabs__nav {
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (max-width:900px) {
   .footer__top {
     -webkit-box-orient: vertical;
@@ -582,6 +588,9 @@
   .footer__item:not(:last-child) {
     padding-bottom: 15px;
     border-bottom: 1px solid #fff
+  }
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -720,3 +729,10 @@
 .webp .about {
   background-image: url(../img/about-bg.webp)
 }
+
+@media screen and (max-width:600px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+}
+
