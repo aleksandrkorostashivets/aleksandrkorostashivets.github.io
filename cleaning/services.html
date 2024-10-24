@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Web-site description">
+  <meta name="keywords" content="Keywords">
+  <meta name="author" content="Company name">
+  <meta name="language" content="en">
+  <meta name="robots" content="index, follow">
+  <title>Services</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="img/favicons/android-chrome-512x512.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/HyundaiSansHeadOffice-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="page__body">
+  <div class="site-container site-container--hidden">
+    <h1 class="visually-hidden">Services</h1>
+    <header class="header">
+      <div class="container header__body flex">
+        <a href="/" aria-label="Home Page" class="logo header__logo">
+          <img src="img/logo.png" alt="">
+        </a>
+        <div class="mobile__row">
+          <a href="tel:+13335556302" class="header__phone">
+            <svg>
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+          </a>
+          <div class="header__burger burger" aria-label="Open menu" aria-expanded="false" data-burger>
+            <span class="burger__line"></span>
+          </div>
+        </div>
+        <nav class="header__menu nav flex" data-nav>
+          <ul class="header__list flex list-reset">
+            <li class="header__item">
+              <a href="#section-about" aria-label="About us" class="header__link">About us</a>
+            </li>
+            <li class="header__item dropdown">
+              <a href="./services.html" aria-label="Services" class="header__link">Services</a>
+              <svg>
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+              <ul class="dropdown__list list-reset">
+                <li class="dropdown__list-item">
+                  <a href="#" aria-label="On-going Cleaning" class="dropdown__list-link">
+                    On-going Cleaning
+                  </a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#" aria-label="One-time Cleaning" class="dropdown__list-link">
+                    One-time Cleaning
+                  </a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#" aria-label="Move-in & Move-out Cleans" class="dropdown__list-link">
+                    Move-in &amp; Move-out Cleans
+                  </a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#" aria-label="Apartment & Condo Cleaning N 86 %" class="dropdown__list-link">
+                    Apartment &amp; Condo Cleaning N 86%
+                  </a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="./seasonal-cleaning.html" aria-label="Seasonal Cleaning" class="dropdown__list-link">
+                    Seasonal Cleaning
+                  </a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#" aria-label="Cleaning for Seniors" class="dropdown__list-link">
+                    Cleaning for Seniors
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item">
+              <a href="#section-reviews" aria-label="Reviews" class="header__link">Reviews</a>
+            </li>
+            <li class="header__item">
+              <a href="#section-area" aria-label="Service areas" class="header__link">Service areas</a>
+            </li>
+            <li class="header__item">
+              <a href="#section-contact" aria-label="Contact" class="header__link">Contact</a>
+            </li>
+          </ul>
+          <a href="#section-contact" aria-label="Book now" class="header__btn primary__btn">
+            <span>Book now</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero hero--services first">
+        <div class="container hero__row flex">
+          <div class="hero__info">
+            <h2 class="hero__title" data-aos="fade-right" data-aos-delay="150">Services</h2>
+            <p class="hero__text" data-aos="fade-right" data-aos-delay="350">
+                Our cleaning company offers a wide range of professional cleaning services to meet all your needs. Whether you require regular cleaning, deep cleaning, or specialized services, our team of experienced professionals is here to ensure your space is spotless and welcoming.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="services-page section" data-aos="fade-up" data-aos-delay="150">
+        <div class="container">
+          <h2 class="services-page__title section__title">Discover our diverse cleaning services</h2>
+          <ul class="services-page__list list-reset grid">
+            <li>
+              <article class="services__item" style="background-image: url('./img/services/services-1.png');">
+                <div class="wave">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="233" viewBox="0 0 1000 233" fill="none">
+                    <path id="wave"
+                      d="M0.666626 233V21C17.253 18.1667 63.293 6.48014 120.586 17.5C227.167 38 207.664 46 279.317 46C336.64 46 392.768 15.3333 413.667 0V233H0.666626Z"
+                      fill="#34A6F8" fill-opacity="0.2" width="100%" />
+                  </svg>
+
+                </div>
+                <div class="services__item-info">
+                  <h3 class="services__item-title">On-going cleaning</h3>
+                  <a href="#" aria-label="Order service" class="services__item-link flex">
+                    <span>Order service</span>
+                    <svg>
+                      <use xlink:href="img/sprite.svg#services-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="services__item" style="background-image: url('./img/services/services-2.png');">
+                <div class="wave">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="233" viewBox="0 0 1000 233" fill="none">
+                    <path id="wave"
+                      d="M0.666626 233V21C17.253 18.1667 63.293 6.48014 120.586 17.5C227.167 38 207.664 46 279.317 46C336.64 46 392.768 15.3333 413.667 0V233H0.666626Z"
+                      fill="#34A6F8" fill-opacity="0.2" width="100%" />
+                  </svg>
+
+                </div>
+                <div class="services__item-info">
+                  <h3 class="services__item-title">One-time cleaning</h3>
+                  <a href="#" aria-label="Order service" class="services__item-link flex">
+                    <span>Order service</span>
+                    <svg>
+                      <use xlink:href="img/sprite.svg#services-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="services__item" style="background-image: url('./img/services/services-3.png');">
+                <div class="wave">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="233" viewBox="0 0 1000 233" fill="none">
+                    <path id="wave"
+                      d="M0.666626 233V21C17.253 18.1667 63.293 6.48014 120.586 17.5C227.167 38 207.664 46 279.317 46C336.64 46 392.768 15.3333 413.667 0V233H0.666626Z"
+                      fill="#34A6F8" fill-opacity="0.2" width="100%" />
+                  </svg>
+
+                </div>
+                <div class="services__item-info">
+                  <h3 class="services__item-title">Move-in &amp; Move-out Cleans</h3>
+                  <a href="#" aria-label="Order service" class="services__item-link flex">
+                    <span>Order service</span>
+                    <svg>
+                      <use xlink:href="img/sprite.svg#services-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="services__item" style="background-image: url('./img/services/services-4.png');">
+                <div class="wave">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="233" viewBox="0 0 1000 233" fill="none">
+                    <path id="wave"
+                      d="M0.666626 233V21C17.253 18.1667 63.293 6.48014 120.586 17.5C227.167 38 207.664 46 279.317 46C336.64 46 392.768 15.3333 413.667 0V233H0.666626Z"
+                      fill="#34A6F8" fill-opacity="0.2" width="100%" />
+                  </svg>
+
+                </div>
+                <div class="services__item-info">
+                  <h3 class="services__item-title">Apartment &amp; Condo Cleaning N 86%</h3>
+                  <a href="#" aria-label="Order service" class="services__item-link flex">
+                    <span>Order service</span>
+                    <svg>
+                      <use xlink:href="img/sprite.svg#services-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="services__item" style="background-image: url('./img/services/services-5.png');">
+                <div class="wave">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="233" viewBox="0 0 1000 233" fill="none">
+                    <path id="wave"
+                      d="M0.666626 233V21C17.253 18.1667 63.293 6.48014 120.586 17.5C227.167 38 207.664 46 279.317 46C336.64 46 392.768 15.3333 413.667 0V233H0.666626Z"
+                      fill="#34A6F8" fill-opacity="0.2" width="100%" />
+                  </svg>
+
+                </div>
+                <div class="services__item-info">
+                  <h3 class="services__item-title">Seasonal Cleaning</h3>
+                  <a href="#" aria-label="Order service" class="services__item-link flex">
+                    <span>Order service</span>
+                    <svg>
+                      <use xlink:href="img/sprite.svg#services-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="services__item" style="background-image: url('./img/services/services-6.png');">
+                <div class="wave">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="233" viewBox="0 0 1000 233" fill="none">
+                    <path id="wave"
+                      d="M0.666626 233V21C17.253 18.1667 63.293 6.48014 120.586 17.5C227.167 38 207.664 46 279.317 46C336.64 46 392.768 15.3333 413.667 0V233H0.666626Z"
+                      fill="#34A6F8" fill-opacity="0.2" />
+                  </svg>
+
+                </div>
+                <div class="services__item-info">
+                  <h3 class="services__item-title">Cleaning for Seniors</h3>
+                  <a href="#" aria-label="Order service" class="services__item-link flex">
+                    <span>Order service</span>
+                    <svg>
+                      <use xlink:href="img/sprite.svg#services-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container flex">
+        <a href="/" aria-label="Homepage" class="footer__logo">
+          <img src="img/logo.png" alt="">
+        </a>
+        <div class="footer__col">
+          <nav class="footer__nav">
+            <ul class="footer__list list-reset flex">
+              <li class="footer__list-item">
+                <a href="/#section-about" aria-label="About us" class="footer__link">
+                  About us
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="/#section-services" aria-label="Services" class="footer__link">
+                  Services
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="/#section-reviews" aria-label="Reviews" class="footer__link">
+                  Reviews
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="/#section-area" aria-label="Service areas" class="footer__link">
+                  Service areas
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#section-contact" aria-label="Contact" class="footer__link">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <p class="footer__copyright">
+            Copyright 2024 Cleaning, <a href="./privacy.html" aria-label="Terms and privacy">Terms and privacy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <div id="loader-wrapper">
+    <div id="loader">
+        <div class="loader-inner"></div>
+    </div>
+</div>
+  <div id="successModal" class="success__modal">
+  <div class="success__modal-content">
+    <span class="close">×</span>
+    <h2 class="success__modal-title">Thank You!</h2>
+    <p class="success__modal-text">We have received your application and will contact you soon!</p>
+  </div>
+</div>
+
+  <div class="cookies-infobar">
+  <p class="cookie__text">By proceeding with your exploration of our website, you hereby consent to the use of cookies as outlined in our policies.</p>
+  <div class="cookies-infobar_wrapper">
+    <a id="cookies-infobar-close" class="cookies-infobar_btn">Accept</a>
+    <a id="false" class="cookies-infobar_btn cookies-infobar_btn--decline">Reject</a></div>
+</div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/secondary.js"></script>
+</body>
+
+</html>
