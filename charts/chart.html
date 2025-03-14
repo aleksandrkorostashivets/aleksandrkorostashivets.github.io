@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charts Display</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .charts {
+      width: 60%;
+      height: 300px;
+      margin: 20px auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Vessel Types</h2>
+  <canvas id="vesselChart" class="charts"></canvas>
+
+  <h2>Contacts</h2>
+  <canvas id="contactsChart" class="charts"></canvas>
+
+  <h2>Gross Tonnage</h2>
+  <canvas id="tonnageChart" class="charts"></canvas>
+
+  <h2>Company Countries</h2>
+  <canvas id="countriesChart" class="charts"></canvas>
+
+  <script>
+    // Vessel Types Chart (sorted by descending count)
+    const vesselCtx = document.getElementById('vesselChart').getContext('2d');
+    new Chart(vesselCtx, {
+      type: 'bar',
+      data: {
+        labels: ["Cargo", "Fishing", "Tug/Tow/Push Boat", "Cargo Bulk", "Tanker Oil", "Tanker", "Passenger", "Cargo Container", "Offshore Supply/Support", "Special", "Cargo Vehicle", "Harbor vessel", "Other", "Pleasure", "Tanker LPG/LNG", "Construction", "Barge", "Coast Guard/Military", "Drill Rig/Ship"],
+        datasets: [{
+          label: 'Vessel Types',
+          data: [47482, 44093, 24154, 20529, 19217, 10871, 10201, 8103, 7336, 5466, 4961, 3879, 3613, 3401, 3202, 2861, 2753, 1378, 1288],
+          backgroundColor: 'rgba(54, 162, 235, 0.5)'
+        }]
+      },
+      options: {
+        indexAxis: 'y'
+      }
+    });
+
+    // Contacts Chart
+    const contactsCtx = document.getElementById('contactsChart').getContext('2d');
+    new Chart(contactsCtx, {
+      type: 'pie',
+      data: {
+        labels: ["Middle Management", "Marketing/Sales", "Ship/Fleet Management", "Technical/Engineering", "Procurement/Purchasing", "Executive Management", "Operations", "Safety/Security", "Information Technology", "Other"],
+        datasets: [{
+          label: 'Contacts by title',
+          data: [63429, 44620, 37158, 29587, 18013, 15572, 14238, 12107, 8923, 6523],
+          backgroundColor: ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink', 'cyan', 'lime', 'gray']
+        }]
+      }
+    });
+
+    // Gross Tonnage Chart
+    const tonnageCtx = document.getElementById('tonnageChart').getContext('2d');
+    new Chart(tonnageCtx, {
+      type: 'pie',
+      data: {
+        labels: ["< 100 GT", "100 - 1K GT", "1K - 10K GT", "10K - 100K GT", "Over 100K GT"],
+        datasets: [{
+          label: 'Vessels by Gross Tonnage',
+          data: [8244, 108544, 57757, 46001, 4242],
+          backgroundColor: ['red', 'blue', 'green', 'yellow', 'purple']
+        }]
+      }
+    });
+
+    // Company Countries Chart
+    const countriesCtx = document.getElementById('countriesChart').getContext('2d');
+    new Chart(countriesCtx, {
+      type: 'bar',
+      data: {
+        labels: ["Panama", "Indonesia", "Japan", "China", "Singapore", "Greece", "USA", "Norway", "South Korea", "Germany"],
+        datasets: [{
+          label: 'Companies by Location',
+          data: [7735, 6972, 6193, 4629, 3457, 3321, 3218, 2984, 2765, 2534],
+          backgroundColor: 'rgba(255, 99, 132, 0.5)'
+        }]
+      },
+      options: {
+        indexAxis: 'x'
+      }
+    });
+  </script>
+</body>
+
+</html>
