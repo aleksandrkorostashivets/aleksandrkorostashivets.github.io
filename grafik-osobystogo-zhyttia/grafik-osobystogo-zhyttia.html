@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Графік особистого життя</title>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fafc;
+      color: #2c3e50;
+      padding: 30px;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    form {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    label {
+      font-weight: 500;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"] {
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      width: 100%;
+      max-width: 300px;
+      margin: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+
+    th, td {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    button {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin: 10px 5px;
+    }
+
+    button:hover {
+      background: #2980b9;
+    }
+
+    #chart {
+      width: 100%;
+      height: 500px;
+      margin-top: 15px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      padding: 10px;
+    }
+
+    .comfort-input {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .comfort-input input {
+      padding: 8px 10px;
+      width: 120px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h2>Графік особистого життя</h2>
+
+  <form id="data-form">
+    <div class="form-group">
+      <label for="fullName">ПІБ:</label><br>
+      <input type="text" id="fullName" name="fullName" placeholder="ПІБ" required />
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Дата народження:</label><br>
+      <input type="date" id="dob" name="dob" required />
+    </div>
+
+    <table>
+      <tr>
+        <th>Вік</th>
+        <td><input type="number" value="10" name="age" /></td>
+        <td><input type="number" value="20" name="age" /></td>
+        <td><input type="number" value="30" name="age" /></td>
+        <td><input type="number" value="40" name="age" /></td>
+        <td><input type="number" value="50" name="age" /></td>
+        <td><input type="number" value="60" name="age" /></td>
+        <td><input type="number" value="70" name="age" /></td>
+      </tr>
+      <tr>
+        <th>Бали</th>
+        <td><input type="number" value="6" name="score" min="0" max="9" /></td>
+        <td><input type="number" value="3" name="score" min="0" max="9" /></td>
+        <td><input type="number" value="9" name="score" min="0" max="9" /></td>
+        <td><input type="number" value="2" name="score" min="0" max="9" /></td>
+        <td><input type="number" value="5" name="score" min="0" max="9" /></td>
+        <td><input type="number" value="6" name="score" min="0" max="9" /></td>
+        <td><input type="number" value="0" name="score" min="0" max="9" /></td>
+      </tr>
+    </table>
+
+    <div class="comfort-input">
+      <label for="comfort">Рівень комфорту: </label>
+      <input type="number" id="comfort" name="comfort" value="4.7" step="0.1" min="0" max="9"/>
+    </div>
+
+    <div class="center">
+      <button type="submit">Побудувати графік</button>
+      <button type="button" onclick="downloadChart()">Завантажити графік</button>
+    </div>
+  </form>
+
+  <div id="chart"></div>
+
+  <script>
+    const chart = echarts.init(document.getElementById('chart'));
+    let lastFullName = '';
+    let lastDob = '';
+
+    function buildChart(ages, scores, comfortLevel, fullName, dob) {
+      const option = {
+        title: {
+          text: 'Графік особистого життя',
+          left: 'center',
+          top: '30',
+          textStyle: {
+            color: '#34495e',
+            fontSize: 20
+          }
+        },
+        tooltip: { trigger: 'axis' },
+        legend: {
+          top: 70,
+          data: ['Бали', `Рівень комфорту (${comfortLevel})`],
+          textStyle: { color: '#2c3e50', fontSize: 14 }
+        },
+        grid: { left: '8%', right: '8%', bottom: '10%', top: '30%' },
+        xAxis: {
+          type: 'category',
+          name: 'Вік',
+          nameLocation: 'middle',
+          nameGap: 30,
+          data: ages,
+          axisLine: { lineStyle: { color: '#34495e' } },
+          axisLabel: { color: '#2c3e50' }
+        },
+        yAxis: {
+          type: 'value',
+          name: 'Бали',
+          min: 0,
+          max: 9,
+          nameTextStyle: { color: '#34495e' },
+          axisLine: { lineStyle: { color: '#34495e' } },
+          axisLabel: { color: '#2c3e50' },
+          splitLine: { lineStyle: { type: 'dashed', color: '#dcdcdc' } }
+        },
+        series: [
+          {
+            name: 'Бали',
+            type: 'line',
+            data: scores,
+            smooth: true,
+            symbol: 'circle',
+            symbolSize: 10,
+            label: { show: true, position: 'top', color: '#2c3e50' },
+            lineStyle: { color: '#3498db', width: 4 },
+            itemStyle: { color: '#2980b9' }
+          },
+          {
+            name: `Рівень комфорту (${comfortLevel})`,
+            type: 'line',
+            data: Array(ages.length).fill(comfortLevel),
+            lineStyle: { type: 'dashed', color: '#e74c3c', width: 2 },
+            itemStyle: { color: '#e74c3c' },
+            symbol: 'none'
+          }
+        ],
+        graphic: [
+          {
+            type: 'text',
+            left: 'center',
+            top: 5,
+            style: {
+              text: `ПІБ: ${fullName}   |   Дата народження: ${dob}`,
+              font: '16px Segoe UI',
+              fill: '#2c3e50',
+              lineHeight: 20 // Adds vertical space between lines
+            }
+          }
+        ]
+      };
+
+      chart.setOption(option);
+    }
+
+    document.getElementById('data-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const fullName = document.getElementById('fullName').value.trim();
+      const dob = document.getElementById('dob').value;
+      const ageInputs = document.querySelectorAll('input[name="age"]');
+      const scoreInputs = document.querySelectorAll('input[name="score"]');
+      const comfortInput = document.getElementById('comfort');
+
+      const ages = Array.from(ageInputs).map(i => i.value);
+      const scores = Array.from(scoreInputs).map(i => parseFloat(i.value));
+      const comfortLevel = parseFloat(comfortInput.value);
+
+      lastFullName = fullName;
+      lastDob = dob;
+
+      buildChart(ages, scores, comfortLevel, fullName, dob);
+    });
+
+    function downloadChart() {
+      const img = chart.getDataURL({
+        type: 'png',
+        pixelRatio: 2,
+        backgroundColor: '#fff'
+      });
+
+      const link = document.createElement('a');
+      link.href = img;
+      link.download = 'grafik-osobystogo-zhyttia.png';
+      link.click();
+    }
+
+    // Побудова при старті
+    window.onload = () => {
+      const ageInputs = document.querySelectorAll('input[name="age"]');
+      const scoreInputs = document.querySelectorAll('input[name="score"]');
+      const comfortInput = document.getElementById('comfort');
+
+      const ages = Array.from(ageInputs).map(i => i.value);
+      const scores = Array.from(scoreInputs).map(i => parseFloat(i.value));
+      const comfortLevel = parseFloat(comfortInput.value);
+
+      buildChart(ages, scores, comfortLevel, 'Ім’я', 'дд.мм.рррр');
+    };
+  </script>
+</body>
+</html>
