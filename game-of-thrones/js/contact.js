@@ -1,1 +1,0 @@
-(()=>{let e=document.querySelector("[data-contactus]");e.addEventListener("submit",t=>{t.preventDefault();let{elements:{name:l,email:a,message:r}}=t.currentTarget;(l.value||a.value||r.value)&&(document.querySelector(".submit-success").style.display="block",document.querySelector("[data-form]").style.display="none"),e.reset()})})();
