@@ -1,0 +1,197 @@
+<!-- Breadcrumbs -->
+<section class="breadcrumbs-custom bg-image context-dark" style='background-image: url("<%= post.heroImg %>");'>
+
+	<div class="breadcrumbs-custom-inner">
+		<div class="container breadcrumbs-custom-container">
+			<div class="breadcrumbs-custom-main">
+				<h6 class="breadcrumbs-custom-subtitle title-decorated">Cruises</h6>
+				<h1 class="breadcrumbs-custom-title">
+					<%= post.title %>
+				</h1>
+			</div>
+			<ul class="breadcrumbs-custom-path">
+				<li><a href="index.html">Home</a></li>
+				<li class="active">
+					<%= post.title %>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<!-- Overview-->
+<section class="section section-sm bg-gray-100">
+	<div class="container">
+		<!-- Owl Carousel-->
+		<div class="owl-carousel owl-carousel-centered-pagination" data-items="1" data-sm-items="2" data-md-items="2"
+			data-lg-items="3" data-dots="true" data-stage-padding="0" data-loop="false" data-margin="20"
+			data-mouse-drag="false">
+			<div class="item">
+				<h4 class="box-light-title text-gray-800">Price</h4>
+				<p class="box-light-text text-primary font-weight-regular">
+					<%= post.cost %>
+				</p>
+			</div>
+			<div class="item">
+				<h4 class="text-gray-800 box-light-title">Features</h4>
+				<ul class="list-inline-comma list-inline-comma-default list-comma-text">
+					<% eventsData.forEach(event=> { %>
+						<li>
+							<a href="<%= event.title.toLowerCase().replace(/ /g, '-') %>.html">
+								<%= event.title %>
+							</a>
+						</li>
+						<% }); %>
+				</ul>
+			</div>
+			<div class="item">
+				<h4 class="text-gray-800 box-light-title">Description</h4>
+				<p class="list-comma-text">
+					<%= post.description %>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Tabs-->
+<section class="section section-lg">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-10">
+				<h4>About Cruise</h4>
+				<!-- Bootstrap tabs -->
+				<div class="tabs-custom tabs-horizontal tabs-line" id="tabs-1">
+					<!-- Nav tabs-->
+					<ul class="nav nav-tabs">
+						<% post.about.tabs.forEach((tab, index)=> { %>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link <%= index === 0 ? 'active' : '' %>" href="#tab-content-<%= index %>"
+									data-toggle="tab">
+									<%= tab.name %>
+								</a>
+							</li>
+							<% }); %>
+					</ul>
+					<!-- Tab panes-->
+					<div class="tab-content">
+						<% post.about.tabs.forEach((tab, index)=> { %>
+							<div class="tab-pane fade <%= index === 0 ? 'show active' : '' %>" id="tab-content-<%= index %>">
+								<% tab.content.forEach(paragraph=> { %>
+									<p>
+										<%= paragraph %>
+									</p>
+									<% }); %>
+							</div>
+							<% }); %>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Book This Cruise-->
+<section class="section section-lg">
+	<div class="container">
+		<div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse">
+			<div class="col-md-10 col-lg-5 col-xl-4">
+				<div class="inset-left-2">
+					<h2 class="wow-outer font-weight-bold text-gray-800"><span class="wow slideInUp">Book This Cruise</span>
+					</h2>
+					<form class="rd-form booking-form" id="bookingForm">
+
+						<div class="form-wrap form-wrap-select wow fadeInLeftSmall" data-wow-delay=".2s">
+							<!-- Select 1-->
+							<input class="form-input select2-input-gray" name="find-job-location"
+								data-minimum-results-for-search="Infinity" data-container-class="input-gray" placeholder="Date">
+						</div>
+						<div class="form-wrap form-wrap-select wow fadeInLeftSmall" data-wow-delay=".2s">
+							<!-- Select 1-->
+							<input class="form-input select2-input-gray" name="find-job-phone"
+								data-minimum-results-for-search="Infinity" data-container-class="input-gray" placeholder="Phone"
+								required>
+						</div>
+						<div class="form-wrap form-wrap-select wow fadeInLeftSmall" data-wow-delay=".2s">
+							<!-- Select 2-->
+							<select class="form-input select" name="find-job-location"
+								data-minimum-results-for-search="Infinity" data-container-class="select-gray"
+								data-dropdown-class="select-gray">
+								<option value="1">Cruise Type</option>
+								<option value="2">Adventure Cruise</option>
+								<option value="3">Classic Cruise</option>
+								<option value="4">Family Cruise</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<div>
+								<div class="form-wrap form-wrap-select wow fadeInLeftSmall" data-wow-delay=".2s">
+									<!-- Select 3-->
+									<select class="form-input select" name="find-job-location"
+										data-minimum-results-for-search="Infinity" data-container-class="select-gray"
+										data-dropdown-class="select-gray">
+										<option value="1">Adults</option>
+										<option value="2">2 Adults</option>
+										<option value="3">3 Adults</option>
+										<option value="4">4 Adults</option>
+									</select>
+								</div>
+							</div>
+							<div>
+								<div class="form-wrap form-wrap-select wow fadeInLeftSmall" data-wow-delay=".2s">
+									<!-- Select 4-->
+									<select class="form-input select" name="find-job-location"
+										data-minimum-results-for-search="Infinity" data-container-class="select-gray"
+										data-dropdown-class="select-gray">
+										<option value="1">Children</option>
+										<option value="2">1 Child</option>
+										<option value="3">2 Children</option>
+										<option value="4">3 Children</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<p id="message" class="p-3 bg-success" style="display: none;">Your order has been successfully
+							submitted! We will contact you shortly to confirm your booking.</p>
+						<div class="form-wrap form-wrap-button">
+							<button class="button button-block button-primary button-winona" data-wow-delay=".4s">Book
+								now</button>
+						</div>
+					</form>
+
+					<script>
+						const bookingForm = document.getElementById('bookingForm');
+
+						if (bookingForm) {
+							bookingForm.addEventListener('submit', function (event) {
+								event.preventDefault();
+								const message = bookingForm.querySelector('#message');
+								if (message) {
+									message.style.display = 'block';
+								}
+							});
+						}
+					</script>
+				</div>
+			</div>
+			<div class="col-md-10 col-lg-7"><img class="img-responsive wow slideInLeft"
+					src="images/single-cruise1-668x384.jpg" alt="" width="668" height="384" />
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section swiper-container swiper-slider swiper-slider-tiny text-center" data-loop="true"
+	data-slide-effect="fade" data-autoplay="false" data-simulate-touch="true">
+	<div class="swiper-wrapper">
+		<% post.gall.forEach((slide, index)=> { %>
+			<div class="swiper-slide" data-slide-bg="<%= slide %>">
+				<div class="swiper-slide-caption">
+					<div class="container">
+					</div>
+				</div>
+			</div>
+			<% }); %>
+	</div>
+	<div class="swiper-pagination-outer container">
+		<div class="swiper-pagination swiper-pagination-modern swiper-pagination-marked" data-index-bullet="true"></div>
+	</div>
+</section>

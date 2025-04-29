@@ -1,0 +1,65 @@
+<!-- Breadcrumbs -->
+<section class="breadcrumbs-custom bg-image context-dark" style='background-image: url("<%= event.heroImg %>");'>
+
+	<div class="breadcrumbs-custom-inner">
+		<div class="container breadcrumbs-custom-container">
+			<div class="breadcrumbs-custom-main">
+				<h6 class="breadcrumbs-custom-subtitle title-decorated">Onboard activities</h6>
+				<h1 class="breadcrumbs-custom-title">
+					<%= event.title %>
+				</h1>
+			</div>
+			<ul class="breadcrumbs-custom-path">
+				<li><a href="index.html">Home</a></li>
+				<li class="active">
+					<%= event.title %>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<!-- Event About Section -->
+<div class="container py-5">
+	<h2>
+		<%= event.about.header %>
+	</h2>
+	<% event.about.description.forEach(desc=> { %>
+		<p>
+			<%- desc %>
+		</p>
+		<% }) %>
+</div>
+
+<div class="container content_loader pb-5">
+	<% event.content.forEach(item=> { %>
+		<article class="mb-5 <%= item.img ? 'has_image' : '' %>">
+			<% if (item.img) { %>
+				<h3>
+					<%= item.h2 %>
+				</h3>
+				<div class="row align-items-center">
+					<div class="col-12 col-lg-4 col_img mb-3 mb-lg-0">
+						<img src="<%= item.img %>" alt="<%= item.h2 %>" class="img-fluid">
+					</div>
+					<div class="col-12 col-lg">
+
+						<% item.description.forEach(desc=> { %>
+							<p>
+								<%= desc %>
+							</p>
+							<% }); %>
+					</div>
+				</div>
+				<% } else { %>
+					<h3>
+						<%= item.h2 %>
+					</h3>
+					<% item.description.forEach(desc=> { %>
+						<p>
+							<%= desc %>
+						</p>
+						<% }); %>
+							<% } %>
+		</article>
+		<% }); %>
+</div>

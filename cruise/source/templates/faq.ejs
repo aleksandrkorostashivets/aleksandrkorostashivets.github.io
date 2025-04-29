@@ -1,0 +1,47 @@
+<section class="py-5">
+	<div class="container">
+		<h2>
+			<%= faqData.hero.title %>
+		</h2>
+		<% faqData.hero.content.forEach(function(paragraph) { %>
+			<p>
+				<%= paragraph %>
+			</p>
+			<% }) %>
+				<div class="row mt-5">
+					<div class="col-12 col-md">
+						<div class="accordion accordion-flush" id="accordionFlushExample">
+							<% faqData.faqs.forEach(function(faq, index) { %>
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="flush-heading<%= index %>">
+										<button class="accordion-button <% if (index !== 0) { %>collapsed<% } %>" type="button"
+											data-bs-toggle="collapse" data-bs-target="#flush-collapse<%= index %>"
+											aria-expanded="<%= index === 0 ? 'true' : 'false' %>"
+											aria-controls="flush-collapse<%= index %>">
+											<%= faq.question %>
+										</button>
+									</h2>
+									<div id="flush-collapse<%= index %>"
+										class="accordion-collapse collapse <% if (index === 0) { %>show<% } %>"
+										aria-labelledby="flush-heading<%= index %>" data-bs-parent="#accordionFlushExample">
+										<div class="accordion-body">
+											<% faq.answer.forEach(function(paragraph) { %>
+												<p>
+													<%= paragraph %>
+												</p>
+												<% }) %>
+										</div>
+									</div>
+								</div>
+								<% }) %>
+						</div>
+					</div>
+					<div class="col-12 col-md">
+						<img src="<%= page === 1 ? '' : '../' %><%= faqData.hero.image %>" alt="<%= faqData.hero.title %>"
+							class="img-fluid">
+					</div>
+				</div>
+
+
+	</div>
+</section>

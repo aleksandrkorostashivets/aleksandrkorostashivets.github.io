@@ -1,0 +1,28 @@
+{
+	"links": [
+		{
+			"name": "Home",
+			"url": "index.html"
+		},
+		{
+			"name": "Contact",
+			"url": "contacts.html"
+		},
+		{
+			"name": "About Us",
+			"url": "about-us.html"
+		},
+		{
+			"name": "Feature of cruise casino",
+			"url": "feature-of-cruise-casino.html"
+		},
+		{
+			"name": "Terms",
+			"url": "terms.html"
+		},
+		{
+			"name": "Privacy Policy",
+			"url": "privacy-policy.html"
+		}
+	]
+}

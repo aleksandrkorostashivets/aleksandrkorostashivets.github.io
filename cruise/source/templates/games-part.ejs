@@ -1,0 +1,34 @@
+<section class="py-5">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-12 col-md">
+				<h4>Onze Spellen</h4>
+				<h2>Breng het Casino naar Jouw Evenement met Spelavonturen</h2>
+				<p>Voeg spanning toe aan jouw evenement met de opwindende casino spellen van Spelavonturen!</p>
+			</div>
+			<div class="col-12 col-md">
+				<p>Bij Spelavonturen brengen we de sensatie van het casino naar jouw evenement. Of je nu een zakelijk
+					evenement,
+					bruiloft of privéfeest organiseert, onze deskundige dealers en spannende casino spellen —Blackjack, Poker
+					en Roulette—zullen je gasten vermaken en een onvergetelijke ervaring creëren.</p>
+			</div>
+		</div>
+		<div class="row pt-4">
+			<% posts.forEach(function(post) { %>
+				<div class="col-12 col-md-4 mb-4">
+					<img class="img-fluid" src="<%= page === 1 ? '' : '../' %><%= post.image %>" alt="<%= post.title %>">
+					<h3 class="pt-3">
+						<%= post.title %>
+					</h3>
+					<% post.content.forEach(function(paragraph) { %>
+						<p>
+							<%= paragraph %>
+						</p>
+						<% }) %>
+							<a href="<%= post.title.toLowerCase().replace(/ /g, '-') %>.html" class="btn btn-info">Boek Nu</a>
+				</div>
+				<% }) %>
+		</div>
+
+	</div>
+</section>

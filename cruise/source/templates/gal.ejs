@@ -1,0 +1,17 @@
+<section class="py-5 bg-info">
+	<div class="container text-center">
+		<h6>
+			<%= galData.hero.subtitle %>
+		</h6>
+		<h2 class="mb-5">
+			<%= galData.hero.title %>
+		</h2>
+		<div class="row">
+			<% galData.hero.images.forEach(function(image, index) { %>
+				<div class="col-12 col-md-4 mb-4">
+					<img src="<%= image.path %>" alt="Image <%= index + 1 %>" class="img-fluid">
+				</div>
+				<% }); %>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,35 @@
+{
+	"hero": {
+		"title": "Veelgestelde Vragen",
+		"content": [
+			"Bij Spelavonturen begrijpen we dat het plannen van een evenement veel vragen met zich meebrengt. Hieronder vindt u enkele van de meest gestelde vragen om u te helpen onze diensten te begrijpen en hoe we uw evenement buitengewoon kunnen maken."
+		],
+		"image": "images/48a683.webp"
+	},
+	"faqs": [
+		{
+			"question": "Welke soorten evenementen organiseert Spelavonturen?",
+			"answer": [
+				"Spelavonturen is trots om een breed scala aan evenementendiensten aan te bieden. We zijn gespecialiseerd in bruiloften, zakelijke evenementen, fondsenwervingsfeesten en casino thema bijeenkomsten. Of u nu op zoek bent naar een grootse bruiloftsviering of een spannend casinonacht met spellen zoals Poker, Blackjack en Roulette, wij stemmen elk evenement af op uw behoeften en overtreffen verwachtingen."
+			]
+		},
+		{
+			"question": "Leveren jullie alle benodigdheden voor de casino spellen ?",
+			"answer": [
+				"Ja, we leveren alles wat nodig is voor een complete casino ervaring! Ons pakket omvat professionele speeltafels, hoogwaardige apparatuur en ervaren croupiers die ervoor zorgen dat uw gasten genieten van een authentieke en opwindende casino ervaring. Of het nu gaat om een zakelijk evenement of een privéfeest, wij verzorgen de gehele op- en afbouw, zodat u zich kunt concentreren op het plezier."
+			]
+		},
+		{
+			"question": "Kan ik het evenement aanpassen aan mijn thema of voorkeuren?",
+			"answer": [
+				"Absoluut! Wij begrijpen dat elk evenement uniek is en werken nauw met u samen om elk aspect van het evenement te personaliseren. Van de keuze van casino spellen  tot de decoratie, muziek en het verloop van het evenement, we zorgen ervoor dat uw visie tot leven komt. Of u nu een klassieke black-tie casinonacht wilt of een leuke, informele sfeer, wij maken het mogelijk."
+			]
+		},
+		{
+			"question": "Hoe ver van tevoren moet ik mijn evenement boeken?",
+			"answer": [
+				"Wij raden aan om uw evenement zo vroeg mogelijk te boeken, meestal 3-6 maanden van tevoren, vooral voor grotere gelegenheden zoals bruiloften of zakelijke evenementen. Dit zorgt ervoor dat we voldoende tijd hebben om elk detail nauwkeurig te plannen. Als u echter een snellere uitvoering nodig heeft, neem dan contact met ons op en we zullen ons best doen om aan uw tijdschema te voldoen."
+			]
+		}
+	]
+}

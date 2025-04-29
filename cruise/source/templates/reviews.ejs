@@ -1,0 +1,40 @@
+<section class="py-5">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-12 col-md">
+				<h6>Beoordelingen</h6>
+				<h2>Wat Onze Klanten Zeggen</h2>
+			</div>
+			<div class="col-12 col-md">
+				<p>Bekijk wat onze klanten zeggen over hun onvergetelijke ervaringen met Spelavonturen. Van bruiloften
+					tot
+					zakelijke evenementen en meer, ons team is toegewijd aan het leveren van uitmuntendheid bij elk
+					evenement. Hier is een glimp van wat onze tevreden klanten te zeggen hebben.</p>
+			</div>
+		</div>
+		<h5 class="text-info text-center py-4">Wij brengen onvergetelijke ervaringen naar elk evenement!</h5>
+		<div class="reviews">
+			<% reviewsData.forEach(function(review) { %>
+				<div class="reviews_item mb-4 bg-info rounded p-3">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-4 col_img">
+							<!-- Pas het pad van de afbeelding aan indien nodig -->
+							<img src="<%= page === 1 ? '' : '../' %><%= review.image %>" alt="<%= review.name %>"
+								class="img-fluid rounded-circle">
+						</div>
+						<div class="col-12 col-md">
+							<h4>
+								<%= review.name %>
+							</h4>
+							<% review.content.forEach(function(paragraph) { %>
+								<p>
+									<%= paragraph %>
+								</p>
+								<% }) %>
+						</div>
+					</div>
+				</div>
+				<% }) %>
+		</div>
+	</div>
+</section>

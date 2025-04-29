@@ -1,0 +1,26 @@
+{
+	"hero": {
+		"subtitle": "Foto",
+		"title": "Kijk hoe we werken",
+		"images": [
+			{
+				"path": "images/263582.webp"
+			},
+			{
+				"path": "images/7636f6.webp"
+			},
+			{
+				"path": "images/35760b.webp"
+			},
+			{
+				"path": "images/5a2317.webp"
+			},
+			{
+				"path": "images/a0cccb.webp"
+			},
+			{
+				"path": "images/db53f3.webp"
+			}
+		]
+	}
+}
