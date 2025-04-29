@@ -1,0 +1,1 @@
+(()=>{let e=document.querySelector("[data-modal-close7]"),d=document.querySelector("[data-modal7]");e.addEventListener("click",()=>{d.classList.add("is-hidden")})})();
