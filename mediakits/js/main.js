@@ -20,9 +20,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_accordion_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/accordion.js */ "./src/js/components/accordion.js");
 /* harmony import */ var _components_tabs_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/tabs.js */ "./src/js/components/tabs.js");
 /* harmony import */ var _components_website_map_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/website-map.js */ "./src/js/components/website-map.js");
-/* harmony import */ var _components_audience_map_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/audience-map.js */ "./src/js/components/audience-map.js");
-/* harmony import */ var _components_current_year_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/current-year.js */ "./src/js/components/current-year.js");
-/* harmony import */ var _components_footer_accrodion_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/footer-accrodion.js */ "./src/js/components/footer-accrodion.js");
+/* harmony import */ var _components_current_year_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/current-year.js */ "./src/js/components/current-year.js");
+/* harmony import */ var _components_footer_accrodion_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/footer-accrodion.js */ "./src/js/components/footer-accrodion.js");
 // import './components/active-link.js';
 
 
@@ -40,7 +39,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+// import './components/audience-map.js';
 
 // import './components/audio.js';
 
@@ -54,140 +53,16 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-const accordionItems = document.querySelectorAll('.accordion__item');
-accordionItems.forEach(item => {
-  const header = item.querySelector('.accordion__header');
-  header.addEventListener('click', () => {
-    const isActive = item.classList.contains('is-active');
-    accordionItems.forEach(i => i.classList.remove('is-active'));
-    if (!isActive) {
-      item.classList.add('is-active');
-    }
-  });
-});
-
-/***/ }),
-
-/***/ "./src/js/components/audience-map.js":
-/*!*******************************************!*\
-  !*** ./src/js/components/audience-map.js ***!
-  \*******************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-am5.ready(function () {
-  var root = am5.Root.new("audienceMap");
-  root.setThemes([am5themes_Animated.new(root)]);
-  var map = root.container.children.push(am5map.MapChart.new(root, {
-    panX: "none",
-    panY: "none",
-    wheelX: "none",
-    wheelY: "none",
-    projection: am5map.geoNaturalEarth1()
-  }));
-  var polygonSeries = map.series.push(am5map.MapPolygonSeries.new(root, {
-    geoJSON: am5geodata_continentsLow,
-    exclude: ["antarctica"],
-    fill: am5.color(0xbbbbbb)
-  }));
-  var pointSeries = map.series.push(am5map.MapPointSeries.new(root, {}));
-  var colorSet = am5.ColorSet.new(root, {
-    step: 2
-  });
-  pointSeries.bullets.push(function (root, series, dataItem) {
-    var value = dataItem.dataContext.value;
-    var container = am5.Container.new(root, {});
-    var color = colorSet.next();
-    var radius = 20; // Фіксований радіус для всіх кружків
-
-    // Кружок із тултіпом
-    var circle = container.children.push(am5.Circle.new(root, {
-      radius: radius,
-      fill: color,
-      dy: -radius * 2,
-      tooltipText: "{title}",
-      cursorOverStyle: "pointer"
-    }));
-    container.children.push(am5.Line.new(root, {
-      stroke: color,
-      height: -40,
-      strokeGradient: am5.LinearGradient.new(root, {
-        stops: [{
-          opacity: 1
-        }, {
-          opacity: 1
-        }, {
-          opacity: 0
-        }]
-      })
-    }));
-    container.children.push(am5.Label.new(root, {
-      text: String(value),
-      fill: am5.color(0xffffff),
-      fontWeight: "400",
-      fontSize: 14,
-      centerX: am5.p50,
-      centerY: am5.p50,
-      dy: -radius * 2
-    }));
-    return am5.Bullet.new(root, {
-      sprite: container
-    });
-  });
-  var data = [{
-    title: "Canada / Mexico / Caribbean",
-    latitude: 55.0,
-    longitude: -110.0,
-    value: 1924
-  }, {
-    title: "Pacific / West Coast",
-    latitude: 37.0,
-    longitude: -120.0,
-    value: 4233
-  }, {
-    title: "Gulf Coast",
-    latitude: 30.0,
-    longitude: -90.0,
-    value: 10784
-  }, {
-    title: "South / Central America",
-    latitude: -10.0,
-    longitude: -60.0,
-    value: 456
-  }, {
-    title: "Lakes / Inland",
-    latitude: 54.0,
-    longitude: -84.0,
-    value: 5523
-  }, {
-    title: "East Coast",
-    latitude: 38.0,
-    longitude: -65.0,
-    value: 8180
-  }, {
-    title: "Europe",
-    latitude: 50.896104,
-    longitude: 19.160156,
-    value: 6808
-  }, {
-    title: "Africa / Middle East",
-    latitude: 11.081385,
-    longitude: 21.621094,
-    value: 1081
-  }, {
-    title: "Asia / Pacific / Oceania",
-    latitude: 20.0,
-    longitude: 100.0,
-    value: 3042
-  }];
-  data.forEach(function (d) {
-    pointSeries.data.push({
-      geometry: {
-        type: "Point",
-        coordinates: [d.longitude, d.latitude]
-      },
-      title: d.title,
-      value: d.value
+document.querySelectorAll('.accordion').forEach(accordion => {
+  const items = accordion.querySelectorAll('.accordion__item');
+  items.forEach(item => {
+    const header = item.querySelector('.accordion__header');
+    header.addEventListener('click', () => {
+      const isActive = item.classList.contains('is-active');
+      items.forEach(i => i.classList.remove('is-active'));
+      if (!isActive) {
+        item.classList.add('is-active');
+      }
     });
   });
 });
@@ -489,6 +364,11 @@ function animateCountersInElement(selector) {
 let aboutAnimated = false;
 let socialAnimated = false;
 let websiteAnimated = false;
+let audienceAnimated = false;
+let circulationAnimated = false;
+let podcastAnimated = false;
+let tvAnimated = false;
+let whyUsAnimated = false;
 window.addEventListener("scroll", function () {
   if (!aboutAnimated && isInViewport(document.querySelector(".about__list"))) {
     aboutAnimated = true;
@@ -501,6 +381,26 @@ window.addEventListener("scroll", function () {
   if (!websiteAnimated && isInViewport(document.querySelector(".website__list"))) {
     websiteAnimated = true;
     animateCountersInElement(".website__list");
+  }
+  if (!audienceAnimated && isInViewport(document.querySelector(".audience__list"))) {
+    audienceAnimated = true;
+    animateCountersInElement(".audience__list");
+  }
+  if (!circulationAnimated && isInViewport(document.querySelector(".circulation__list"))) {
+    circulationAnimated = true;
+    animateCountersInElement(".circulation__list");
+  }
+  if (!podcastAnimated && isInViewport(document.querySelector(".podcast__list"))) {
+    podcastAnimated = true;
+    animateCountersInElement(".podcast__list");
+  }
+  if (!tvAnimated && isInViewport(document.querySelector(".tv__list"))) {
+    tvAnimated = true;
+    animateCountersInElement(".tv__list");
+  }
+  if (!whyUsAnimated && isInViewport(document.querySelector(".why-us__list"))) {
+    whyUsAnimated = true;
+    animateCountersInElement(".why-us__list");
   }
 });
 
@@ -690,39 +590,38 @@ am5.ready(function () {
   var data = [{
     id: "NA",
     name: "North America",
-    value: 42,
-    latitude: 54.5260,
-    longitude: -105.2551
-  }, {
-    id: "SA",
-    name: "South America",
-    value: 3,
-    latitude: -8.7832,
-    longitude: -55.4915
-  }, {
-    id: "AF",
-    name: "Africa",
-    value: 2,
-    latitude: 1.6508,
-    longitude: 17.6791
-  }, {
-    id: "AS",
-    name: "Asia",
-    value: 20,
-    latitude: 34.0479,
-    longitude: 100.6197
-  }, {
-    id: "OC",
-    name: "Oceania",
-    value: 2,
-    latitude: -22.7359,
-    longitude: 140.0188
+    value: 15420,
+    latitude: 40,
+    longitude: -100,
+    color: am5.color(0x0d6efd)
   }, {
     id: "EU",
     name: "Europe",
-    value: 32,
-    latitude: 54.5260,
-    longitude: 15.2551
+    value: 12850,
+    latitude: 54,
+    longitude: 15,
+    color: am5.color(0x0d2e62)
+  }, {
+    id: "AP",
+    name: "Asia Pacific",
+    value: 8940,
+    latitude: 30,
+    longitude: 120,
+    color: am5.color(0x343a40)
+  }, {
+    id: "ME",
+    name: "Middle East",
+    value: 3210,
+    latitude: 26,
+    longitude: 50,
+    color: am5.color(0xdc3545)
+  }, {
+    id: "LA",
+    name: "Latin America",
+    value: 1611,
+    latitude: -15,
+    longitude: -60,
+    color: am5.color(0x198754)
   }];
   var root = am5.Root.new("websiteMap");
   root.setThemes([am5themes_Animated.new(root)]);
@@ -741,23 +640,14 @@ am5.ready(function () {
     longitudeField: "longitude",
     latitudeField: "latitude"
   }));
-  var circleTemplate = am5.Template.new({});
   bubbleSeries.bullets.push(function (root, series, dataItem) {
     var container = am5.Container.new(root, {});
     var circle = container.children.push(am5.Circle.new(root, {
-      radius: 20,
+      radius: 25,
       fillOpacity: 0.9,
-      fill: am5.color(0xdc3545),
-      cursorOverStyle: "pointer",
-      tooltipText: `{name}: [bold]{value}%[/]`
-    }, circleTemplate));
-    var countryLabel = container.children.push(am5.Label.new(root, {
-      text: "{name}",
-      paddingTop: 20,
-      populateText: true,
-      fontWeight: "bold",
-      fontSize: 16,
-      centerX: am5.p50
+      fill: dataItem.dataContext.color,
+      tooltipText: `{name}: [bold]{value}[/]`,
+      cursorOverStyle: "pointer"
     }));
     circle.on("radius", function (radius) {
       countryLabel.set("x", radius);
@@ -770,7 +660,7 @@ am5.ready(function () {
   bubbleSeries.bullets.push(function (root, series, dataItem) {
     return am5.Bullet.new(root, {
       sprite: am5.Label.new(root, {
-        text: "{value.formatNumber('#.')}%",
+        text: "{value.formatNumber('#,###')}",
         fill: am5.color(0xffffff),
         populateText: true,
         centerX: am5.p50,
@@ -780,19 +670,6 @@ am5.ready(function () {
       dynamic: true
     });
   });
-
-  // bubbleSeries.set("heatRules", [
-  //   {
-  //     target: circleTemplate,
-  //     dataField: "value",
-  //     min: 10,
-  //     max: 50,
-  //     minValue: 0,
-  //     maxValue: 100,
-  //     key: "radius"
-  //   }
-  // ]);
-
   bubbleSeries.data.setAll(data);
 });
 
