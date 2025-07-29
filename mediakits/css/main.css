@@ -2225,6 +2225,35 @@ canvas {
   font-size: clamp(1.125rem, 1.018rem + 0.54vw, 1.5rem);
 }
 
+.email-marketing__row {
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--mb-3);
+}
+.email-marketing__text {
+  margin-bottom: var(--mb-1);
+}
+.email-marketing__text:last-of-type {
+  margin-bottom: var(--mb-3);
+}
+.email-marketing__list {
+  list-style: square;
+  margin-bottom: var(--mb-1);
+  padding-left: var(--mb-2);
+}
+.email-marketing__item strong {
+  font-weight: var(--semibold-font);
+}
+.email-marketing__item:not(:last-child) {
+  margin-bottom: var(--mb-1);
+}
+
+@media screen and (max-width: 1000px) {
+  .email-marketing__row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 767px) {
   .marketing__row {
     -ms-grid-columns: 1fr;
