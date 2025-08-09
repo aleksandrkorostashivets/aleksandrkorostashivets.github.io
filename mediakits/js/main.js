@@ -188,8 +188,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector('[data-nav]');
   const navItems = nav?.querySelectorAll('a');
   const body = document.body;
-  const dropdownToggles = document.querySelectorAll('[data-toggle]');
-  const dropdownItems = document.querySelectorAll('.header__item--has-submenu');
+  // const dropdownToggles = document.querySelectorAll('[data-toggle]');
+  // const dropdownItems = document.querySelectorAll('.header__item--has-submenu');
+
   burger?.addEventListener('click', event => {
     event.preventDefault();
     burger.blur();
@@ -204,25 +205,30 @@ document.addEventListener("DOMContentLoaded", () => {
       nav.classList.remove('nav--visible');
     });
   });
-  dropdownToggles.forEach(toggle => {
-    toggle.addEventListener('click', e => {
-      e.stopPropagation();
-      const parent = toggle.closest('.header__item--has-submenu');
-      const isOpen = parent.classList.contains('is-open');
-      dropdownItems.forEach(item => item.classList.remove('is-open'));
-      if (!isOpen) {
-        parent.classList.add('is-open');
-      }
-    });
-  });
-  document.querySelectorAll('.header__submenu').forEach(menu => {
-    menu.addEventListener('click', e => {
-      e.stopPropagation();
-    });
-  });
-  document.addEventListener('click', () => {
-    dropdownItems.forEach(item => item.classList.remove('is-open'));
-  });
+
+  // dropdownToggles.forEach(toggle => {
+  //   toggle.addEventListener('click', e => {
+  //     e.stopPropagation();
+  //     const parent = toggle.closest('.header__item--has-submenu');
+  //     const isOpen = parent.classList.contains('is-open');
+
+  //     dropdownItems.forEach(item => item.classList.remove('is-open'));
+
+  //     if (!isOpen) {
+  //       parent.classList.add('is-open');
+  //     }
+  //   });
+  // });
+
+  // document.querySelectorAll('.header__submenu').forEach(menu => {
+  //   menu.addEventListener('click', e => {
+  //     e.stopPropagation();
+  //   });
+  // });
+
+  // document.addEventListener('click', () => {
+  //   dropdownItems.forEach(item => item.classList.remove('is-open'));
+  // });
 });
 
 /***/ }),
