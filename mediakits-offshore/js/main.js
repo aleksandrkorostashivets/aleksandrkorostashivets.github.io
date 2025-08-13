@@ -204,25 +204,6 @@ document.addEventListener("DOMContentLoaded", () => {
       nav.classList.remove('nav--visible');
     });
   });
-  dropdownToggles.forEach(toggle => {
-    toggle.addEventListener('click', e => {
-      e.stopPropagation();
-      const parent = toggle.closest('.header__item--has-submenu');
-      const isOpen = parent.classList.contains('is-open');
-      dropdownItems.forEach(item => item.classList.remove('is-open'));
-      if (!isOpen) {
-        parent.classList.add('is-open');
-      }
-    });
-  });
-  document.querySelectorAll('.header__submenu').forEach(menu => {
-    menu.addEventListener('click', e => {
-      e.stopPropagation();
-    });
-  });
-  document.addEventListener('click', () => {
-    dropdownItems.forEach(item => item.classList.remove('is-open'));
-  });
 });
 
 /***/ }),
@@ -623,6 +604,10 @@ am5.ready(function () {
     longitude: -60,
     color: am5.color(0x198754)
   }];
+  var totalValue = data.reduce((sum, item) => sum + item.value, 0);
+  data.forEach(item => {
+    item.percent = (item.value / totalValue * 100).toFixed(1);
+  });
   var root = am5.Root.new("websiteMap");
   root.setThemes([am5themes_Animated.new(root)]);
   var chart = root.container.children.push(am5map.MapChart.new(root, {
@@ -646,12 +631,9 @@ am5.ready(function () {
       radius: 25,
       fillOpacity: 0.9,
       fill: dataItem.dataContext.color,
-      tooltipText: `{name}: [bold]{value}[/]`,
+      tooltipText: `{name}: [bold]{percent} %[/]`,
       cursorOverStyle: "pointer"
     }));
-    circle.on("radius", function (radius) {
-      countryLabel.set("x", radius);
-    });
     return am5.Bullet.new(root, {
       sprite: container,
       dynamic: true
@@ -660,7 +642,7 @@ am5.ready(function () {
   bubbleSeries.bullets.push(function (root, series, dataItem) {
     return am5.Bullet.new(root, {
       sprite: am5.Label.new(root, {
-        text: "{value.formatNumber('#,###')}",
+        text: "{percent}%",
         fill: am5.color(0xffffff),
         populateText: true,
         centerX: am5.p50,
