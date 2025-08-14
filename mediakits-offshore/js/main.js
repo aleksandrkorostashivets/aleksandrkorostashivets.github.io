@@ -347,7 +347,6 @@ let socialAnimated = false;
 let websiteAnimated = false;
 let audienceAnimated = false;
 let circulationAnimated = false;
-let podcastAnimated = false;
 let tvAnimated = false;
 let whyUsAnimated = false;
 window.addEventListener("scroll", function () {
@@ -370,10 +369,6 @@ window.addEventListener("scroll", function () {
   if (!circulationAnimated && isInViewport(document.querySelector(".circulation__list"))) {
     circulationAnimated = true;
     animateCountersInElement(".circulation__list");
-  }
-  if (!podcastAnimated && isInViewport(document.querySelector(".podcast__list"))) {
-    podcastAnimated = true;
-    animateCountersInElement(".podcast__list");
   }
   if (!tvAnimated && isInViewport(document.querySelector(".tv__list"))) {
     tvAnimated = true;
