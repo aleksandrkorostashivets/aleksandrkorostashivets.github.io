@@ -78,11 +78,11 @@ document.querySelectorAll('.accordion').forEach(accordion => {
 __webpack_require__.r(__webpack_exports__);
 const ctx = document.getElementById('audienceChart').getContext('2d');
 const data = {
-  labels: ['Social networks', 'Websites (avg sessions/month)', 'Magazine', 'E-news recipients', 'Mobile apps'],
+  labels: ['Interactive eMagazine', 'Websites (avg sessions/month)', 'eNewsletter', 'Web TV', 'Email Marketing', 'Social Media'],
   datasets: [{
     label: 'Audience',
-    data: [366662, 452579, 42031, 71219, 78083],
-    backgroundColor: ['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f'],
+    data: [47295, 466415, 55674, 80974, 62000, 354381],
+    backgroundColor: ['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#9333ea', '#66cff5'],
     borderWidth: 1,
     hoverOffset: 10
   }]
@@ -566,35 +566,35 @@ am5.ready(function () {
   var data = [{
     id: "NA",
     name: "North America",
-    value: 15420,
+    value: 17499,
     latitude: 40,
     longitude: -100,
     color: am5.color(0x0d6efd)
   }, {
     id: "EU",
     name: "Europe",
-    value: 12850,
+    value: 14188,
     latitude: 54,
     longitude: 15,
     color: am5.color(0x0d2e62)
   }, {
     id: "AP",
     name: "Asia Pacific",
-    value: 8940,
+    value: 9932,
     latitude: 30,
     longitude: 120,
     color: am5.color(0x343a40)
   }, {
     id: "ME",
     name: "Middle East",
-    value: 3210,
+    value: 3784,
     latitude: 26,
     longitude: 50,
     color: am5.color(0xdc3545)
   }, {
     id: "LA",
     name: "Latin America",
-    value: 1611,
+    value: 1892,
     latitude: -15,
     longitude: -60,
     color: am5.color(0x198754)
@@ -623,12 +623,17 @@ am5.ready(function () {
   bubbleSeries.bullets.push(function (root, series, dataItem) {
     var container = am5.Container.new(root, {});
     var circle = container.children.push(am5.Circle.new(root, {
-      radius: 25,
+      radius: 35,
       fillOpacity: 0.9,
       fill: dataItem.dataContext.color,
       tooltipText: `{name}: [bold]{percent} %[/]`,
       cursorOverStyle: "pointer"
     }));
+    circle.set("tooltip", am5.Tooltip.new(root, {}));
+    circle.get("tooltip").label.setAll({
+      fontSize: 20,
+      fontWeight: "bold"
+    });
     return am5.Bullet.new(root, {
       sprite: container,
       dynamic: true

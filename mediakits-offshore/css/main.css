@@ -2607,7 +2607,7 @@ canvas {
   background-color: var(--white-color);
 }
 .circulation__item-title {
-  font-size: clamp(1.125rem, 0.982rem + 0.71vw, 1.625rem);
+  font-size: clamp(1.125rem, 1rem + 0.56vw, 1.5rem);
   font-weight: var(--semibold-font);
   line-height: var(--line-height);
 }
