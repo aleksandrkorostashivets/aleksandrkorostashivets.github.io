@@ -89,7 +89,7 @@ ol {
   min-width: 320px;
   min-height: 100%;
   font-family: var(--font-family);
-  font-weight: var(--light-font);
+  font-weight: var(--regular-font);
   font-size: 16px;
 }
 
@@ -339,6 +339,7 @@ a {
 
 .swiper-pagination-bullet-active {
   width: 35px !important;
+  background-color: var(--orange-color);
   border-radius: var(--border-radius);
 }
 
@@ -1006,7 +1007,8 @@ a {
 .hero__info p {
   margin-bottom: 50px;
   max-width: 80%;
-  font-size: clamp(1.125rem, 1.089rem + 0.18vw, 1.25rem);
+  font-size: clamp(1.125rem, 1.054rem + 0.36vw, 1.375rem);
+  font-weight: 500;
   line-height: var(--line-height);
 }
 .hero__list {
@@ -1863,12 +1865,8 @@ canvas {
   padding-left: 0;
   text-align: center;
 }
-.calendar__grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[12];
-  grid-template-columns: repeat(12, 1fr);
-  gap: var(--mb-2);
+.calendar__slider {
+  padding: 0 10px 50px;
 }
 .calendar__item {
   position: relative;
@@ -1882,9 +1880,13 @@ canvas {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  border: 1px solid var(--blue-color);
   border-radius: var(--border-radius);
+  min-height: 420px;
   height: 100%;
   background-color: var(--light-color);
+  -webkit-box-shadow: 0 0 4px 1px var(--blue-color);
+  box-shadow: 0 0 4px 1px var(--blue-color);
 }
 .calendar__item-top {
   border-top-left-radius: var(--border-radius);
@@ -1894,7 +1896,7 @@ canvas {
   background-color: var(--blue-color);
 }
 .calendar__item-title {
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-0-75);
   font-size: clamp(1.25rem, 1.143rem + 0.54vw, 1.625rem);
   color: var(--orange-color);
   text-align: center;
@@ -1931,6 +1933,7 @@ canvas {
   line-height: var(--line-height);
 }
 .calendar__item-text {
+  font-size: 16px;
   line-height: var(--line-height);
 }
 .calendar__link {
@@ -1990,11 +1993,15 @@ canvas {
     -moz-column-gap: 0;
     column-gap: 0;
   }
-  .calendar__slider {
-    padding-bottom: 100px;
-  }
+}
+@media (min-width: 1000px) {
   .calendar__item {
-    min-height: 650px;
+    min-height: 420px;
+  }
+}
+@media (min-width: 320px) {
+  .calendar__item {
+    min-height: 500px;
   }
 }
 .emagazine__row {
@@ -2016,8 +2023,24 @@ canvas {
   line-height: var(--line-height);
   list-style: square;
 }
+.emagazine__list li {
+  font-weight: var(--medium-font);
+}
 .emagazine__list li:not(:last-child) {
   margin-bottom: var(--mb-1);
+}
+.emagazine__sublist {
+  margin: var(--mb-1) 0;
+  padding-left: var(--mb-1);
+  font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
+  line-height: var(--line-height);
+  list-style: disc;
+}
+.emagazine__sublist li {
+  font-weight: var(--light-font);
+}
+.emagazine__sublist li:not(:last-child) {
+  margin-bottom: var(--mb-0-5);
 }
 .emagazine__subtitle {
   margin-bottom: 50px;
@@ -2368,9 +2391,6 @@ canvas {
   max-width: 1000px;
   text-align: center;
 }
-.podcast__image img {
-  margin-bottom: var(--mb-3);
-}
 .podcast__list {
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
@@ -2405,8 +2425,8 @@ canvas {
 }
 
 .podcast-sublist {
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
   -webkit-column-gap: var(--mb-1);
   -moz-column-gap: var(--mb-1);
   column-gap: var(--mb-1);
@@ -2423,12 +2443,12 @@ canvas {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: var(--mb-1);
+  gap: var(--mb-0-75);
   text-align: center;
 }
 .podcast-sublist__icon {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 }
 .podcast-sublist__icon img {
   display: block;
@@ -2436,9 +2456,12 @@ canvas {
   height: 100%;
 }
 .podcast-sublist__title {
-  font-size: clamp(1.25rem, 1.179rem + 0.36vw, 1.5rem);
+  font-size: clamp(1.125rem, 1.089rem + 0.18vw, 1.25rem);
   font-weight: var(--medium-font);
   line-height: var(--line-height);
+}
+.podcast-sublist__text {
+  font-size: 16px;
 }
 .podcast-sublist__text--highlight {
   border: 1px solid var(--dark-blue-color);
@@ -2454,9 +2477,9 @@ canvas {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .podcast-sublist {
     -ms-grid-columns: (1fr)[3];
@@ -2713,6 +2736,7 @@ canvas {
   }
 }
 .newsletter__headline {
+  margin-bottom: var(--mb-2);
   text-align: center;
 }
 .newsletter__text {
@@ -2720,15 +2744,13 @@ canvas {
   max-width: 1000px;
   text-align: center;
 }
-.newsletter__list {
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.newsletter__row {
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--mb-1);
-  max-width: 800px;
-  margin: auto;
+}
+.newsletter__list {
+  gap: var(--mb-1);
 }
 .newsletter__item {
   padding: 0 var(--mb-1);
@@ -2740,7 +2762,6 @@ canvas {
   margin-bottom: var(--mb-1);
   font-size: clamp(1.25rem, 1.107rem + 0.71vw, 1.75rem);
   line-height: var(--line-height);
-  text-align: center;
 }
 .newsletter__subtitle {
   margin-bottom: var(--mb-1);
@@ -2748,16 +2769,9 @@ canvas {
   font-weight: var(--medium-font);
   line-height: var(--line-height);
   color: var(--blue-color);
-  text-align: center;
 }
 .newsletter__descr {
   margin-bottom: var(--mb-1);
-  text-align: center;
-}
-.newsletter__img {
-  display: block;
-  width: 80%;
-  margin: 0 auto var(--mb-1);
 }
 .newsletter__btn {
   display: -webkit-box;
@@ -2766,14 +2780,12 @@ canvas {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: auto;
   min-width: 220px;
 }
 
 @media screen and (max-width: 1000px) {
   .newsletter__list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    max-width: 100%;
   }
   .newsletter__item {
     padding: var(--mb-2) 0;
@@ -2781,6 +2793,10 @@ canvas {
   .newsletter__item:not(:last-child) {
     border-right: none;
     border-bottom: 1px solid #cecece;
+  }
+  .newsletter__row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 600px) {

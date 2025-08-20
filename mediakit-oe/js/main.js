@@ -215,51 +215,89 @@ document.addEventListener("DOMContentLoaded", () => {
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-window.addEventListener('DOMContentLoaded', () => {
-  const resizableSwiper = (breakpoint, swiperClass, swiperSettings, callback) => {
-    let swiper;
-    breakpoint = window.matchMedia(breakpoint);
-    const enableSwiper = function (className, settings) {
-      swiper = new Swiper(className, settings);
-      if (callback) {
-        callback(swiper);
-      }
-    };
-    const checker = function () {
-      if (breakpoint.matches) {
-        return enableSwiper(swiperClass, swiperSettings);
-      } else {
-        if (swiper !== undefined) swiper.destroy(true, true);
-        return;
-      }
-    };
-    breakpoint.addEventListener('change', checker);
-    checker();
-  };
-  const someFunc = instance => {
-    if (instance) {
-      instance.on('slideChange', function (e) {
-        console.log('*** mySwiper.activeIndex', instance.activeIndex);
-      });
-    }
-  };
-  resizableSwiper('(max-width: 1000px)', '.calendar__slider', {
-    spaceBetween: 10,
-    slidesPerView: 2,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
+// window.addEventListener('DOMContentLoaded', () => {
+
+//   const resizableSwiper = (breakpoint, swiperClass, swiperSettings, callback) => {
+//     let swiper;
+
+//     breakpoint = window.matchMedia(breakpoint);
+
+//     const enableSwiper = function (className, settings) {
+//       swiper = new Swiper(className, settings);
+
+//       if (callback) {
+//         callback(swiper);
+//       }
+//     }
+
+//     const checker = function () {
+//       if (breakpoint.matches) {
+//         return enableSwiper(swiperClass, swiperSettings);
+//       } else {
+//         if (swiper !== undefined) swiper.destroy(true, true);
+//         return;
+//       }
+//     };
+
+//     breakpoint.addEventListener('change', checker);
+//     checker();
+//   }
+
+//   const someFunc = (instance) => {
+//     if (instance) {
+//       instance.on('slideChange', function (e) {
+//         console.log('*** mySwiper.activeIndex', instance.activeIndex);
+//       });
+//     }
+//   };
+
+//   resizableSwiper(
+//     '(max-width: 1000px)',
+//     '.calendar__slider',
+//     {
+//       spaceBetween: 10,
+//       slidesPerView: 2,
+//       pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//       },
+//       speed: 1000,
+//       breakpoints: {
+//         0: {
+//           slidesPerView: 1.1,
+//         },
+//         600: {
+//           slidesPerView: 2,
+//         }
+//       }
+//     },
+//     someFunc
+//   );
+// });
+
+const mySwiper = new Swiper('.calendar__slider', {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  speed: 1000,
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.1
     },
-    speed: 1000,
-    breakpoints: {
-      0: {
-        slidesPerView: 1.1
-      },
-      600: {
-        slidesPerView: 2
-      }
+    600: {
+      slidesPerView: 2
+    },
+    1000: {
+      slidesPerView: 3
     }
-  }, someFunc);
+  }
 });
 
 /***/ }),
@@ -326,7 +364,7 @@ function animateCountersInElement(selector) {
   const counters = block.querySelectorAll(".number");
   counters.forEach(counter => {
     const value = parseInt(counter.getAttribute("data-value"), 10);
-    const duration = 6000;
+    const duration = 4000;
     let startTime = null;
     function step(timestamp) {
       if (!startTime) startTime = timestamp;
@@ -346,7 +384,6 @@ let aboutAnimated = false;
 let socialAnimated = false;
 let websiteAnimated = false;
 let audienceAnimated = false;
-let circulationAnimated = false;
 let tvAnimated = false;
 let whyUsAnimated = false;
 window.addEventListener("scroll", function () {
@@ -365,10 +402,6 @@ window.addEventListener("scroll", function () {
   if (!audienceAnimated && isInViewport(document.querySelector(".audience__list"))) {
     audienceAnimated = true;
     animateCountersInElement(".audience__list");
-  }
-  if (!circulationAnimated && isInViewport(document.querySelector(".circulation__list"))) {
-    circulationAnimated = true;
-    animateCountersInElement(".circulation__list");
   }
   if (!tvAnimated && isInViewport(document.querySelector(".tv__list"))) {
     tvAnimated = true;
