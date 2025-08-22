@@ -2298,8 +2298,8 @@ canvas {
   cursor: pointer;
   border: 1px solid var(--dark-color);
   border-radius: var(--border-radius);
-  padding: var(--mb-1) var(--mb-2);
-  font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
+  padding: var(--mb-1) var(--mb-0-75);
+  font-size: 16px;
   font-weight: var(--semibold-font);
   line-height: var(--line-height);
   background-color: var(--light-color);
@@ -2327,7 +2327,7 @@ canvas {
 }
 .tab__title {
   margin-bottom: var(--mb-1);
-  font-size: clamp(1.25rem, 1.143rem + 0.54vw, 1.625rem);
+  font-size: clamp(1rem, 0.929rem + 0.36vw, 1.25rem);
 }
 .tab__text {
   margin-bottom: var(--mb-1);
