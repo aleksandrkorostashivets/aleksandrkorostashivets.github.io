@@ -22,14 +22,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_website_map_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/website-map.js */ "./src/js/components/website-map.js");
 /* harmony import */ var _components_current_year_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/current-year.js */ "./src/js/components/current-year.js");
 /* harmony import */ var _components_footer_accrodion_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/footer-accrodion.js */ "./src/js/components/footer-accrodion.js");
-// import './components/active-link.js';
 
 
 
-// import './components/contact-form.js';
-// import './components/disable-scroll.js';
-// import './components/enable-scroll.js';
-// import './components/countdown.js';
 
 
 

@@ -93,12 +93,7 @@
       <p>The most qualified global audience of decision makers for over 50 years</p>
       <ul class="hero__list list-reset flex">
         <li>
-          <a href="#" download="#" class="hero__btn">
-            <span>Explore Our Reach</span>
-          </a>
-        </li>
-        <li>
-          <a href="#section-rate" class="hero__btn hero__btn--white">
+          <a href="#section-rate" class="hero__btn">
             <span>Get Rates</span>
           </a>
         </li>
@@ -448,9 +443,9 @@
             </a>
           </li>
           <li>
-            <button class="section__btn btn-reset section__btn--secondary btn" data-open-modal="modal-video">
-              <span>View Video</span>
-            </button>
+            <a href="https://www.maritimemagazines.com/offshore-engineer/202505/" target="_blank" class="section__btn btn-reset section__btn--secondary btn">
+              <span>Current e-Magazine</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -813,7 +808,18 @@
               Users</p>
           </li>
         </ul>
-        <button class="website__link section__btn btn-reset"><span>Get Website Advertising Rates</span></button>
+        <ul class="btn__list list-reset flex">
+          <li>
+            <a href="#section-rate" class="section__btn btn">
+              <span>Get Website Advertising Rates</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.oedigital.com/" target="_blank" class="section__btn btn-reset section__btn--secondary btn">
+              <span>OEDigital.com</span>
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="website__image">
         <img src="img/about.png" alt="">
@@ -835,7 +841,18 @@
             <h4 class="newsletter__subtitle"><strong>11.3%</strong> — Avg Open Rate (%)</h4>
             <h4 class="newsletter__subtitle"><strong>3.1%</strong> — Avg CTR (%)</h4>
             <p class="newsletter__descr section__text">OE Today E-News provides industry professionals easy access to the top offshore energy news. Reaching tens of thousands of influential buyers in the offshore energy market, OE Today lets readers be among the first to know about the news that matters to them most.</p>
-            <button class="btn-reset newsletter__btn section__btn"><span>Get Rates</span></button>
+            <ul class="btn__list list-reset flex">
+              <li>
+                <a href="#section-rate" class="section__btn btn">
+                  <span>Get Rates</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class="section__btn btn-reset section__btn--secondary btn">
+                  <span>OE Today E-News</span>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -903,7 +920,7 @@
               </div>
             </div>
           </div>
-          <h3 class="podcast__subtitle">Listen to a sample podcast:</h3>
+          <!-- <h3 class="podcast__subtitle">Listen to a sample podcast:</h3>
           <div class="podcast__audio">
             <audio controls>
               <source
@@ -911,7 +928,7 @@
                 type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-          </div>
+          </div> -->
           <button class="btn-reset podcast__btn section__btn"><span>Get Podcast Rates</span></button>
         </div>
       </div>
@@ -957,26 +974,42 @@
             <p class="podcast-sublist__text section__text podcast-sublist__text--highlight">10% of listeners</p>
           </li>
           <li class="podcast-sublist__item">
+            <div class="podcast-sublist__icon"
+              style="padding: 10px;background-color: var(--orange-color);border-radius: 100%;">
+              <img src="img/logo-small.svg" alt="" style="object-fit: contain;">
+            </div>
+            <h3 class="podcast-sublist__title">OE Today</h3>
+            <p class="podcast-sublist__text section__text">Latest updates and insights from the offshore energy industry</p>
+          </li>
+          <li class="podcast-sublist__item">
+            <div class="podcast-sublist__icon"
+              style="padding: 10px;background-color: var(--orange-color);border-radius: 100%;">
+              <img src="img/logo-small.svg" alt="" style="object-fit: contain;">
+            </div>
+            <h3 class="podcast-sublist__title">OE Social Media</h3>
+            <p class="podcast-sublist__text section__text">Follow our channels for real-time news and industry trends</p>
+          </li>
+          <!-- <li class="podcast-sublist__item">
             <div class="podcast-sublist__icon">
               <img src="img/headphone-icon.svg" alt="">
             </div>
             <h3 class="podcast-sublist__title">Audio Quality</h3>
             <p class="podcast-sublist__text section__text">Professional studio recording and production</p>
-          </li>
-          <li class="podcast-sublist__item">
+          </li> -->
+          <!-- <li class="podcast-sublist__item">
             <div class="podcast-sublist__icon">
               <img src="img/phone-icon.svg" alt="">
             </div>
             <h3 class="podcast-sublist__title">Mobile Optimized</h3>
-            <p class="podcast-sublist__text section__text">Accessible on all mobile devices and platforms</p>
-          </li>
-          <li class="podcast-sublist__item">
+            <p class="podcast-sublist__text section__text">Accessible on all mobile devices and platforms</p>
+          </li> -->
+          <!-- <li class="podcast-sublist__item">
             <div class="podcast-sublist__icon">
               <img src="img/desktop-icon.svg" alt="">
             </div>
             <h3 class="podcast-sublist__title">Analytics Tracking</h3>
             <p class="podcast-sublist__text section__text">Detailed listener metrics and engagement data</p>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -1049,8 +1082,8 @@
         <div class="tab-component">
           <div class="tab-component__buttons">
             <button class="tab-component__btn btn-reset active" data-tab="7">Primary Distribution</button>
-            <button class="tab-component__btn btn-reset" data-tab="8">Video + eNews</button>
-            <button class="tab-component__btn btn-reset" data-tab="9">Expanded Distribution</button>
+            <button class="tab-component__btn btn-reset" data-tab="8">Expanded Distribution</button>
+            <button class="tab-component__btn btn-reset" data-tab="9">Full Video Package</button>
           </div>
 
           <div class="tab-component__contents">
@@ -1080,7 +1113,7 @@
             </div>
             <div class="tab-component__content" data-content="9">
               <div class="tab__info">
-                <h3 class="tab__title">Expanded Distribution</h3>
+                <h3 class="tab__title">Full Video Package</h3>
                 <p class="tab__text section__text">The most comprehensive video package, combining video production,
                   e-newsletter promotion, and a dedicated online feature with embedded video for maximum visibility and
                   SEO.</p>
@@ -1093,7 +1126,18 @@
               </div>
             </div>
           </div>
-          <button class="btn-reset podcast__btn section__btn"><span>Get Video Rates</span></button>
+          <ul class="btn__list list-reset flex">
+            <li>
+              <a href="#section-rate" class="section__btn btn">
+                <span>Get Video Rates</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="section__btn btn-reset section__btn--secondary btn">
+                <span>Offshore Engineer TV</span>
+              </a>
+            </li>
+          </ul>
         </div>
 
       </div>
@@ -1164,7 +1208,18 @@
           </li>
         </ul>
         <p class="email-marketing__text section__text">Asian Oil & Gas (AOG) provides oil and gas marketers the opportunity to reach, engage, interact, and sell their products and services to an audience of highly qualified oil and gas professionals throughout the APAC region. AOG is comprised of its website (AOGdigital.com) and eNewsletter (AOG Today E-News), offering comprehensive distribution to the critical decision-makers at companies driving the Asian oil and gas industry.</p>
-        <button class="jobs__link section__btn btn-reset"><span>Get AOG Rates</span></button>
+        <ul class="btn__list list-reset flex">
+          <li>
+            <a href="#section-rate" class="section__btn btn">
+              <span>Get AOG Rates</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="section__btn btn-reset section__btn--secondary btn">
+              <span>AOG Today eNews</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -1940,83 +1995,84 @@
 
       <section class="social-reach section" id="section-social">
   <div class="container">
-    <h2 class="social-reach__headline section__title">Our Social Media Reach</h2>
-    <p class="social-reach__text section__text">Join thousands of Offshore Energy professionals and enthusiasts who follow us across platforms.</p>
-    <ul class="social-reach__list list-reset grid">
-      <li>
-        <a href="https://www.linkedin.com/company/offshore-engineer/" target="_blank" class="social-reach__item">
-          <svg class="social-reach__icon"><use xlink:href="img/sprite.svg#linkedin"></use></svg>
-          <h3 class="social-reach__title number" data-value="82421">0</h3>
-          <p class="social-reach__caption section__text">Linkedin Offshore Engineer Followers</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/pages/Offshore-Engineer-Magazine/108429650975" target="_blank" class="social-reach__item">
-          <svg class="social-reach__icon"><use xlink:href="img/sprite.svg#facebook"></use></svg>
-          <h3 class="social-reach__title number" data-value="7158">0</h3>
-          <p class="social-reach__caption section__text">Facebook Followers</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/OEdigital" target="_blank" class="social-reach__item">
-          <svg class="social-reach__icon"><use xlink:href="img/sprite.svg#twitter"></use></svg>
-          <h3 class="social-reach__title number" data-value="15560">0</h3>
-          <p class="social-reach__caption section__text">X Followers</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/channel/UCwBXCAFcUzC4C84HBsndIPA" target="_blank" class="social-reach__item">
-          <svg class="social-reach__icon"><use xlink:href="img/sprite.svg#youtube"></use></svg>
-          <h3 class="social-reach__title number" data-value="92423">0</h3>
-          <p class="social-reach__caption section__text">YouTube Views</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/groups/44626/" target="_blank" class="social-reach__item">
-          <svg class="social-reach__icon"><use xlink:href="img/sprite.svg#linkedin"></use></svg>
-          <h3 class="social-reach__title number" data-value="249242">0</h3>
-          <p class="social-reach__caption section__text">Linkedin Groups with Offshore Engineer </p>
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
-
-      <section class="why-us section">
-  <div class="container">
-    <h2 class="why-us__headline section__title">Why Choose Our Marketing Solutions?</h2>
-    <ul class="why-us__list list-reset flex">
-      <li class="why-us__item">
-        <div class="why-us__icon">
-          <svg style="stroke: transparent;fill:var(--blue-color);"><use xlink:href="img/sprite.svg#users"></use></svg>
-        </div>
-        <h3 class="why-us__title">
-          <span class="number" data-value="1000000">00000</span>
-          <span class="plus">+ </span>
-        </h3>
-        <p class="why-us__text section__text">Total Audience Reach</p>
-      </li>
-      <li class="why-us__item">
-        <div class="why-us__icon">
-          <svg class=""><use xlink:href="img/sprite.svg#static"></use></svg>
-        </div>
-        <h3 class="why-us__title">
-          <span class="number" data-value="85">00000</span>
-          <span class="plus">%</span>
-        </h3>
-        <p class="why-us__text section__text">Decision Maker Audience</p>
-      </li>
-      <li class="why-us__item">
-        <div class="why-us__icon">
-          <svg class=""><use xlink:href="img/sprite.svg#award"></use></svg>
-        </div>
-        <h3 class="why-us__title">
-          <span class="number" data-value="50">00000</span>
-          <span class="plus">+ </span>
-        </h3>
-        <p class="why-us__text section__text">Years of Industry Authority</p>
-      </li>
-    </ul>
+    <div class="social-reach__grid grid">
+      <div class="social-reach__col">
+        <h2 class="social-reach__headline section__subtitle">Our Social Media Reach</h2>
+        <p class="social-reach__text section__text">Join thousands of Offshore Energy professionals and enthusiasts who follow us across platforms.</p>
+        <ul class="social-reach__list list-reset grid">
+          <li>
+            <a href="https://www.linkedin.com/company/offshore-engineer/" target="_blank" class="social-reach__item">
+              <svg class="social-reach__icon"><use xlink:href="img/sprite.svg#linkedin"></use></svg>
+              <h3 class="social-reach__title number" data-value="82421">0</h3>
+              <p class="social-reach__caption section__text">Linkedin Offshore Engineer Followers</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/pages/Offshore-Engineer-Magazine/108429650975" target="_blank" class="social-reach__item">
+              <svg class="social-reach__icon"><use xlink:href="img/sprite.svg#facebook"></use></svg>
+              <h3 class="social-reach__title number" data-value="7158">0</h3>
+              <p class="social-reach__caption section__text">Facebook Followers</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/OEdigital" target="_blank" class="social-reach__item">
+              <svg class="social-reach__icon"><use xlink:href="img/sprite.svg#twitter"></use></svg>
+              <h3 class="social-reach__title number" data-value="15560">0</h3>
+              <p class="social-reach__caption section__text">X Followers</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCwBXCAFcUzC4C84HBsndIPA" target="_blank" class="social-reach__item">
+              <svg class="social-reach__icon"><use xlink:href="img/sprite.svg#youtube"></use></svg>
+              <h3 class="social-reach__title number" data-value="92423">0</h3>
+              <p class="social-reach__caption section__text">YouTube Views</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/groups/44626/" target="_blank" class="social-reach__item">
+              <svg class="social-reach__icon"><use xlink:href="img/sprite.svg#linkedin"></use></svg>
+              <h3 class="social-reach__title number" data-value="249242">0</h3>
+              <p class="social-reach__caption section__text">Linkedin Groups with Offshore Engineer </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="social-reach__col">
+        <h2 class="why-us__headline section__subtitle">Why Choose Our Marketing Solutions?</h2>
+        <ul class="why-us__list list-reset flex">
+          <li class="why-us__item">
+            <div class="why-us__icon">
+              <svg style="stroke: transparent;fill:var(--blue-color);"><use xlink:href="img/sprite.svg#users"></use></svg>
+            </div>
+            <h3 class="why-us__title">
+              <span class="number" data-value="1000000">00000</span>
+              <span class="plus">+ </span>
+            </h3>
+            <p class="why-us__text section__text">Total Audience Reach</p>
+          </li>
+          <li class="why-us__item">
+            <div class="why-us__icon">
+              <svg class=""><use xlink:href="img/sprite.svg#static"></use></svg>
+            </div>
+            <h3 class="why-us__title">
+              <span class="number" data-value="85">00000</span>
+              <span class="plus">%</span>
+            </h3>
+            <p class="why-us__text section__text">Decision Maker Audience</p>
+          </li>
+          <li class="why-us__item">
+            <div class="why-us__icon">
+              <svg class=""><use xlink:href="img/sprite.svg#award"></use></svg>
+            </div>
+            <h3 class="why-us__title">
+              <span class="number" data-value="50">00000</span>
+              <span class="plus">+ </span>
+            </h3>
+            <p class="why-us__text section__text">Years of Industry Authority</p>
+          </li>
+        </ul>
+      </div>
+    </div>
     <h3 class="why-us__subtitle section__subtitle">Ready to Amplify Your Offshore Energy Marketing?</h3>
     <p class="why-us__descr section__text">Let’s discuss how our comprehensive marketing solutions can help you reach the right offshore energy professionals at the right time.</p>
   </div>
@@ -2030,8 +2086,8 @@
       effectively plan your campaign.</p>
     <div class="tab-component">
       <div class="tab-component__buttons">
-        <button class="tab-component__btn btn-reset active" data-tab="banner">Banner ad rates monthly</button>
-        <button class="tab-component__btn btn-reset" data-tab="email">Feature email blast rates</button>
+        <button class="tab-component__btn btn-reset active" data-tab="banner">Banner Ad Rates Monthly</button>
+        <button class="tab-component__btn btn-reset" data-tab="email">Email Direct Marketing rates</button>
         <button class="tab-component__btn btn-reset" data-tab="tv">Offshore Engineer TV Rates</button>
         <button class="tab-component__btn btn-reset" data-tab="podcast">Podcast Rates </button>
         <button class="tab-component__btn btn-reset" data-tab="sponsored">Sponsored Content</button>
@@ -2128,7 +2184,7 @@
         </div>
         <div class="tab-component__content" data-content="email">
           <div class="tab__info">
-            <h3 class="rate-item__title section__subtitle">Feature Email Blast Rates</h3>
+            <h3 class="rate-item__title section__subtitle">Email Direct Marketing Rates</h3>
             <p class="rate-item__descr section__text">Targeted email campaigns reaching over 67,000 recipients. Options
               include single or multiple blasts, allowing optimization of audience reach and campaign effectiveness.</p>
             <ul class="rate__list list-reset">
@@ -2443,26 +2499,29 @@
       <!-- Publications -->
       <div class="footer__column footer__accordion">
         <button class="footer__accordion-btn btn-reset" type="button">
-          <h3 class="footer__title">Publications</h3>
+          <h3 class="footer__title">Platform </h3>
           <span class="dropdown-arrow" aria-hidden="true"></span>
         </button>
         <ul class="footer__list list-reset">
-          <li><a href="#section-magazine" class="footer__link">Magazine</a></li>
           <li><a href="#section-emagazine" class="footer__link">Interactive eMagazine</a></li>
-          <li><a href="#section-website" class="footer__link">Website</a></li>
-          <li><a href="#section-newsletter" class="footer__link">eNewsletter</a></li>
+          <li><a href="#section-website" class="footer__link">Website OEdigital.com</a></li>
+          <li><a href="https://aogdigital.com/" target="_blank" class="footer__link">Website AOGdigital.com</a></li>
+          <li><a href="#section-newsletter" class="footer__link">eNewsletter OE</a></li>
+          <li><a href="#section-aog" class="footer__link">eNewsletter AOG</a></li>
+          <li><a href="#section-social" class="footer__link">Social Media</a></li>
         </ul>
       </div>
 
       <!-- Media Content -->
       <div class="footer__column footer__accordion">
         <button class="footer__accordion-btn btn-reset" type="button">
-          <h3 class="footer__title">Media Content</h3>
+          <h3 class="footer__title">Rich Content</h3>
           <span class="dropdown-arrow" aria-hidden="true"></span>
         </button>
         <ul class="footer__list list-reset">
           <li><a href="#section-tv" class="footer__link">Web TV</a></li>
           <li><a href="#section-podcast" class="footer__link">Podcasts</a></li>
+          <li><a href="#section-webinar" class="footer__link">Webinar</a></li>
         </ul>
       </div>
 
@@ -2478,17 +2537,6 @@
         </ul>
       </div>
 
-      <!-- Careers & Community -->
-      <div class="footer__column footer__accordion">
-        <button class="footer__accordion-btn btn-reset" type="button">
-          <h3 class="footer__title">Careers & Community</h3>
-          <span class="dropdown-arrow" aria-hidden="true"></span>
-        </button>
-        <ul class="footer__list list-reset">
-          <li><a href="#section-social" class="footer__link">Social Media</a></li>
-        </ul>
-      </div>
-
       <!-- Contact Us -->
       <div class="footer__column footer__accordion">
         <button class="footer__accordion-btn btn-reset" type="button">
@@ -2496,7 +2544,6 @@
           <span class="dropdown-arrow" aria-hidden="true"></span>
         </button>
         <ul class="footer__contact list-reset">
-          <li><a href="tel:+11234567890" class="footer__link">+1 (123) 456-7890</a></li>
           <li><a href="mailto:info@example.com" class="footer__link">info@example.com</a></li>
           <ul class="footer__social list-reset flex">
             <li>
