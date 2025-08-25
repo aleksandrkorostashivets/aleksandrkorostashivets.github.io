@@ -2441,6 +2441,9 @@ canvas {
   line-height: var(--line-height);
   font-variant-numeric: tabular-nums;
 }
+.podcast__btn {
+  margin-top: 30px;
+}
 .podcast__audio {
   margin-bottom: var(--mb-1);
 }
