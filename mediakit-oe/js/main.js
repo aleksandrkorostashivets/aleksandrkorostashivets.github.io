@@ -73,11 +73,11 @@ document.querySelectorAll('.accordion').forEach(accordion => {
 __webpack_require__.r(__webpack_exports__);
 const ctx = document.getElementById('audienceChart').getContext('2d');
 const data = {
-  labels: ['Interactive eMagazine', 'Websites (avg sessions/month)', 'eNewsletter', 'Web TV', 'Email Marketing', 'Social Media'],
+  labels: ['Interactive eMagazine', 'Websites (avg sessions/month)', 'eNewsletter', 'Web TV', 'Email Marketing'],
   datasets: [{
     label: 'Audience',
-    data: [47295, 466415, 55674, 80974, 62000, 354381],
-    backgroundColor: ['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#9333ea', '#66cff5'],
+    data: [71025, 466415, 55674, 80974, 354381],
+    backgroundColor: ['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#66cff5'],
     borderWidth: 1,
     hoverOffset: 10
   }]
