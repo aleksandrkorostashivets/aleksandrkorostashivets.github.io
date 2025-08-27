@@ -16,12 +16,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_counter_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/counter.js */ "./src/js/components/counter.js");
 /* harmony import */ var _components_audience_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/audience.js */ "./src/js/components/audience.js");
 /* harmony import */ var _components_calendar_slider_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/calendar-slider.js */ "./src/js/components/calendar-slider.js");
-/* harmony import */ var _components_modal_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/modal.js */ "./src/js/components/modal.js");
-/* harmony import */ var _components_accordion_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/accordion.js */ "./src/js/components/accordion.js");
-/* harmony import */ var _components_tabs_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/tabs.js */ "./src/js/components/tabs.js");
-/* harmony import */ var _components_website_map_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/website-map.js */ "./src/js/components/website-map.js");
-/* harmony import */ var _components_current_year_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/current-year.js */ "./src/js/components/current-year.js");
-/* harmony import */ var _components_footer_accrodion_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/footer-accrodion.js */ "./src/js/components/footer-accrodion.js");
+/* harmony import */ var _components_accordion_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/accordion.js */ "./src/js/components/accordion.js");
+/* harmony import */ var _components_tabs_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/tabs.js */ "./src/js/components/tabs.js");
+/* harmony import */ var _components_website_map_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/website-map.js */ "./src/js/components/website-map.js");
+/* harmony import */ var _components_current_year_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/current-year.js */ "./src/js/components/current-year.js");
+/* harmony import */ var _components_footer_accrodion_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/footer-accrodion.js */ "./src/js/components/footer-accrodion.js");
 // import './components/active-link.js';
 
 
@@ -35,7 +34,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // import './components/map.js';
 
-
+// import './components/modal.js';
 
 
 
@@ -371,7 +370,6 @@ let aboutAnimated = false;
 let socialAnimated = false;
 let websiteAnimated = false;
 let audienceAnimated = false;
-let circulationAnimated = false;
 let podcastAnimated = false;
 let tvAnimated = false;
 let whyUsAnimated = false;
@@ -391,10 +389,6 @@ window.addEventListener("scroll", function () {
   if (!audienceAnimated && isInViewport(document.querySelector(".audience__list"))) {
     audienceAnimated = true;
     animateCountersInElement(".audience__list");
-  }
-  if (!circulationAnimated && isInViewport(document.querySelector(".circulation__list"))) {
-    circulationAnimated = true;
-    animateCountersInElement(".circulation__list");
   }
   if (!podcastAnimated && isInViewport(document.querySelector(".podcast__list"))) {
     podcastAnimated = true;
@@ -479,66 +473,6 @@ accordionItems.forEach(item => {
       item.classList.add('is-active');
     }
   });
-});
-
-/***/ }),
-
-/***/ "./src/js/components/modal.js":
-/*!************************************!*\
-  !*** ./src/js/components/modal.js ***!
-  \************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-const pageBody = document.querySelector('.page__body');
-let scrollY = 0;
-function openModal(modal) {
-  scrollY = window.scrollY || window.pageYOffset;
-  pageBody.style.setProperty('--scroll-y', `-${scrollY}px`);
-  pageBody.classList.add('modal-open');
-  modal.classList.add('active');
-}
-function closeModal(modal) {
-  modal.classList.remove('active');
-  pageBody.classList.remove('modal-open');
-  pageBody.style.removeProperty('--scroll-y');
-
-  // Зупинити відео якщо є
-  const video = modal.querySelector('video');
-  if (video) {
-    video.pause();
-    video.currentTime = 0;
-  }
-  setTimeout(() => {
-    window.scrollTo(0, scrollY);
-  }, 0);
-}
-
-// Відкриття модалки по кнопці
-document.querySelectorAll('[data-open-modal]').forEach(btn => {
-  btn.addEventListener('click', e => {
-    e.preventDefault();
-    const modalId = btn.getAttribute('data-open-modal');
-    const modal = document.getElementById(modalId);
-    if (modal) openModal(modal);
-  });
-});
-
-// Закриття модалок по кнопці "х" і оверлею
-document.querySelectorAll('.modal').forEach(modal => {
-  const closeBtn = modal.querySelector('.modal__close');
-  const overlay = modal.querySelector('.modal__overlay');
-  if (closeBtn) {
-    closeBtn.addEventListener('click', () => closeModal(modal));
-  }
-  if (overlay) {
-    overlay.addEventListener('click', () => closeModal(modal));
-  }
-  // Щоб клік по контенту не закривав модалку
-  const content = modal.querySelector('.modal__content');
-  if (content) {
-    content.addEventListener('click', e => e.stopPropagation());
-  }
 });
 
 /***/ }),

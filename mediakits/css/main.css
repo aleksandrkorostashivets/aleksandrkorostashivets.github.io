@@ -984,19 +984,19 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  max-width: 1100px;
   height: 100%;
   color: var(--white-color);
 }
 .hero__info h2 {
   margin-bottom: var(--mb-3);
-  font-size: clamp(1.875rem, 1.518rem + 1.79vw, 3.125rem);
+  font-size: clamp(2.125rem, 1.661rem + 2.32vw, 3.75rem);
   line-height: var(--line-height);
 }
 .hero__info p {
   margin-bottom: 50px;
-  max-width: 80%;
-  font-size: clamp(1.125rem, 1.089rem + 0.18vw, 1.25rem);
+  max-width: 90%;
+  font-weight: 600;
+  font-size: clamp(1.125rem, 0.911rem + 1.07vw, 1.875rem);
   line-height: var(--line-height);
 }
 .hero__list {
@@ -1220,10 +1220,10 @@ a {
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   gap: var(--mb-1);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .about__title {
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-0-5);
   text-align: center;
 }
 .about__text {
@@ -1263,8 +1263,7 @@ a {
   justify-content: flex-start;
   gap: 5px;
   margin-bottom: var(--mb-0-75);
-  font-size: clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem);
-  color: var(--dark-blue-color);
+  font-size: clamp(1.125rem, 1.018rem + 0.54vw, 1.5rem);
   line-height: var(--line-height);
   font-variant-numeric: tabular-nums;
 }
@@ -1282,8 +1281,8 @@ a {
 }
 
 .portfolio__list {
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
   -webkit-column-gap: var(--mb-1);
   -moz-column-gap: var(--mb-1);
   column-gap: var(--mb-1);
@@ -1307,16 +1306,17 @@ a {
   text-align: center;
 }
 .portfolio__title {
-  font-size: clamp(1.25rem, 1.214rem + 0.18vw, 1.375rem);
+  font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
   font-weight: var(--semibold-font);
   line-height: var(--line-height);
 }
 .portfolio__text {
+  font-size: 14px;
   line-height: var(--line-height);
 }
 .portfolio__icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 .portfolio__icon svg {
   display: block;
@@ -1847,6 +1847,12 @@ canvas {
   padding-left: 0;
   text-align: center;
 }
+.calendar__link {
+  display: block;
+  max-width: 280px;
+  text-align: center;
+  margin: 0 auto var(--mb-1);
+}
 .calendar__grid {
   display: -ms-grid;
   display: grid;
@@ -2310,7 +2316,7 @@ canvas {
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   gap: var(--mb-1);
-  margin-bottom: var(--mb-3);
+  margin-top: var(--mb-1);
 }
 .podcast__list-item {
   display: -webkit-box;
@@ -2327,10 +2333,13 @@ canvas {
   text-align: center;
 }
 .podcast__list-title {
-  font-size: clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem);
+  font-size: clamp(1.125rem, 1.018rem + 0.54vw, 1.5rem);
   color: var(--dark-blue-color);
   line-height: var(--line-height);
   font-variant-numeric: tabular-nums;
+}
+.podcast__list-text {
+  font-size: 14px;
 }
 .podcast__audio {
   margin-bottom: var(--mb-1);
@@ -2340,8 +2349,8 @@ canvas {
 }
 
 .podcast-sublist {
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
   -webkit-column-gap: var(--mb-1);
   -moz-column-gap: var(--mb-1);
   column-gap: var(--mb-1);
@@ -2362,8 +2371,8 @@ canvas {
   text-align: center;
 }
 .podcast-sublist__icon {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .podcast-sublist__icon img {
   display: block;
@@ -2371,9 +2380,12 @@ canvas {
   height: 100%;
 }
 .podcast-sublist__title {
-  font-size: clamp(1.25rem, 1.179rem + 0.36vw, 1.5rem);
+  font-size: clamp(1.125rem, 1.054rem + 0.36vw, 1.375rem);
   font-weight: var(--medium-font);
   line-height: var(--line-height);
+}
+.podcast-sublist__text {
+  font-size: 14px;
 }
 .podcast-sublist__text--highlight {
   border: 1px solid var(--dark-blue-color);
@@ -2510,90 +2522,15 @@ canvas {
   text-align: center;
 }
 .circulation__text {
-  margin: 0 auto 50px;
-  max-width: 1000px;
+  margin: 0 auto 20px;
+  max-width: 1200px;
   text-align: center;
-}
-.circulation__list {
-  -ms-grid-columns: (1fr)[5];
-  grid-template-columns: repeat(5, 1fr);
-  gap: var(--mb-1);
-  margin-top: var(--mb-5);
-  margin-bottom: var(--mb-1);
-}
-.circulation__item {
-  position: relative;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: var(--mb-1);
-  border: 1px solid var(--dark-blue-color);
-  border-radius: var(--border-radius);
-  padding: 50px 15px;
-  text-align: center;
-  background-color: var(--white-color);
-}
-.circulation__item-title {
-  font-size: clamp(1.125rem, 0.982rem + 0.71vw, 1.625rem);
-  font-weight: var(--semibold-font);
-  line-height: var(--line-height);
-}
-.circulation__item-number {
-  font-size: clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem);
-}
-.circulation__item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 60px;
-  height: 60px;
-  background-color: #000;
-  clip-path: polygon(0 0, 100% 0, 100% 20%, 20% 100%, 0 100%);
-}
-.circulation__item:nth-child(1) {
-  border-color: #0d6efd;
-}
-.circulation__item:nth-child(1)::before {
-  background-color: #0d6efd;
-}
-.circulation__item:nth-child(2) {
-  border-color: #0d2e62;
-}
-.circulation__item:nth-child(2)::before {
-  background-color: #0d2e62;
-}
-.circulation__item:nth-child(3) {
-  border-color: #343a40;
-}
-.circulation__item:nth-child(3)::before {
-  background-color: #343a40;
-}
-.circulation__item:nth-child(4) {
-  border-color: #dc3545;
-}
-.circulation__item:nth-child(4)::before {
-  background-color: #dc3545;
-}
-.circulation__item:nth-child(5) {
-  border-color: #198754;
-}
-.circulation__item:nth-child(5)::before {
-  background-color: #198754;
 }
 .circulation__sublist {
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   gap: var(--mb-1);
-  margin-bottom: var(--mb-3);
+  margin-bottom: var(--mb-2);
 }
 .circulation__sublist-item {
   display: -webkit-box;
@@ -2610,8 +2547,8 @@ canvas {
   text-align: center;
 }
 .circulation__sublist-icon {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   fill: transparent;
   stroke: var(--blue-color);
 }
