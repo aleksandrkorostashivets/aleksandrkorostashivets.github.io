@@ -3233,8 +3233,13 @@ canvas {
 
 @media screen and (max-width: 1000px) {
   .jobs__container {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
 .why-us {
