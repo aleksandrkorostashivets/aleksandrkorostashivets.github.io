@@ -14,26 +14,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_fixed_header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/fixed-header.js */ "./src/js/components/fixed-header.js");
 /* harmony import */ var _components_preloader_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/preloader.js */ "./src/js/components/preloader.js");
 /* harmony import */ var _components_counter_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/counter.js */ "./src/js/components/counter.js");
-/* harmony import */ var _components_audience_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/audience.js */ "./src/js/components/audience.js");
-/* harmony import */ var _components_calendar_slider_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/calendar-slider.js */ "./src/js/components/calendar-slider.js");
-/* harmony import */ var _components_modal_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/modal.js */ "./src/js/components/modal.js");
-/* harmony import */ var _components_accordion_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/accordion.js */ "./src/js/components/accordion.js");
-/* harmony import */ var _components_tabs_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/tabs.js */ "./src/js/components/tabs.js");
-/* harmony import */ var _components_website_map_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/website-map.js */ "./src/js/components/website-map.js");
-/* harmony import */ var _components_current_year_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/current-year.js */ "./src/js/components/current-year.js");
-/* harmony import */ var _components_footer_accrodion_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/footer-accrodion.js */ "./src/js/components/footer-accrodion.js");
+/* harmony import */ var _components_accordion_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/accordion.js */ "./src/js/components/accordion.js");
+/* harmony import */ var _components_current_year_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/current-year.js */ "./src/js/components/current-year.js");
+/* harmony import */ var _components_footer_accrodion_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/footer-accrodion.js */ "./src/js/components/footer-accrodion.js");
 
 
 
 
 
-
+// import './components/audience.js';
 // import './components/map.js';
+// import './components/calendar-slider.js';
+// import './components/modal.js';
 
-
-
-
-
+// import './components/tabs.js';
+// import './components/website-map.js';
 // import './components/audience-map.js';
 
 // import './components/audio.js';
@@ -60,113 +55,6 @@ document.querySelectorAll('.accordion').forEach(accordion => {
       }
     });
   });
-});
-
-/***/ }),
-
-/***/ "./src/js/components/audience.js":
-/*!***************************************!*\
-  !*** ./src/js/components/audience.js ***!
-  \***************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-const ctx = document.getElementById('audienceChart').getContext('2d');
-const data = {
-  labels: ['Interactive eMagazine', 'Websites (avg sessions/month)', 'eNewsletter', 'Web TV', 'Email Marketing', 'Social Media'],
-  datasets: [{
-    label: 'Audience',
-    data: [47295, 466415, 55674, 80974, 62000, 354381],
-    backgroundColor: ['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#9333ea', '#66cff5'],
-    borderWidth: 1,
-    hoverOffset: 10
-  }]
-};
-function formatNumber(value) {
-  return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ", ");
-}
-const options = {
-  responsive: true,
-  maintainAspectRatio: true,
-  plugins: {
-    tooltip: {
-      callbacks: {
-        label: function (context) {
-          const value = formatNumber(context.raw);
-          return `${context.label}: ${value}`;
-        }
-      }
-    },
-    legend: {
-      position: 'top',
-      labels: {
-        boxWidth: 20,
-        padding: 15,
-        font: {
-          family: 'Montserrat',
-          size: 16,
-          style: 'italic',
-          weight: 'normal'
-        },
-        color: '#333',
-        generateLabels: function (chart) {
-          const data = chart.data;
-          if (data.labels.length && data.datasets.length) {
-            return data.labels.map((label, i) => {
-              const value = formatNumber(data.datasets[0].data[i]);
-              return {
-                text: `${label} – ${value}`,
-                fillStyle: data.datasets[0].backgroundColor[i],
-                strokeStyle: data.datasets[0].backgroundColor[i],
-                lineWidth: 1,
-                hidden: false,
-                index: i
-              };
-            });
-          }
-          return [];
-        }
-      }
-    },
-    datalabels: {
-      color: '#fff',
-      font: {
-        family: 'Montserrat',
-        weight: '600',
-        size: 16
-      },
-      formatter: function (value) {
-        return formatNumber(value);
-      },
-      display: function () {
-        return window.innerWidth > 768;
-      },
-      anchor: 'center',
-      align: 'center',
-      clamp: true
-    }
-  },
-  animation: {
-    animateScale: true,
-    animateRotate: true
-  },
-  layout: {
-    padding: {
-      top: 0,
-      bottom: 0,
-      left: 0,
-      right: 0
-    }
-  }
-};
-const chart = new Chart(ctx, {
-  type: 'doughnut',
-  data: data,
-  options: options,
-  plugins: [ChartDataLabels]
-});
-window.addEventListener('resize', () => {
-  chart.update();
 });
 
 /***/ }),
@@ -199,100 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
       nav.classList.remove('nav--visible');
     });
   });
-});
-
-/***/ }),
-
-/***/ "./src/js/components/calendar-slider.js":
-/*!**********************************************!*\
-  !*** ./src/js/components/calendar-slider.js ***!
-  \**********************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-// window.addEventListener('DOMContentLoaded', () => {
-
-//   const resizableSwiper = (breakpoint, swiperClass, swiperSettings, callback) => {
-//     let swiper;
-
-//     breakpoint = window.matchMedia(breakpoint);
-
-//     const enableSwiper = function (className, settings) {
-//       swiper = new Swiper(className, settings);
-
-//       if (callback) {
-//         callback(swiper);
-//       }
-//     }
-
-//     const checker = function () {
-//       if (breakpoint.matches) {
-//         return enableSwiper(swiperClass, swiperSettings);
-//       } else {
-//         if (swiper !== undefined) swiper.destroy(true, true);
-//         return;
-//       }
-//     };
-
-//     breakpoint.addEventListener('change', checker);
-//     checker();
-//   }
-
-//   const someFunc = (instance) => {
-//     if (instance) {
-//       instance.on('slideChange', function (e) {
-//         console.log('*** mySwiper.activeIndex', instance.activeIndex);
-//       });
-//     }
-//   };
-
-//   resizableSwiper(
-//     '(max-width: 1000px)',
-//     '.calendar__slider',
-//     {
-//       spaceBetween: 10,
-//       slidesPerView: 2,
-//       pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
-//       },
-//       speed: 1000,
-//       breakpoints: {
-//         0: {
-//           slidesPerView: 1.1,
-//         },
-//         600: {
-//           slidesPerView: 2,
-//         }
-//       }
-//     },
-//     someFunc
-//   );
-// });
-
-const mySwiper = new Swiper('.calendar__slider', {
-  spaceBetween: 20,
-  slidesPerView: 1,
-  speed: 1000,
-  autoplay: {
-    delay: 4500,
-    disableOnInteraction: false
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1.1
-    },
-    600: {
-      slidesPerView: 2
-    },
-    1000: {
-      slidesPerView: 3
-    }
-  }
 });
 
 /***/ }),
@@ -377,9 +171,6 @@ function animateCountersInElement(selector) {
 }
 let aboutAnimated = false;
 let socialAnimated = false;
-let websiteAnimated = false;
-let audienceAnimated = false;
-let tvAnimated = false;
 let whyUsAnimated = false;
 window.addEventListener("scroll", function () {
   if (!aboutAnimated && isInViewport(document.querySelector(".about__list"))) {
@@ -389,18 +180,6 @@ window.addEventListener("scroll", function () {
   if (!socialAnimated && isInViewport(document.querySelector(".social-reach__list"))) {
     socialAnimated = true;
     animateCountersInElement(".social-reach__list");
-  }
-  if (!websiteAnimated && isInViewport(document.querySelector(".website__list"))) {
-    websiteAnimated = true;
-    animateCountersInElement(".website__list");
-  }
-  if (!audienceAnimated && isInViewport(document.querySelector(".audience__list"))) {
-    audienceAnimated = true;
-    animateCountersInElement(".audience__list");
-  }
-  if (!tvAnimated && isInViewport(document.querySelector(".tv__list"))) {
-    tvAnimated = true;
-    animateCountersInElement(".tv__list");
   }
   if (!whyUsAnimated && isInViewport(document.querySelector(".why-us__list"))) {
     whyUsAnimated = true;
@@ -481,66 +260,6 @@ accordionItems.forEach(item => {
 
 /***/ }),
 
-/***/ "./src/js/components/modal.js":
-/*!************************************!*\
-  !*** ./src/js/components/modal.js ***!
-  \************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-const pageBody = document.querySelector('.page__body');
-let scrollY = 0;
-function openModal(modal) {
-  scrollY = window.scrollY || window.pageYOffset;
-  pageBody.style.setProperty('--scroll-y', `-${scrollY}px`);
-  pageBody.classList.add('modal-open');
-  modal.classList.add('active');
-}
-function closeModal(modal) {
-  modal.classList.remove('active');
-  pageBody.classList.remove('modal-open');
-  pageBody.style.removeProperty('--scroll-y');
-
-  // Зупинити відео якщо є
-  const video = modal.querySelector('video');
-  if (video) {
-    video.pause();
-    video.currentTime = 0;
-  }
-  setTimeout(() => {
-    window.scrollTo(0, scrollY);
-  }, 0);
-}
-
-// Відкриття модалки по кнопці
-document.querySelectorAll('[data-open-modal]').forEach(btn => {
-  btn.addEventListener('click', e => {
-    e.preventDefault();
-    const modalId = btn.getAttribute('data-open-modal');
-    const modal = document.getElementById(modalId);
-    if (modal) openModal(modal);
-  });
-});
-
-// Закриття модалок по кнопці "х" і оверлею
-document.querySelectorAll('.modal').forEach(modal => {
-  const closeBtn = modal.querySelector('.modal__close');
-  const overlay = modal.querySelector('.modal__overlay');
-  if (closeBtn) {
-    closeBtn.addEventListener('click', () => closeModal(modal));
-  }
-  if (overlay) {
-    overlay.addEventListener('click', () => closeModal(modal));
-  }
-  // Щоб клік по контенту не закривав модалку
-  const content = modal.querySelector('.modal__content');
-  if (content) {
-    content.addEventListener('click', e => e.stopPropagation());
-  }
-});
-
-/***/ }),
-
 /***/ "./src/js/components/preloader.js":
 /*!****************************************!*\
   !*** ./src/js/components/preloader.js ***!
@@ -557,131 +276,6 @@ document.onreadystatechange = function () {
     document.querySelector('.site-container').classList.remove('site-container--hidden');
   }
 };
-
-/***/ }),
-
-/***/ "./src/js/components/tabs.js":
-/*!***********************************!*\
-  !*** ./src/js/components/tabs.js ***!
-  \***********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-document.querySelectorAll('.tab-component').forEach(tabComponent => {
-  const buttons = tabComponent.querySelectorAll('.tab-component__btn');
-  const contents = tabComponent.querySelectorAll('.tab-component__content');
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      const tab = button.getAttribute('data-tab');
-      buttons.forEach(btn => btn.classList.remove('active'));
-      contents.forEach(content => content.classList.remove('active'));
-      button.classList.add('active');
-      tabComponent.querySelector(`.tab-component__content[data-content="${tab}"]`).classList.add('active');
-    });
-  });
-});
-
-/***/ }),
-
-/***/ "./src/js/components/website-map.js":
-/*!******************************************!*\
-  !*** ./src/js/components/website-map.js ***!
-  \******************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-am5.ready(function () {
-  var data = [{
-    id: "NA",
-    name: "North America",
-    value: 17499,
-    latitude: 40,
-    longitude: -100,
-    color: am5.color(0x0d6efd)
-  }, {
-    id: "EU",
-    name: "Europe",
-    value: 14188,
-    latitude: 54,
-    longitude: 15,
-    color: am5.color(0x0d2e62)
-  }, {
-    id: "AP",
-    name: "Asia Pacific",
-    value: 9932,
-    latitude: 30,
-    longitude: 120,
-    color: am5.color(0x343a40)
-  }, {
-    id: "ME",
-    name: "Middle East",
-    value: 3784,
-    latitude: 26,
-    longitude: 50,
-    color: am5.color(0xdc3545)
-  }, {
-    id: "LA",
-    name: "Latin America",
-    value: 1892,
-    latitude: -15,
-    longitude: -60,
-    color: am5.color(0x198754)
-  }];
-  var totalValue = data.reduce((sum, item) => sum + item.value, 0);
-  data.forEach(item => {
-    item.percent = (item.value / totalValue * 100).toFixed(1);
-  });
-  var root = am5.Root.new("websiteMap");
-  root.setThemes([am5themes_Animated.new(root)]);
-  var chart = root.container.children.push(am5map.MapChart.new(root, {
-    panX: "none",
-    panY: "none",
-    wheelX: "none",
-    wheelY: "none"
-  }));
-  var polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
-    geoJSON: am5geodata_worldLow,
-    exclude: ["AQ"]
-  }));
-  var bubbleSeries = chart.series.push(am5map.MapPointSeries.new(root, {
-    valueField: "value",
-    longitudeField: "longitude",
-    latitudeField: "latitude"
-  }));
-  bubbleSeries.bullets.push(function (root, series, dataItem) {
-    var container = am5.Container.new(root, {});
-    var circle = container.children.push(am5.Circle.new(root, {
-      radius: 35,
-      fillOpacity: 0.9,
-      fill: dataItem.dataContext.color,
-      tooltipText: `{name}: [bold]{percent} %[/]`,
-      cursorOverStyle: "pointer"
-    }));
-    circle.set("tooltip", am5.Tooltip.new(root, {}));
-    circle.get("tooltip").label.setAll({
-      fontSize: 20,
-      fontWeight: "bold"
-    });
-    return am5.Bullet.new(root, {
-      sprite: container,
-      dynamic: true
-    });
-  });
-  bubbleSeries.bullets.push(function (root, series, dataItem) {
-    return am5.Bullet.new(root, {
-      sprite: am5.Label.new(root, {
-        text: "{percent}%",
-        fill: am5.color(0xffffff),
-        populateText: true,
-        centerX: am5.p50,
-        centerY: am5.p50,
-        textAlign: "center"
-      }),
-      dynamic: true
-    });
-  });
-  bubbleSeries.data.setAll(data);
-});
 
 /***/ })
 
