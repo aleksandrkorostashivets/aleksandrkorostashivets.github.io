@@ -3736,14 +3736,43 @@ canvas {
   margin-bottom: 15px;
 }
 
+.rates__list {
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: var(--mb-2);
+}
+.rates__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
+  height: 100%;
+}
+.rates__btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
 @media screen and (max-width: 1000px) {
   .rate .tab-component__buttons {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
+  .rate-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (max-width: 900px) {
-  .rate-grid {
+  .rates__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
