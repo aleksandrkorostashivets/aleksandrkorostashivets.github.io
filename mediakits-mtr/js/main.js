@@ -73,10 +73,10 @@ document.querySelectorAll('.accordion').forEach(accordion => {
 __webpack_require__.r(__webpack_exports__);
 const ctx = document.getElementById('audienceChart').getContext('2d');
 const data = {
-  labels: ['Subscribers', 'Website users/month', 'Page views/month', 'eNews subscribers', 'Mobile App'],
+  labels: ['Subscribers', 'Website users/month', 'Social Media', 'eNews subscribers', 'Mobile App'],
   datasets: [{
     label: 'Audience',
-    data: [29458, 56108, 98235, 21285, 19568],
+    data: [29588, 56108, 307104, 21285, 19568],
     backgroundColor: ['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#9333ea'],
     borderWidth: 1,
     hoverOffset: 10
