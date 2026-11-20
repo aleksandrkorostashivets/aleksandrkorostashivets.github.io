@@ -1687,6 +1687,16 @@ color: var(--color-accent-text);
 .masthead__col-text a:hover {
 text-decoration: underline;
 }
+@media (min-width: 1200px) {
+#mr-202609 .contents,
+#mr-202609 .playlist {
+padding-right: calc(var(--banner-safe) + 20px);
+}
+#mr-202609 .compact-contents {
+max-width: calc(1120px + var(--banner-safe));
+padding-right: calc(var(--banner-safe) + 20px);
+}
+}
 @media (max-width: 1100px) {
 #mr-202609 .compact-contents__row {
 grid-template-columns: repeat(3, minmax(0, 1fr));
