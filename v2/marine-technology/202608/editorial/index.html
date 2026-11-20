@@ -1026,13 +1026,20 @@ position: absolute;
 left: 0;
 top: 300px;
 z-index: 2;
+display: block;
+width: 300px;
 margin: 0;
 padding: 0;
 border: 0;
 transform: translateY(-100%);
 }
 #editorial .editorial__image + .pic-caption small {
-display: block;
+max-width: none;
+margin: 0;
+text-align: left;
+}
+#editorial .editorial__image + .pic-caption small {
+display: inline-block;
 padding: 4px 10px;
 font-size: 10px;
 color: var(--color-white);
@@ -1171,6 +1178,7 @@ height: 360px;
 #editorial .editorial__image + .pic-caption {
 order: 1;
 position: static;
+width: 100%;
 transform: none;
 max-width: 420px;
 }
