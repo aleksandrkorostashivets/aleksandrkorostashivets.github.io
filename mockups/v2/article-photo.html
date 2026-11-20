@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-font="a">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Article 1 — photo — v2 prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500;1,8..60,600&family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mock.css?v=1">
+<script>
+/* Mockup only: remember the chosen headline font */
+(function(){var f='a';try{f=localStorage.getItem('v2font')||'a';}catch(e){}
+document.documentElement.setAttribute('data-font',f);
+window.setFont=function(v){document.documentElement.setAttribute('data-font',v);try{localStorage.setItem('v2font',v);}catch(e){}
+document.querySelectorAll('.sw button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.f===v);});};
+document.addEventListener('DOMContentLoaded',function(){setFont(f);});})();
+</script>
+</head>
+<body><div class="mbar"><b>Прототип v2</b><nav><a href="index.html">Огляд</a><a href="heroes.html">Hero-варіанти</a><a href="article-photo.html" aria-current=page>Стаття 1: фото</a><a href="article-video.html">Стаття 2: відео</a><a href="contents.html">TOC</a><a href="components.html">Компоненти</a><a href="editorial.html">Editorial</a><a href="authors.html">Authors</a><a href="mobile.html">Мобільна</a></nav>
+<div class="sw"><button data-f="a" onclick="setFont('a')">A Serif</button><button data-f="b" onclick="setFont('b')">B Archivo</button></div></div><section class="hero hero--photo" style="background-image:url('https://images.marinelink.com/images/storage/w1920/ukhos-100underkeelclearance.jpg')"><div class="shift" style="width:100%">
+<div class="in"><span class="chip">Tech File</span>
+<h1><span class="kicker">Hydrography</span>Exploring S-102 and the Future of Maritime Navigation</h1>
+<p class="deck">High-resolution bathymetry is coming to next-generation ECDIS. UKHO trials with pilots and bridge teams show what it changes on the bridge.</p>
+<div class="byline"><img src="https://images.marinelink.com/images/storage/w600h800c/tommellorheadshot.jpg" alt=""><div><b>By Tom Mellor</b><small>Head of Technical Partnerships, The UK Hydrographic Office</small></div></div>
+</div></div><div class="credit">Credit: The UK Hydrographic Office</div></section><div class="shift"><section class="article"><div class="read">
+<div class="player"><i></i>Listen to this article<div class="bar"></div><em>1:26 / 8:02</em></div>
+<p class="lead">From route planning and optimization to safe maneuvering in ports and coastal waters, bathymetric data plays a fundamental role in maritime navigation.</p>
+<p>Today, mariners set a safety contour on their ECDIS based on their vessel’s draught, which delineates the safe navigable space. However, current ECDIS are limited to the predefined contour limits of S-57 ENCs, which are typically only available at broad intervals.</p>
+<h2>Why S-102 matters for navigation</h2>
+<p>For bridge teams, more precise safety contours and an improved awareness of the true navigable space around their vessels can help to increase safety when navigating in shallow, confined or highly congested waterways.</p>
+<figure class="fig"><img src="https://images.marinelink.com/images/storage/w1400/ukhobathymetrys-100.jpg" alt=""><figcaption class="cap"><span>S-100 bathymetry layer overlaid on an S-101 ENC</span><small>Credit: UKHO</small></figcaption></figure>
+<p>Integration of S-102 with other interoperable S-100 data layers can provide further advantages. Combining S-102 with S-104, the data layer for water level information, can support dynamic adjustment of under keel clearance calculations in near real time.</p>
+<div class="pull"><p>“After introducing S-100 data layers, crews validated all 20 waypoints as safe — up from just 5 with S-57.”</p><cite>UKHO bridge simulator trials</cite></div>
+<p>Across both voyage planning and navigation, the interoperability of S-100 layers was cited as a key advantage. By integrating multiple data sources, crews could avoid cross-referencing materials such as tide tables and current references, improving efficiency.</p>
+<div class="facts"><span class="eyebrow">Fact box</span><h4>What S-102 adds on the bridge</h4><ul>
+<li>Vessel-specific safety contours instead of fixed S-57 intervals.</li>
+<li>Dynamic under-keel clearance when combined with S-104 water levels.</li>
+<li>Fewer nuisance alarms where clearance is known to be sufficient.</li></ul></div>
+<h2>Evaluating S-102 in practice</h2>
+<p>Today, mariners set a safety contour on their ECDIS based on their vessel’s draught, which delineates the safe navigable space. However, current ECDIS are limited to the predefined contour limits of S-57 ENCs, which are typically only available at broad intervals.</p>
+</div>
+<div class="pair"><figure><img src="https://images.marinelink.com/images/storage/w1400/ukhogreekseatrialsfamiliarisation.jpg" alt=""><figcaption class="cap"><span>UKHO trials with Greek bridge teams</span><small>Credit: UKHO</small></figcaption></figure><figure><img src="https://images.marinelink.com/images/storage/w1400/ukhocsmarts-100trials.jpg" alt=""><figcaption class="cap"><span>S-100 trials in a full mission simulator</span><small>Credit: UKHO</small></figcaption></figure></div>
+<div class="read">
+<figure class="fig float-r"><img src="https://images.marinelink.com/images/storage/w1400/saampetrel-ed62.jpg" alt=""><figcaption class="cap"><span>Survey vessel Petrel</span><small>Credit: SAAM</small></figcaption></figure>
+<p>For bridge teams, more precise safety contours and an improved awareness of the true navigable space around their vessels can help to increase safety when navigating in shallow, confined or highly congested waterways.</p>
+<p>Integration of S-102 with other interoperable S-100 data layers can provide further advantages. Combining S-102 with S-104, the data layer for water level information, can support dynamic adjustment of under keel clearance calculations in near real time.</p>
+<h3>Key considerations for implementation</h3>
+<ul class="list"><li>User interface optimizations for next-generation ECDIS.</li><li>Toggle data layers on and off to tailor displays.</li><li>Scenario-based training and clear operational guidance.</li></ul>
+<p>Across both voyage planning and navigation, the interoperability of S-100 layers was cited as a key advantage. By integrating multiple data sources, crews could avoid cross-referencing materials such as tide tables and current references, improving efficiency.</p>
+<div class="tbl"><table><caption>S-57 vs S-100 in trials</caption><thead><tr><th>Metric</th><th>S-57</th><th>S-100</th></tr></thead>
+<tbody><tr><td>Validated waypoints</td><td>5 / 20</td><td>20 / 20</td></tr><tr><td>Safety contour interval</td><td>Fixed</td><td>Vessel-specific</td></tr><tr><td>Water level source</td><td>Tide tables</td><td>S-104 live</td></tr><tr><td>Alarm rate (relative)</td><td>100%</td><td>62%</td></tr></tbody></table></div>
+</div>
+<div class="slider"><div class="main"><img src="https://images.marinelink.com/images/storage/w1920/ukhos-100underkeelclearance.jpg" alt=""><span class="nav prev"></span><span class="nav next"></span><span class="count">1 / 5</span></div>
+<figcaption class="cap"><span>Slider: the caption always sits under the photo</span><small>Credit: UKHO</small></figcaption><div class="thumbs"><img src="https://images.marinelink.com/images/storage/w1920/ukhos-100underkeelclearance.jpg" alt=""><img src="https://images.marinelink.com/images/storage/w1400/ukhobathymetrys-100.jpg" alt=""><img src="https://images.marinelink.com/images/storage/w1400/ukhogreekseatrialsfamiliarisation.jpg" alt=""><img src="https://images.marinelink.com/images/storage/w1400/ukhocsmarts-100trials.jpg" alt=""><img src="https://images.marinelink.com/images/storage/w1900/1078748.jpg" alt=""></div></div>
+<div class="read">
+<p>Today, mariners set a safety contour on their ECDIS based on their vessel’s draught, which delineates the safe navigable space. However, current ECDIS are limited to the predefined contour limits of S-57 ENCs, which are typically only available at broad intervals.</p>
+<div class="about"><img src="https://images.marinelink.com/images/storage/w600h800c/tommellorheadshot.jpg" alt=""><div><span class="eyebrow">About the author</span><h3>Tom Mellor</h3><div class="role">Head of Technical Partnerships, The UK Hydrographic Office</div><p>Tom leads the UKHO’s collaboration with technical partners including Original Equipment Manufacturers (OEMs) to enable the development of e-navigation products and S-100 solutions for ECDIS. He works at the forefront of next-generation navigation technologies.</p></div></div>
+</div></section></div><section class="cc"><div class="shift"><div class="wide"><div class="head"><h2>In this issue</h2><a href="contents.html">Full contents →</a></div>
+<div class="grid"><a class="card" href="#"><img src="https://images.marinelink.com/images/storage/w1920/ukhos-100underkeelclearance.jpg" alt=""><small>Tech File</small><b>Exploring S-102 and the Future of Maritime Navigation</b></a><a class="card" href="#"><img src="https://images.marinelink.com/images/storage/w1400/rovwithlatchsystem.jpg" alt=""><small>Subsea</small><b>From Custom Connectors to Work-Class Solutions: a Very Long Title That Must Be Cut After Two Lines</b></a><a class="card" href="#"><span class="tile">Opinion</span><small>Opinion</small><b>Editorial</b></a><a class="card" href="#"><img src="https://images.marinelink.com/images/storage/w1400/robotics-172934.jpg" alt=""><small>Robotics</small><b>Multiple Sync’d Self-Recording, Battery-Powered Cameras</b></a><a class="card" href="#"><img src="https://images.marinelink.com/images/storage/w1400/fig4dwe-lajollakelpforest.jpg" alt=""><small>Ocean Science</small><b>Modelling Climate Solutions</b></a><a class="card" href="#"><img src="https://images.marinelink.com/images/storage/w1900/credit-anduril-174156.jpg" alt=""><small>Autonomy</small><b>Redefining Affordable Autonomous Underwater Operations</b></a><a class="card" href="#"><img src="https://images.marinelink.com/images/storage/w1400/ukhocsmarts-100trials.jpg" alt=""><small>Navigation</small><b>Latency Games</b></a><a class="card" href="#"><span class="tile">People</span><small>People</small><b>People & Company Updates</b></a></div></div></div></section><div class="toolbar"><div class="w"><img src="https://images.marinelink.com/images/storage/w300/mtrlogo.jpg" alt="">
+<div class="m">AUGUST 2026</div><div>This issue sponsored by</div><div class="sp">SPONSOR<br>300×250</div></div></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-font="a">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Authors — v2 prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500;1,8..60,600&family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mock.css?v=1">
+<script>
+/* Mockup only: remember the chosen headline font */
+(function(){var f='a';try{f=localStorage.getItem('v2font')||'a';}catch(e){}
+document.documentElement.setAttribute('data-font',f);
+window.setFont=function(v){document.documentElement.setAttribute('data-font',v);try{localStorage.setItem('v2font',v);}catch(e){}
+document.querySelectorAll('.sw button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.f===v);});};
+document.addEventListener('DOMContentLoaded',function(){setFont(f);});})();
+</script>
+</head>
+<body><div class="mbar"><b>Прототип v2</b><nav><a href="index.html">Огляд</a><a href="heroes.html">Hero-варіанти</a><a href="article-photo.html">Стаття 1: фото</a><a href="article-video.html">Стаття 2: відео</a><a href="contents.html">TOC</a><a href="components.html">Компоненти</a><a href="editorial.html">Editorial</a><a href="authors.html" aria-current=page>Authors</a><a href="mobile.html">Мобільна</a></nav>
+<div class="sw"><button data-f="a" onclick="setFont('a')">A Serif</button><button data-f="b" onclick="setFont('b')">B Archivo</button></div></div><div class="shift" id="authors"><section class="authors"><div class="wide">
+<span class="eyebrow">Marine Technology Reporter · August 2026</span><h1>Authors &amp; Contributors</h1>
+<p class="intro">The editorial board and the experts who wrote for this issue.</p>
+<div class="group"><h2>Editorial Board</h2><div class="grid2">
+<div class="a-card"><img src="https://images.marinelink.com/images/storage/w600h750c/atgportraitsm.jpeg" alt=""><h3>Gallaudet</h3><p>The Honorable Tim Gallaudet, PhD, Rear Admiral, U.S. Navy (ret) is the CEO of Ocean STL Consulting and host of The American Blue Economy Podcast. He serves on several boards, is a fellow at The Explorer’s Club, and is a strategic advisor for a few dozen startups, research institutions, and nonprofits in the ocean, weather, climate, and space sectors.</p></div>
+<div class="a-card"><img src="https://images.marinelink.com/images/storage/w600h750c/kevinhardyatperiscopeoct2020.jpg" alt=""><h3>Hardy</h3><p>Kevin Hardy is President of Global Ocean Design, creating components and subsystems for unmanned vehicles, following a career at Scripps Institution of Oceanography/UCSD. He holds important patents in the field of ocean landers.</p><a href="#"><span><small>In this issue</small><b>Multiple Sync’d Self-Recording, Battery-Powered Cameras</b></span><i></i></a></div>
+</div></div>
+<div class="group"><h2>Authors &amp; Contributors</h2><div class="grid2">
+<div class="a-card"><img src="https://images.marinelink.com/images/storage/w600h800c/tommellorheadshot.jpg" alt=""><h3>Mellor</h3><p>As Head of Technical Partnerships, Tom leads the UKHO’s collaboration with technical partners including Original Equipment Manufacturers (OEMs) to enable the development of e-navigation products and S-100 solutions for Electronic Chart and Information Display Systems (ECDIS).</p><a href="#"><span><small>In this issue</small><b>Exploring S-102 and the Future of Maritime Navigation</b></span><i></i></a></div>
+<div class="a-card"><img src="https://images.marinelink.com/images/storage/w600h800c/nokiani-lucapossidente-headshot.jpg" alt=""><h3>Possidente</h3><p>As part of Nokia’s Optical Product Marketing team, Luca works with advanced optical products and cutting-edge technologies designed for the AI &amp; cloud service providers and telecom operators.</p><a href="#"><span><small>In this issue</small><b>At the Intersection of Pluggables and Subsea Networks</b></span><i></i></a></div>
+</div></div></div></section></div><div class="toolbar"><div class="w"><img src="https://images.marinelink.com/images/storage/w300/mtrlogo.jpg" alt="">
+<div class="m">AUGUST 2026</div><div>This issue sponsored by</div><div class="sp">SPONSOR<br>300×250</div></div></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" data-font="a">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Overview — v2 prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500;1,8..60,600&family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mock.css?v=1">
+<script>
+/* Mockup only: remember the chosen headline font */
+(function(){var f='a';try{f=localStorage.getItem('v2font')||'a';}catch(e){}
+document.documentElement.setAttribute('data-font',f);
+window.setFont=function(v){document.documentElement.setAttribute('data-font',v);try{localStorage.setItem('v2font',v);}catch(e){}
+document.querySelectorAll('.sw button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.f===v);});};
+document.addEventListener('DOMContentLoaded',function(){setFont(f);});})();
+</script>
+</head>
+<body><div class="mbar"><b>Прототип v2</b><nav><a href="index.html" aria-current=page>Огляд</a><a href="heroes.html">Hero-варіанти</a><a href="article-photo.html">Стаття 1: фото</a><a href="article-video.html">Стаття 2: відео</a><a href="contents.html">TOC</a><a href="components.html">Компоненти</a><a href="editorial.html">Editorial</a><a href="authors.html">Authors</a><a href="mobile.html">Мобільна</a></nav>
+<div class="sw"><button data-f="a" onclick="setFont('a')">A Serif</button><button data-f="b" onclick="setFont('b')">B Archivo</button></div></div><div class="shift"><section class="hub"><div class="wide">
+<span class="eyebrow">E-mag redesign · v2 prototype</span>
+<h1 style="margin-top:14px">Нова дизайн-система е-журналів</h1>
+<p class="sub">Текст і інтерфейс — Inter. Заголовки — окремий шрифт. Перемикач A / B угорі міняє шрифт заголовків на всіх сторінках прототипу.</p>
+<div class="fonts"><div class="fa"><span class="eyebrow">A — Source Serif 4 + Inter</span><h3>Exploring S-102 and the Future of Maritime Navigation</h3><p>Діловий журнальний стиль (FT, Economist, McKinsey). Солідно і добре контрастує з Inter у тексті.</p></div>
+<div class="fb"><span class="eyebrow">B — Archivo + Inter</span><h3>Exploring S-102 and the Future of Maritime Navigation</h3><p>Сучасний корпоративний гротеск з індустріальним характером. Більш «технологічно», менш «журнально».</p></div></div>
+<div class="tiles"><a href="heroes.html"><b>Hero-варіанти</b><span>6 типів: фото, split, без фото, світлий, партнерський, відео.</span></a><a href="article-photo.html"><b>Стаття 1 — фото</b><span>Фото-hero, підписи, цитата, fact box, пара фото, слайдер, таблиця, про автора, compact contents.</span></a><a href="article-video.html"><b>Стаття 2 — відео</b><span>Split-hero, відео-картка, цитата з фото, цифри, бокс з шапкою, списки, реклама.</span></a><a href="contents.html"><b>TOC випуску</b><span>Масхед по центру, одна велика головна стаття, решта — список.</span></a><a href="components.html"><b>Компоненти окремо</b><span>Compact contents, слайдер, плеєр, бокси, підписи, реклама.</span></a><a href="editorial.html"><b>Editorial</b><span>Варіант C: картка редактора зліва, текст справа.</span></a><a href="authors.html"><b>Authors & Contributors</b><span>Повна біографія, посилання на статтю, групи з відступами.</span></a><a href="mobile.html"><b>Мобільна версія</b><span>Усі сторінки у вікнах 390px.</span></a></div></div></section></div><div class="toolbar"><div class="w"><img src="https://images.marinelink.com/images/storage/w300/mtrlogo.jpg" alt="">
+<div class="m">AUGUST 2026</div><div>This issue sponsored by</div><div class="sp">SPONSOR<br>300×250</div></div></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-font="a">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Hero variants — v2 prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500;1,8..60,600&family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mock.css?v=1">
+<script>
+/* Mockup only: remember the chosen headline font */
+(function(){var f='a';try{f=localStorage.getItem('v2font')||'a';}catch(e){}
+document.documentElement.setAttribute('data-font',f);
+window.setFont=function(v){document.documentElement.setAttribute('data-font',v);try{localStorage.setItem('v2font',v);}catch(e){}
+document.querySelectorAll('.sw button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.f===v);});};
+document.addEventListener('DOMContentLoaded',function(){setFont(f);});})();
+</script>
+</head>
+<body><div class="mbar"><b>Прототип v2</b><nav><a href="index.html">Огляд</a><a href="heroes.html" aria-current=page>Hero-варіанти</a><a href="article-photo.html">Стаття 1: фото</a><a href="article-video.html">Стаття 2: відео</a><a href="contents.html">TOC</a><a href="components.html">Компоненти</a><a href="editorial.html">Editorial</a><a href="authors.html">Authors</a><a href="mobile.html">Мобільна</a></nav>
+<div class="sw"><button data-f="a" onclick="setFont('a')">A Serif</button><button data-f="b" onclick="setFont('b')">B Archivo</button></div></div><div class="shift"><div class="tag">1 — Фото на весь екран<span>основний тип для фіч; інтро й автор у hero, кредит фото знизу справа</span></div></div><section class="hero hero--photo" style="background-image:url('https://images.marinelink.com/images/storage/w1920/ukhos-100underkeelclearance.jpg')"><div class="shift" style="width:100%">
+<div class="in"><span class="chip">Tech File</span>
+<h1><span class="kicker">Hydrography</span>Exploring S-102 and the Future of Maritime Navigation</h1>
+<p class="deck">High-resolution bathymetry is coming to next-generation ECDIS. UKHO trials with pilots and bridge teams show what it changes on the bridge.</p>
+<div class="byline"><img src="https://images.marinelink.com/images/storage/w600h800c/tommellorheadshot.jpg" alt=""><div><b>By Tom Mellor</b><small>Head of Technical Partnerships, The UK Hydrographic Office</small></div></div>
+</div></div><div class="credit">Credit: The UK Hydrographic Office</div></section><div class="shift"><div class="tag">2 — Split<span>текст зліва, фото справа; фото не затемнюється</span></div></div><section class="hero hero--split"><div class="txt"><span class="chip">Autonomy</span>
+<h1>Redefining Affordable Autonomous Underwater Operations</h1>
+<p class="deck">Smaller, cheaper AUVs are moving from trials to fleet work. What operators learned from the first season at sea.</p>
+<div class="byline"><img src="data:image/svg+xml;utf8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 120 150%27%3E%3Crect width=%27120%27 height=%27150%27 fill=%27%23cfd8e3%27/%3E%3Ccircle cx=%2760%27 cy=%2758%27 r=%2724%27 fill=%27%23f5f7fa%27/%3E%3Cpath d=%27M18 150c4-34 22-50 42-50s38 16 42 50z%27 fill=%27%23f5f7fa%27/%3E%3C/svg%3E" alt=""><div><b>By Author Name</b><small>Contributing Writer, Marine Technology Reporter</small></div></div>
+</div><div class="pic" style="background-image:url('https://images.marinelink.com/images/storage/w1900/credit-anduril-174156.jpg')"><div class="credit">Credit: Anduril</div></div></section><div class="shift"><div class="tag">3 — Без фото<span>колонки, editorial, короткі розділи</span></div></div><section class="hero hero--type"><div class="shift"><div class="in"><span class="chip">Editorial</span>
+<h1>Why Ocean Data Is the Next Big Infrastructure Project</h1>
+<p class="deck">A no-image hero for opinion, columns and short sections. Colour, type and a strong rule do the work.</p>
+<div class="byline"><img src="data:image/svg+xml;utf8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 120 150%27%3E%3Crect width=%27120%27 height=%27150%27 fill=%27%23cfd8e3%27/%3E%3Ccircle cx=%2760%27 cy=%2758%27 r=%2724%27 fill=%27%23f5f7fa%27/%3E%3Cpath d=%27M18 150c4-34 22-50 42-50s38 16 42 50z%27 fill=%27%23f5f7fa%27/%3E%3C/svg%3E" alt=""><div><b>By Columnist Name</b><small>Editorial Board, Marine Technology Reporter</small></div></div>
+</div></div></section><div class="shift"><div class="tag">4 — Світлий<span>заголовок зверху, широке фото під ним</span></div></div><section class="hero hero--light"><div class="shift"><div class="in"><span class="eyebrow">Ocean Science</span>
+<h1 style="margin-top:14px">Modelling Climate Solutions Beneath the Kelp Canopy</h1>
+<p class="deck">Light hero: title first, wide photo under it. Good for features where the photo is detailed and should not be darkened.</p>
+<div class="byline"><img src="data:image/svg+xml;utf8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 120 150%27%3E%3Crect width=%27120%27 height=%27150%27 fill=%27%23cfd8e3%27/%3E%3Ccircle cx=%2760%27 cy=%2758%27 r=%2724%27 fill=%27%23f5f7fa%27/%3E%3Cpath d=%27M18 150c4-34 22-50 42-50s38 16 42 50z%27 fill=%27%23f5f7fa%27/%3E%3C/svg%3E" alt=""><div><b>By Author Name</b><small>Senior Scientist, Research Institute</small></div></div>
+<figure><img src="https://images.marinelink.com/images/storage/w1400/fig4dwe-lajollakelpforest.jpg" alt=""><figcaption class="cap"><span>Kelp forest survey off La Jolla</span><small>Credit: DWE</small></figcaption></figure>
+</div></div></section><div class="shift"><div class="tag">5 — Партнерський<span>позначка партнера над заголовком</span></div></div><section class="hero hero--partner" style="background-image:url('https://images.marinelink.com/images/storage/w1900/rovehero4.png')"><div class="shift" style="width:100%"><div class="in">
+<div class="partner"><i></i>Partner content</div>
+<h1>From Custom Connectors to Work-Class Solutions</h1>
+<p class="deck" style="color:rgba(255,255,255,.85)">Sponsored story: the partner mark sits above the title, the gradient runs from the left so the product stays visible.</p>
+</div></div></section><div class="shift"><div class="tag">6 — Відео<span>плеєр і є hero</span></div></div><section class="hero hero--video"><div class="shift"><div class="in"><span class="chip">Video</span>
+<h1>Precise Control in Emergency Situations</h1>
+<p class="deck">Video hero: the player is the hero. Title and intro stay above it, so the story reads before you press play.</p>
+<div class="player-v" style="background-image:url('https://images.marinelink.com/images/storage/w1400/precisecontrolinemergencysituations.jpg')"><i></i><small>4:12</small></div>
+</div></div></section><div style="height:120px"></div><div class="toolbar"><div class="w"><img src="https://images.marinelink.com/images/storage/w300/mtrlogo.jpg" alt="">
+<div class="m">AUGUST 2026</div><div>This issue sponsored by</div><div class="sp">SPONSOR<br>300×250</div></div></div>
+</body>
+</html>
