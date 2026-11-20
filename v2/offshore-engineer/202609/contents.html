@@ -912,7 +912,7 @@ overflow: hidden;
 clip: rect(0 0 0 0);
 }
 @media (min-width: 1200px) {
-article > section:not(.hero):not(.cover),
+article > section:not(.hero):not(.cover):not(.contents):not(.playlist),
 .compact-contents {
 margin-right: var(--banner-safe);
 }
@@ -1653,10 +1653,6 @@ color: var(--color-accent-text);
 text-decoration: underline;
 }
 @media (min-width: 1200px) {
-#oe-202609 .contents,
-#oe-202609 .playlist {
-padding-right: calc(var(--banner-safe) + 20px);
-}
 #oe-202609 .compact-contents {
 max-width: calc(1120px + var(--banner-safe));
 padding-right: calc(var(--banner-safe) + 20px);
