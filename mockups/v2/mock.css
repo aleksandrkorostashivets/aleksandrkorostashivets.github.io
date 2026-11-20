@@ -389,3 +389,13 @@ html[data-font="b"] .card b { font-weight: 700; }
   .hub .tiles { grid-template-columns: 1fr; }
   .mbar nav { display: none; }
 }
+
+/* Prototype: hide the mockup bar inside phone previews */
+.phone .mbar { display: none; }
+/* Proposal: compact floating banner on phones so it does not cover the text */
+@media (max-width: 600px) {
+  .toolbar { width: 44vw; }
+  .toolbar .w { padding: 3px; border-width: 2px; font-size: 10px; }
+  .toolbar .m { margin: 3px 0; }
+  .toolbar .sp { font-size: 13px; }
+}
