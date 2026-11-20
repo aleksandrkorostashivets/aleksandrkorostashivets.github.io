@@ -376,7 +376,12 @@ min-width: 0;
 .content__slider-item {
 position: relative;
 }
+.container--lg:has(> .carousel) {
+display: flex;
+flex-direction: column;
+}
 .carousel {
+order: 1;
 margin: 40px auto 0;
 }
 .slide {
@@ -431,6 +436,7 @@ box-shadow: 0 6px 20px rgba(0, 0, 0, .25);
 background-color: var(--color-accent);
 }
 .carousel-preview {
+order: 2;
 display: flex;
 gap: 12px;
 margin: 20px auto 48px;
