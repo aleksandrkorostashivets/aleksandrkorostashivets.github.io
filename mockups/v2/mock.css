@@ -292,7 +292,7 @@ html[data-font="b"] .card b { font-weight: 700; }
 .ed aside .b { padding: 22px 24px 24px; }
 .ed aside b { display: block; font: var(--display-w) 22px/1.2 var(--display); letter-spacing: var(--display-ls); color: var(--ink); }
 .ed aside span { display: block; margin-top: 4px; font-size: 14px; color: var(--muted); }
-.ed aside .sig { width: 140px; margin: 16px 0 12px; mix-blend-mode: multiply; }
+.ed aside .sig { width: 140px; height: auto; aspect-ratio: auto; object-fit: contain; margin: 16px 0 12px; mix-blend-mode: multiply; }
 .ed aside a { font: 600 14px/1.4 var(--sans); color: var(--accent); text-decoration: none; }
 .ed h1 { margin: 14px 0 28px; font: var(--display-w) clamp(36px, 4vw, 52px)/1.1 var(--display); letter-spacing: var(--display-ls); color: var(--ink); }
 .ed .txt > * + * { margin-top: 22px; }
