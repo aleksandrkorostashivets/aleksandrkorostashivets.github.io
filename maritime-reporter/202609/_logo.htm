@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        .toolbar {
+            --max-height: calc(100vh / 2.8);
+            --ratio: calc((300 + 5 + 6) / 320);
+            --height: min(var(--max-height), 450px);
+            --width: calc(var(--height) * var(--ratio));
+            display: var(--display-me);
+            position: fixed;
+            bottom: 0;
+            right: 5px;
+            width: var(--width);
+            /* height: var(--height); */
+            max-width: calc(90% - 5px);
+            padding: 3px;
+            overflow: hidden;
+            font-weight: bold;
+            text-decoration: none;
+            z-index: 10000;
+            transition: .2s ease-in-out;
+        }
+
+        .message {
+            margin: 10px 0 10px;
+            text-decoration: underline;
+            font-family: var(--title-font-bebas);
+        }
+
+        @media print {
+            .toolbar {
+                --display-me: none;
+
+            }
+        }
+
+        .toolbar .sponsored {
+            margin-bottom: 10px;
+            font-family: var(--title-font-russo);
+        }
+
+        .toolbar__wrapper {
+            padding: 5px;
+            border: 3px solid var(--color-black);
+            border-radius: 4px;
+            background-color: var(--color-white);
+            color: var(--color-black);
+            text-align: center;
+        }
+
+        body.amp-shadow .hide-in-the-shadows,
+        body.amp-shadow .toolbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toolbar" amp-fx="float-in-bottom">
+        <div class="toolbar__wrapper">
+            <a data-vars-track-id="MR-202609" href="/test/maritime-reporter/202609/contents.html">
+                <amp-img width="300" height="140" layout="responsive"
+                    src="https://images.marinelink.com/images/storage/w300/mrlogo.jpg"
+                    alt="Maritime Reporter"></amp-img>
+                <div class="message">September 2026</div>
+            </a>
+            <!-- <div class="sponsored">This issue sponsored by</div>
+            <a href="https://www.usscgroup.com/" target="_blank">
+                <img src="https://images.marinelink.com/images/storage/w700/unitedfireboyscrollingbannerad300x250mrjuly2025.jpg" alt="United Safety / Fireboy Xintex " class="ad-image" />
+            </a> -->
+        </div>
+    </div>
+
+    <amp-next-page class="hide-in-the-shadows">
+        <script type="application/json">
+            [{
+                "image": "https://images.marinelink.com/images/storage/w300/mrlogo.jpg",
+                "title": "Contents",
+                "url": "/test/maritime-reporter/202609/contents.html"
+            }]
+        </script>
+    </amp-next-page>
+</body>
+
+</html>
