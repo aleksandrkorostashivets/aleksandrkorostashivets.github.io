@@ -1,0 +1,1170 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="referrer" content="origin" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
+<script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+<script async custom-element="amp-next-page" src="https://cdn.ampproject.org/v0/amp-next-page-1.0.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@700&family=Kanit:wght@300;500&family=Noto+Sans:wght@300;400;500;700&family=Orbitron:wght@800&family=Prosto+One&family=Russo+One&family=Unbounded:wght@700&display=swap"
+    rel="stylesheet">
+  <title>Follow the Money </title>
+<link rel="canonical" href="/offshore-engineer/202609/follow-the-money/">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<style amp-custom>
+:root {
+--color-white: #fff;
+--color-black: #000;
+--color-title: #003c7b;
+--color-copyright: rgba(51, 51, 51, 0.61);
+--color-accent: #f8c826;
+--color-accent-hover: #d9ab0c;
+--color-accent-light: #f8c826;
+--color-hover: #2b2d3e;
+--color-orange: #fdaf40;
+--color-link: #0474b6;
+--color-accent-text: #8a6a00;
+--color-on-accent: #0e1620;
+--color-ink: #0e1620;
+--color-ink-2: #3a4652;
+--color-text: #0e1620;
+--color-muted: #5a6670;
+--color-rule: #d6dde3;
+--color-paper: #f4f6f8;
+--color-quote: #eaf2fa;
+--main-font: "Noto Sans", sans-serif;
+--title-font-bebas: "Bebas Neue", sans-serif;
+--title-font-russo: "Russo One", sans-serif;
+--title-font-orbitron: "Orbitron", sans-serif;
+--title-font-cinzel: "Cinzel", serif;
+--title-font-unbounded: "Unbounded", sans-serif;
+--title-font-fifth: "Russo One", sans-serif;
+--copyright-font: "Kanit", sans-serif;
+--category-font: "Prosto One", cursive;
+--light-font: 300;
+--regular-font: 400;
+--medium-font: 500;
+--bold-font: 700;
+--extra-bold-font: 800;
+--line-height: 165%;
+--text-size: clamp(16px, 15px + .3vw, 18px);
+--mb-0-25: .25rem;
+--mb-0-5: .5rem;
+--mb-0-75: .75rem;
+--mb-1: 1rem;
+--mb-1-5: 1.5rem;
+--mb-2: 2rem;
+--mb-2-5: 2.5rem;
+--mb-3: 3rem;
+--small-offset: 1rem;
+--large-offset: 3rem;
+}
+html {
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+body {
+overflow-x: hidden;
+outline: none;
+min-width: 320px;
+font-family: var(--main-font);
+font-weight: var(--regular-font);
+font-size: 16px;
+color: var(--color-text);
+background-color: var(--color-white);
+cursor: default;
+}
+a {
+text-decoration: none;
+color: inherit;
+}
+ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+margin: 0;
+}
+h2 {
+position: relative;
+margin: 0 0 var(--mb-1);
+font-family: var(--title-font-russo);
+font-weight: var(--regular-font);
+font-size: clamp(26px, 2.6vw, 34px);
+line-height: 1.15;
+color: var(--color-ink);
+}
+h3 {
+position: relative;
+margin: 0 0 var(--mb-1);
+font-family: var(--title-font-russo);
+font-weight: var(--regular-font);
+font-size: 22px;
+line-height: 1.2;
+color: var(--color-ink);
+}
+p {
+margin: 0 0 20px;
+font-family: var(--main-font);
+font-size: var(--text-size);
+font-weight: var(--light-font);
+line-height: var(--line-height);
+color: var(--color-text);
+text-align: left;
+}
+strong {
+font-weight: var(--bold-font);
+color: var(--color-ink);
+}
+img {
+display: block;
+width: 100%;
+}
+.category {
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+margin: 0;
+}
+.category__item {
+margin: 0;
+padding: 6px 10px;
+font-family: var(--copyright-font);
+font-weight: var(--medium-font);
+font-size: 12px;
+line-height: 1.2;
+letter-spacing: .06em;
+text-transform: uppercase;
+}
+.category__item--black {
+color: var(--color-on-accent);
+background-color: var(--color-accent);
+}
+.category__item--white {
+color: var(--color-white);
+background-color: rgba(255, 255, 255, .16);
+}
+.container {
+margin: 0 auto;
+padding: 0 20px;
+max-width: 800px;
+}
+.container--lg {
+margin: 0 auto var(--mb-2);
+padding: 0 20px;
+max-width: 1100px;
+}
+.container::after,
+.content::after {
+content: "";
+display: table;
+clear: both;
+}
+.content {
+position: relative;
+margin: 0 auto;
+padding: 48px 0 24px;
+}
+.content p,
+.content li {
+font-weight: var(--light-font);
+font-size: 19px;
+line-height: 1.65;
+color: var(--color-ink);
+}
+.content p {
+margin: 0 0 22px;
+}
+.content__audio + p {
+font-size: 23px;
+line-height: 1.5;
+}
+.content h2 {
+margin: 40px 0 16px;
+font-size: clamp(26px, 2.6vw, 34px);
+line-height: 1.15;
+}
+.content h3 {
+margin: 28px 0 12px;
+font-size: 22px;
+line-height: 1.2;
+}
+.content ul,
+.content ol {
+margin: 0 0 22px;
+padding-left: 22px;
+list-style: disc;
+}
+.content li {
+margin-bottom: 6px;
+}
+.content a {
+color: var(--color-accent-text);
+text-decoration: underline;
+text-underline-offset: 2px;
+}
+.content strong {
+font-weight: var(--bold-font);
+color: var(--color-ink);
+}
+.content em {
+font-style: italic;
+}
+.image {
+position: relative;
+}
+.content__image--full {
+position: relative;
+margin: 32px 0 8px;
+}
+.content__image--left,
+.content__image--right {
+width: 42%;
+margin-top: 6px;
+margin-bottom: 16px;
+}
+.content__image--left {
+float: left;
+margin-right: 24px;
+}
+.content__image--right {
+float: right;
+margin-left: 24px;
+}
+.pic-caption {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 4px 16px;
+margin: 8px 0 28px;
+}
+.pic-caption span {
+font-weight: var(--regular-font);
+font-size: 14px;
+line-height: 1.45;
+color: var(--color-ink-2);
+}
+.pic-caption small {
+font-family: var(--copyright-font);
+font-weight: var(--light-font);
+font-size: 11px;
+line-height: 1.4;
+text-transform: uppercase;
+color: var(--color-muted);
+}
+.pic-caption a {
+color: inherit;
+text-decoration: underline;
+}
+.image__row {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 16px;
+}
+.image__row .content__image--full {
+margin: 0;
+}
+.content__video {
+width: 100%;
+margin: 32px 0;
+}
+.content__audio {
+display: flex;
+align-items: center;
+gap: 16px;
+margin-bottom: 36px;
+padding: 8px 8px 8px 22px;
+border-radius: 999px;
+background-color: #f1f3f4;
+}
+.content__audio span {
+position: relative;
+flex: none;
+padding-left: 18px;
+font-family: var(--copyright-font);
+font-weight: var(--medium-font);
+font-size: 13px;
+line-height: 1.2;
+letter-spacing: .08em;
+text-transform: uppercase;
+color: var(--color-ink);
+}
+.content__audio span::before {
+content: "";
+position: absolute;
+left: 0;
+top: 50%;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background-color: var(--color-accent);
+transform: translateY(-50%);
+}
+.content__audio amp-audio {
+flex: 1 1 auto;
+min-width: 0;
+}
+.content__slider-item {
+position: relative;
+}
+.carousel {
+margin: 40px auto 0;
+background-color: var(--color-ink);
+}
+.slide {
+position: relative;
+height: 100%;
+}
+.slide img {
+width: auto;
+max-width: 100%;
+height: 100%;
+margin: 0 auto;
+object-fit: contain;
+}
+.caption {
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+padding: 12px 16px;
+color: var(--color-white);
+background-color: rgba(8, 14, 22, .78);
+}
+.caption p {
+margin: 0 0 4px;
+font-size: 15px;
+line-height: 1.4;
+color: var(--color-white);
+}
+.caption small {
+font-family: var(--copyright-font);
+font-weight: var(--light-font);
+font-size: 11px;
+text-transform: uppercase;
+color: #c9d4dd;
+}
+.amp-carousel-button-prev,
+.amp-carousel-button-next {
+width: 46px;
+height: 46px;
+border: 0;
+border-radius: 50%;
+background-color: rgba(8, 14, 22, .7);
+}
+.amp-carousel-button-prev:hover,
+.amp-carousel-button-next:hover {
+background-color: var(--color-accent);
+}
+.carousel-preview {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+margin: 12px auto 40px;
+}
+.carousel-preview__item {
+width: 96px;
+height: 64px;
+object-fit: cover;
+opacity: .55;
+cursor: pointer;
+}
+.carousel-preview [option][selected] {
+opacity: 1;
+outline: 3px solid var(--color-accent);
+outline-offset: 2px;
+}
+amp-image-lightbox {
+background: rgba(0, 0, 0, .85);
+}
+.btn__close {
+position: absolute;
+right: 16px;
+top: 16px;
+width: 44px;
+height: 44px;
+border: 0;
+font-size: 18px;
+color: var(--color-black);
+background-color: var(--color-white);
+}
+.ad,
+.ad-half-page,
+.ad-half-page-horizontal,
+.ad-quoter-page,
+.ad-banner {
+position: relative;
+}
+.ad,
+.ad-full-page {
+width: 100%;
+height: 100vh;
+background-color: #e9eef2;
+}
+.ad--full a {
+position: absolute;
+left: 50%;
+top: 50%;
+display: block;
+width: 50%;
+height: 90%;
+transform: translate(-50%, -50%);
+}
+.ad-image {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+.ad-half-page {
+float: right;
+width: 45%;
+margin: 6px 0 16px 24px;
+}
+.ad-quoter-page {
+float: left;
+width: 40%;
+margin: 6px 24px 16px 0;
+}
+.ad-half-page img,
+.ad-quoter-page img {
+box-shadow: 0 6px 18px rgba(14, 22, 32, .18);
+}
+.ad-half-page-horizontal {
+display: block;
+clear: both;
+width: 100%;
+margin: 32px 0;
+padding: 12px 0;
+border-top: 1px solid var(--color-rule);
+border-bottom: 1px solid var(--color-rule);
+}
+.ad-half-page-image {
+width: 100%;
+height: 100%;
+}
+.quote {
+display: grid;
+grid-template-columns: 220px minmax(0, 1fr);
+gap: 28px;
+align-items: center;
+clear: both;
+margin: 40px 0;
+padding: 26px;
+background-color: var(--color-quote);
+}
+.quote__image img {
+width: 100%;
+height: 250px;
+object-fit: cover;
+}
+.quote__image small {
+display: block;
+margin-top: 6px;
+font-family: var(--copyright-font);
+font-weight: var(--light-font);
+font-size: 10px;
+text-transform: uppercase;
+color: var(--color-muted);
+}
+.quote__info:first-child {
+grid-column: 1 / -1;
+}
+.content .quote__info p {
+margin: 0 0 12px;
+font-family: var(--title-font-russo);
+font-weight: var(--regular-font);
+font-size: clamp(20px, 2vw, 26px);
+line-height: 1.28;
+}
+.quote__info strong {
+font-family: var(--copyright-font);
+font-weight: var(--medium-font);
+font-size: 14px;
+line-height: 1.4;
+color: var(--color-ink-2);
+}
+.container > div:not([class]),
+.item > div:not([class]) {
+clear: both;
+margin: 32px 0;
+padding: 24px 26px 4px;
+border-left: 4px solid var(--color-accent);
+background-color: var(--color-paper);
+}
+.container > div:not([class]) > h3,
+.item > div:not([class]) > h3 {
+margin: 0 0 12px;
+font-size: 20px;
+color: var(--color-ink);
+}
+.container > div:not([class]) ul {
+padding-left: 0;
+list-style: none;
+}
+.container > div:not([class]) li p {
+margin-bottom: 6px;
+font-size: 16px;
+}
+.content table {
+width: 100%;
+border-collapse: collapse;
+}
+.content div:not([class]) > div:not([class]) {
+width: 100%;
+margin-bottom: 20px;
+overflow-x: auto;
+}
+.content td,
+.content th {
+padding: 10px 12px;
+border-bottom: 1px solid var(--color-rule);
+font-size: 15px;
+line-height: 1.5;
+text-align: left;
+vertical-align: top;
+}
+.content th {
+font-weight: var(--bold-font);
+color: var(--color-ink);
+background-color: var(--color-paper);
+}
+.content ol {
+list-style: decimal;
+}
+.content td:first-child {
+width: 45%;
+font-family: var(--copyright-font);
+color: var(--color-ink-2);
+}
+.content__container {
+counter-reset: newsitem;
+}
+.item,
+.vessel__item {
+clear: both;
+margin-top: 40px;
+padding-top: 18px;
+border-top: 4px solid var(--color-ink);
+counter-increment: newsitem;
+}
+.item h2,
+.vessel__item h2 {
+margin-top: 6px;
+}
+.item h2::before,
+.vessel__item h2::before {
+content: counter(newsitem, decimal-leading-zero);
+display: block;
+margin-bottom: 8px;
+font-family: var(--copyright-font);
+font-weight: var(--medium-font);
+font-size: 13px;
+line-height: 1;
+letter-spacing: .08em;
+color: var(--color-accent-text);
+}
+.box {
+clear: both;
+max-width: 800px;
+margin: 8px auto 48px;
+padding: 0 20px;
+}
+.box__top h2,
+.content .box__top h2 {
+margin: 0;
+padding-top: 14px;
+border-top: 4px solid var(--color-ink);
+font-family: var(--copyright-font);
+font-weight: var(--medium-font);
+font-size: 12px;
+line-height: 1.3;
+letter-spacing: .1em;
+text-transform: uppercase;
+color: var(--color-muted);
+}
+.box__row {
+display: flex;
+align-items: flex-start;
+gap: 20px;
+padding: 18px 0;
+border-bottom: 1px solid var(--color-rule);
+}
+.box__image {
+position: relative;
+flex: none;
+width: 110px;
+}
+.box__image img {
+width: 110px;
+height: 130px;
+object-fit: cover;
+}
+.box__image small {
+display: block;
+margin-top: 4px;
+font-family: var(--copyright-font);
+font-weight: var(--light-font);
+font-size: 10px;
+color: var(--color-muted);
+}
+.box__info h3,
+.content .box__info h3 {
+margin: 0 0 6px;
+font-size: 21px;
+}
+.box__info p,
+.content .box__info p {
+margin: 0 0 8px;
+font-size: 15px;
+line-height: 1.55;
+color: var(--color-ink-2);
+}
+.stat {
+padding: 18px 0 8px;
+border-top: 1px solid var(--color-ink);
+}
+.stat__number {
+margin-bottom: 10px;
+font-family: var(--title-font-russo);
+font-size: 48px;
+line-height: 1;
+color: var(--color-accent-text);
+}
+.stat__text {
+margin: 0 0 16px;
+font-size: 17px;
+line-height: 1.6;
+color: var(--color-ink-2);
+}
+.hero {
+position: relative;
+overflow: hidden;
+color: var(--color-white);
+}
+.hero h1 {
+margin: 0;
+font-family: var(--title-font-russo);
+font-weight: var(--regular-font);
+font-size: clamp(34px, 4.6vw, 66px);
+line-height: 1.03;
+color: inherit;
+}
+.hero h1 span {
+display: block;
+}
+.hero__info {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+.hero__info p {
+max-width: 860px;
+margin: 0;
+font-weight: var(--light-font);
+font-size: clamp(17px, 1.5vw, 21px);
+line-height: 1.45;
+color: inherit;
+}
+.hero__info p span {
+font-family: var(--copyright-font);
+font-weight: var(--medium-font);
+font-size: 15px;
+line-height: 1.3;
+}
+.hero__copy {
+position: absolute;
+right: 16px;
+top: 14px;
+z-index: 3;
+max-width: 320px;
+text-align: right;
+font-family: var(--copyright-font);
+font-weight: var(--light-font);
+font-size: 11px;
+line-height: 1.2;
+text-transform: uppercase;
+color: #e8eef2;
+}
+.hero__copy p {
+margin: 0 0 4px;
+font-size: 11px;
+line-height: 1.3;
+text-transform: none;
+color: inherit;
+}
+.hero__copy small {
+font-size: 11px;
+}
+@media screen and (max-width: 640px) {
+table[style*="table-layout:fixed"] {
+table-layout: auto !important;
+font-size: 16px !important;
+}
+table[style*="table-layout:fixed"] thead {
+display: none !important;
+}
+table[style*="table-layout:fixed"] tbody,
+table[style*="table-layout:fixed"] tr,
+table[style*="table-layout:fixed"] th,
+table[style*="table-layout:fixed"] td {
+display: block !important;
+width: auto !important;
+}
+table[style*="table-layout:fixed"] tr {
+margin-bottom: 10px;
+border: 1px solid #8aa8e8;
+}
+table[style*="table-layout:fixed"] th[scope="row"] {
+padding: 8px 12px !important;
+background-color: #4472C4 !important;
+color: #fff !important;
+}
+table[style*="table-layout:fixed"] td {
+padding: 10px 12px !important;
+overflow-wrap: anywhere;
+}
+}
+#follow-the-money .hero {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+min-height: 100vh;
+padding: 120px 48px 56px;
+background: url("https://images.marinelink.com/images/storage/w1900/8020495.jpg") no-repeat;
+background-size: cover;
+background-position: bottom;
+background-color: #24323d;
+background-attachment: fixed;
+}
+#follow-the-money .hero::before {
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 1;
+height: 60%;
+background: linear-gradient(to top, rgba(8, 14, 22, .9), rgba(8, 14, 22, 0));
+}
+#follow-the-money .category,
+#follow-the-money .hero__info {
+position: relative;
+z-index: 2;
+width: 100%;
+max-width: 1180px;
+}
+#follow-the-money .category {
+margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+#follow-the-money .hero {
+padding: 120px 20px 32px;
+}
+}
+@supports (-webkit-touch-callout: none) {
+#follow-the-money .hero {
+background-attachment: scroll;
+}
+}
+@supports not (-webkit-touch-callout: none) {
+#follow-the-money .hero {
+background-attachment: fixed;
+}
+}
+@media print {
+body {
+-webkit-print-color-adjust: exact;
+}
+.toolbar {
+display: none;
+}
+.hero {
+min-height: 60vh;
+background-attachment: scroll;
+}
+}
+@media (max-width: 1000px) {
+.ad--full a {
+width: 60%;
+}
+}
+@media (max-width: 768px) {
+.ad--full a {
+left: 5px;
+right: 5px;
+top: 0;
+bottom: 0;
+margin: auto;
+width: 95%;
+height: 90%;
+transform: none;
+}
+.quote {
+grid-template-columns: 1fr;
+}
+.quote__image img {
+height: 220px;
+}
+.image__row {
+grid-template-columns: 1fr;
+}
+}
+@media (max-width: 600px) {
+.content {
+padding: 28px 0 16px;
+}
+.container {
+padding: 0 16px;
+}
+.content p,
+.content li {
+font-size: 17px;
+}
+.content__audio + p {
+font-size: 20px;
+}
+.content__image--left,
+.content__image--right {
+float: none;
+width: 100%;
+margin: 24px 0 8px;
+}
+.ad-half-page {
+width: 60%;
+}
+.content__audio {
+flex-direction: column;
+align-items: stretch;
+gap: 6px;
+padding: 14px 12px 8px;
+border-radius: 18px;
+}
+.content__audio span {
+margin-left: 6px;
+}
+.ad-quoter-page {
+width: 100%;
+margin: 0 0 16px;
+}
+.amp-carousel-button-prev,
+.amp-carousel-button-next {
+display: none;
+}
+.container > div:not([class]),
+.item > div:not([class]) {
+padding: 20px 18px 4px;
+}
+}
+@media (max-width: 450px) {
+.ad-half-page,
+.ad-quoter-page {
+float: none;
+width: 100%;
+margin: 24px 0;
+}
+}
+.toolbar {
+--max-height: calc(100vh / 2.8);
+--ratio: calc((300 + 5 + 6) / 320);
+--height: min(var(--max-height), 450px);
+--width: calc(var(--height) * var(--ratio));
+display: var(--display-me);
+position: fixed;
+bottom: 0;
+right: 5px;
+width: var(--width);
+max-width: calc(90% - 5px);
+padding: 3px;
+overflow: hidden;
+font-weight: bold;
+text-decoration: none;
+z-index: 10000;
+transition: .2s ease-in-out;
+}
+.toolbar img {
+display: block;
+width: 100%;
+height: 100%;
+}
+.message {
+margin: 10px 0 10px;
+text-decoration: underline;
+font-family: var(--title-font-bebas);
+}
+@media print {
+.toolbar {
+--display-me: none;
+}
+}
+.toolbar .sponsored {
+margin-bottom: 10px;
+font-family: var(--title-font-russo);
+}
+.toolbar__wrapper {
+padding: 5px;
+border: 3px solid var(--color-black);
+border-radius: 4px;
+background-color: var(--color-white);
+color: var(--color-black);
+text-align: center;
+}
+body.amp-shadow .hide-in-the-shadows,
+body.amp-shadow .toolbar {
+display: none;
+}
+
+</style>
+</head>
+
+<body>
+  <article id="follow-the-money">
+    <section class="hero">
+      <div class="category">
+        <p class="category__item category__item--black">Markets</p>
+        <p class="category__item category__item--white">Uncrewed Systems</p>
+      </div>
+      <div class="hero__info">
+        <h1><span>Follow the Money</span></h1>
+        <p><span>By Philip Lewis, Research Director at Intelatus Global Partners</span></p>
+      </div>
+      <div class="hero__copy">
+        <p>Commercial operators deploy Saildrone Voyager Unmanned Surface Vessels (USVs) out to sea in the initial steps
+          of U.S. 4th Fleet’s Operation Windward Stack during a launch from Naval Air Station Key West’s Mole Pier and
+          Truman Harbor, Sept. 13, 2023. </p>
+        <small>U.S. Navy photo by Danette Baso Silvers/Released</small>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <div class="content__audio">
+          <span>Listen to this article</span>
+          <amp-audio data-vars-track-id="macgregor-lco-bow-transfer-system audio" layout="fixed-height" height="50"
+            src="https://audio4magazines.blob.core.windows.net/articles/offshore-engineer/202609/follow-the-money"
+            title="Follow the Money">
+          </amp-audio>
+        </div>
+        <p>“Follow the money" is a phrase popularly but incorrectly attributed to Deep Throat/Watergate. Broadening the
+          coverage of the phrase to include the hot unmanned and autonomous surface and underwater vehicle segments
+          allows us to understand what’s really going on in the market and the sums of money involved are significant.
+        </p>
+        <h2>The anatomy of unmanned systems</h2>
+        <p>Firstly, let’s start by understanding the anatomy of an unmanned surface vehicle (USV) and an autonomous
+          underwater vehicle (AUV). Autonomy has several levels, effectively split into manual teleoperation, remote
+          supervised control (generally over the horizon/out of sight), and full autonomy. USVs and AUVs generally
+          feature nine key elements. USV and AUV companies operate with varying degrees of vertical integration,
+          although in the following sections, we will touch on some regional trends.</p>
+        <h2>ANATOMY OF AN UNMANNED VEHICLE</h2>
+        <div class="content__image--full">
+          <img src="https://images.marinelink.com/images/storage/w1400/table-6ad6.jpg" alt="">
+        </div>
+        <div class="pic-caption">
+          <small>Source: Intelatus Global Partners</small>
+        </div>
+        <h2>The U.S. approach: primes, commercial yards and VCs</h2>
+        <p>Four major private shipbuilders act as Navy primes: <strong>HII</strong> (leads in unmanned systems via
+          ROMULUS USV and REMUS AUV programs under Odyssey autonomy software); <strong>General Dynamics</strong> (builds
+          AUVs through Bluefin Robotics and develops USV C2 technology); <strong>Austal USA</strong> (builds Saildrone's
+          Voyager USV); and <strong>Fincantieri Marine Group</strong> (will build Saildrone's Spectre USV).
+          <strong>Boeing</strong>, a broader defense prime, builds the Orca XLUUV in California, with HII assisting hull
+          assembly in Virginia.
+        </p>
+        <p>Partnering with HII and Raytheon Technologies, major commercial shipbuilder Bollinger has supplied nine
+          12-meter semi-autonomous aluminum MCM USVs to the U.S. Navy and has a further 18 MCM USVs under contract, out
+          of a total planned final inventory of 48 MCM USVs.</p>
+        <p>Several commercial shipyards have partnered with the growing number of venture-backed start-ups emerging in
+          the U.S. While these companies ostensibly target both defense and commercial applications, many are scaling on
+          the back of U.S. Navy programs, signaling a potential shift in naval procurement toward a “build first, buy
+          later” model. Although procurement programs are now materializing, questions remain over the long-term
+          financial sustainability of a sector requiring substantial capital investment ahead of revenues. We do not
+          expect all start-ups to sustain this model. Some are likely to consolidate through M&A, while others may fail
+          to progress beyond development. The investment approach of leading venture capital firms, often spreading
+          capital across multiple companies in the sector, may reinforce this expectation.</p>
+        <h2>SELECTED U.S. AUTONOMOUS VEHICLE AND TECHNOLOGY START-UPS </h2>
+        <div class="content__image--full">
+          <img
+            src="https://images.marinelink.com/images/storage/w1400/selectedusautonomousvehicleandtechnologystartups.jpg"
+            alt="">
+        </div>
+        <div class="pic-caption">
+          <small>&copy;Source: Intelatus Global Partners</small>
+        </div>
+        <h2>Other NATO and AUKUS markets: National champions, M&A and some VC activity</h2>
+        <p>Kongsberg Gruppen (Oslo-listed, 50.1% Norwegian government-owned) is a key Nordic defense player with a broad
+          maritime tech portfolio spanning navigation, seafloor mapping, sonar, and autonomous systems, including the
+          Sounder USV and HUGIN AUV family for the defense and commercial segments. Kongsberg has developed much of its
+          defense related technology with partners in the Norwegian defense and industrial space, and the acquisition of
+          Hydroid, the U.S. manufacturer of shallow-to-medium depth REMUS AUVs (sold to HII in 2020). </p>
+        <p>July 2026 saw three major acquisitions consolidating unmanned maritime systems players:</p>
+        <ul>
+          <li>
+            <p>Canada’s Kraken Robotics ($615 million) acquired the UK's Covelya Group, including Sonardyne, EIVA,
+              Forcys, Wavefront Systems, Voyis, and Chelsea Technologies, with technology offerings spanning underwater
+              acoustics, sonar, navigation, imaging, and autonomous systems, significantly broadening Kraken's subsea
+              portfolio.</p>
+          </li>
+          <li>
+            <p>France’s Thales agreed to acquire the Gorgé family's 35.5% stake in compatriot Exail Technologies and
+              launch a tender offer for remaining shares, valuing Exail at about €3.9 billion ($4.6 billion). The deal
+              aims to create a global leader in autonomous maritime systems, underwater warfare, and inertial
+              navigation, combining autonomous surface/underwater drones, mine countermeasures, ASW, sonars, photonics,
+              and quantum sensing, strengthening GPS-independent navigation capabilities.</p>
+          </li>
+          <li>
+            <p>Building on its acquisitions of WASS (2025) and Remazel (2024), Italy’s Fincantieri announced four
+              acquisitions (Next Geosolutions, WSense, Graal Tech, Defcomm) for about €600 million ($687 million),
+              building on earlier WASS (2025) and Remazel (2024) deals. This creates a vertically integrated underwater
+              business across marine surveys, offshore services, autonomous drones, underwater communications, and the
+              Internet of Underwater Things (IoUT), comprising eight specialized companies across Europe and the UAE,
+              reinforcing Fincantieri's position in dual-use underwater technology and maritime infrastructure.</p>
+          </li>
+        </ul>
+        <p>The UK’s Kraken Technology grew in under six years from a three-person startup to around 200 employees,
+          delivering NATO USVs led by its 8.4m K3 Scout (200+ sold) and the USSOCOM-backed K4 Manta. Growth stems from
+          an open, agnostic architecture (30+ modular payloads), NATO/UK government backing, and an automotive-style
+          "boat-in-a-box" model producing a K3 daily from around 400 components, targeting four-country manufacturing
+          through partnerships with U.S. Anduril, Canada’s Davie Defense, and Germany’s Rheinmetall. In July 2026,
+          Kraken closed a $175 million Series B funding round at a $1 billion valuation to fund capability development
+          and manufacturing expansion. UK facilities can scale to 1,000 units/year, with Germany matching that capacity.
+        </p>
+        <h2>The European commercial market</h2>
+        <p>In oil & gas and offshore wind, USVs and AUVs increasingly conduct site surveys, construction surveys, and
+          infrastructure inspection. Successful firms integrate vessels, sensors, C2 software, and data analytics,
+          positioning themselves as data-as-a-service (DaaS) providers, since data delivery, not vessel supply, is the
+          core offering. In this section, we discuss three successful DaaS players.</p>
+        <p>Netherlands-based listed company Fugro is a global leader in on/offshore mapping, modeling, and monitoring,
+          generating around 30% of 2025 revenue from marine asset integrity supported by a USV fleet and remote
+          operation centers. It partnered with SEA-KIT in 2020 (acquired 2023) for USV design/build, and currently
+          operates one Blue Shadow, five Blue Essence (two more in construction), one Blue Eclipse, and one Blue Prism
+          USV, targeting 5-10 geophysical and 5-10 inspection/monitoring USVs by 2027. Fugro's strategy emphasizes
+          remote operations and USV differentiation to cut costs/emissions toward net zero by 2050. It also runs
+          multiple Kongsberg HUGIN AUVs (3000, 4500, 6000, Edge, Superior) plus Echo Surveyor VII and Echo Mapper AUVs.
+        </p>
+        <p>Founded in 2008, Reach Subsea offers IMR, construction support, and survey solutions. Its unmanned business,
+          Reach Remote, provides DaaS and is now transitioning toward becoming a standalone listed company as it scales.
+          Reach Remote operates two Exail Drix H-8 survey USVs (<em>Orca 1 and Orca 2</em>), and two Kongsberg 24-meter
+          USVs (<em>Reach Remote 1 & Reach Remote 2</em>), with two more under construction for 2027 delivery, plus 14
+          tethered ROVs. The USVs run at IMO Degree 3 autonomy (uncrewed, ROC-controlled) for pipeline/subsea
+          inspection, survey, seabed mapping, and light repair across oil & gas, offshore wind, cables, fish farming,
+          mining, and environmental sectors, using hull-mounted sensors, an ROV survey system, and deployable UASs.</p>
+        <p>Founded 2017, XOCEAN is a privately-owned Irish marine tech company with more than €160 million ($185
+          million) raised, valued at about $270 million. It's a vertically integrated DaaS provider, designing/building
+          USVs in-house, operating via its Irish ROC and CyberDeck C2 stack, and delivering multibeam echosounder,
+          side-scan sonar, sub-bottom profiler, and magnetometer data across offshore wind, geophysical, environmental,
+          asset integrity, bathymetry, and fisheries markets. XOCEAN operates around 30 XO-450 USVs (4.5m,
+          solar/battery-powered, container-transportable) and several larger X-580 USVs (5.8m, MCA-compliant), with more
+          X-580s under construction.</p>
+        <h2>A pioneering global player</h2>
+        <p>Founded in 2017 (HQ: Texas, USA and Southampton, UK), Ocean Infinity is a marine robotics company founded by
+          Anthony Clake (majority shareholder/backer) and CEO Oliver Plunkett. Whilst developing into an ideal candidate
+          for listing or M&A, Ocean Infinity remains privately held. It's a leading example of commercial global
+          Maritime Autonomous Surface Ships (MASS), USV, and AUV DaaS company. Ocean Infinity provides seabed surveys,
+          offshore monitoring, infrastructure support, search operations, and uncrewed vessel operations. It combines
+          AI-driven data processing, satellite comms, and remote operation centers (ROCs) to shift the industry from
+          crewed vessels to lean/unmanned fleets across offshore energy, defense, environmental monitoring, and deep-sea
+          exploration.</p>
+        <p>Ocean Infinity’s fleet consists of multiple lean-crewed and unmanned platforms, controlled from ROCs in
+          Southampton and Sweden, with further sites planned in Tasmania, Singapore, and Texas: </p>
+        <ul>
+          <li>
+            <p>USS Accession (3.5m-5m variants), acquired via Unmanned Survey Solutions (Jan 2026).</p>
+          </li>
+          <li>
+            <p>L3Harris C-Worker 8USV for coastal/shallow-water surveys and inspections.</p>
+          </li>
+          <li>
+            <p>Armada 21 (4 x 21m battery-hybrid USVs, built by Grovfjord in Norway, DNV-classed) for windfarm/cable
+              surveys, delivered 2024–2025.</p>
+          </li>
+          <li>
+            <p>Armada 36 (3 x 36m battery-hybrid USVs, built at Gdansk Shipyard/fitted in Southampton) under
+              construction, part of a 5-vessel plan. UK MCA advancing uncrewed operation approval.</p>
+          </li>
+          <li>
+            <p>Armada 78 (8 x 78m battery-hybrid dual-fuel MASS, built by VARD, Singapore-flagged) delivered 2022–2024,
+              for geophysical/geotechnical work.</p>
+          </li>
+          <li>
+            <p>Armada 86 (6 x 86m battery-hybrid MASS, VARD-built, moonpool-equipped for AUV/ROV/seabed tool deployment)
+              delivered 2024–2025.</p>
+          </li>
+          <li>
+            <p>NeedleFish (14m USVs) delivered to Kuwait Coast Guard with SRT Marine Systems.</p>
+          </li>
+          <li>
+            <p>Kongsberg HUGIN AUVs, operating solo or in swarms via mother ships.</p>
+          </li>
+        </ul>
+        <h2>Hundreds of companies and concepts</h2>
+        <p>In this article, we have reviewed some of the leading players in a fast-moving sector. Our proprietary
+          database contains several hundred companies, from start-ups to established global players, who have
+          collectively developed more than 900 individual MASS, USV and AUV models, many of which are in commercial
+          production. Not all of these companies will succeed, but many will and many will require capital to sustain
+          growth.</p>
+        <p>And as the MASS, USV, and AUV segments grow, so do the equipment and payload requirements, benefiting the
+          wider maritime ecosystem.</p>
+        <div>
+          <p>For any queries, please contact Philip Lewis at <a
+              href="mailto:philiplewis@intelatus.com">&lt;philiplewis@intelatus.com&gt;</a>.</p>
+        </div>
+      </div>
+    </section>
+    <aside class="ad ad--full">
+      <a href="https://www.intelatus.com/" target="_blank">
+        <img src="https://images.marinelink.com/images/storage/w1900/2027-intelatus-high-respage-0001.jpg" alt="Intelatus"
+          class="ad-image" />
+      </a>
+    </aside>
+  <div class="toolbar" amp-fx="float-in-bottom">
+        <div class="toolbar__wrapper">
+            <a data-vars-track-id="OE-202609" href="/offshore-engineer/202609/contents.html">
+                <img src="https://images.marinelink.com/images/storage/w700/logo-b76b.jpg" alt="">
+                <div class="message">September - October 2026</div>
+            </a>
+            <div class="sponsored">This issue sponsored by</div>
+            <a target="_blank" href="https://www.tronics.tdk.com/inertial-sensors/dynamic-inertial-mems-sensors-applications/energy-mining/">
+                <img width="300" height="250" layout="responsive"
+                    src="https://images.marinelink.com/images/storage/w500/tronics300x250sponsorbanner.jpg"
+                    alt="Tronics" />
+            </a> 
+        </div>
+    </div>
+</article>
+<amp-next-page class="hide-in-the-shadows">
+        <script type="application/json">
+            [{
+                "image": "https://images.marinelink.com/images/storage/w700/logo-b76b.jpg",
+                "title": "Contents",
+                "url": "/offshore-engineer/202609/contents.html"
+            }]
+        </script>
+    </amp-next-page>
+</body>
+
+</html>

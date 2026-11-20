@@ -1,0 +1,1152 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="referrer" content="origin" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
+<script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+<script async custom-element="amp-next-page" src="https://cdn.ampproject.org/v0/amp-next-page-1.0.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@700&family=Kanit:wght@300;500&family=Noto+Sans:wght@300;400;500;700&family=Orbitron:wght@800&family=Prosto+One&family=Russo+One&family=Unbounded:wght@700&display=swap"
+    rel="stylesheet">
+  <title>Multiple Sync’d Self-Recording, Battery-Powered Cameras</title>
+<link rel="canonical" href="/marine-technology/202608/multiple-syncd-self-recording-battery-powered-cameras/">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<style amp-custom>
+:root {
+--color-white: #fff;
+--color-black: #000;
+--color-title: #003c7b;
+--color-copyright: rgba(51, 51, 51, 0.61);
+--color-accent: #003c7b;
+--color-accent-hover: #002a57;
+--color-accent-light: #6fa8e8;
+--color-hover: #2b2d3e;
+--color-orange: #fdaf40;
+--color-link: #0474b6;
+--color-accent-text: #003c7b;
+--color-on-accent: #fff;
+--color-ink: #0e1620;
+--color-ink-2: #3a4652;
+--color-text: #0e1620;
+--color-muted: #5a6670;
+--color-rule: #d6dde3;
+--color-paper: #f4f6f8;
+--color-quote: #eaf2fa;
+--main-font: "Noto Sans", sans-serif;
+--title-font-bebas: "Bebas Neue", sans-serif;
+--title-font-russo: "Russo One", sans-serif;
+--title-font-orbitron: "Orbitron", sans-serif;
+--title-font-cinzel: "Cinzel", serif;
+--title-font-unbounded: "Unbounded", sans-serif;
+--title-font-fifth: "Russo One", sans-serif;
+--copyright-font: "Kanit", sans-serif;
+--category-font: "Prosto One", cursive;
+--light-font: 300;
+--regular-font: 400;
+--medium-font: 500;
+--bold-font: 700;
+--extra-bold-font: 800;
+--line-height: 165%;
+--text-size: clamp(16px, 15px + .3vw, 18px);
+--mb-0-25: .25rem;
+--mb-0-5: .5rem;
+--mb-0-75: .75rem;
+--mb-1: 1rem;
+--mb-1-5: 1.5rem;
+--mb-2: 2rem;
+--mb-2-5: 2.5rem;
+--mb-3: 3rem;
+--small-offset: 1rem;
+--large-offset: 3rem;
+}
+html {
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+body {
+overflow-x: hidden;
+outline: none;
+min-width: 320px;
+font-family: var(--main-font);
+font-weight: var(--regular-font);
+font-size: 16px;
+color: var(--color-text);
+background-color: var(--color-white);
+cursor: default;
+}
+a {
+text-decoration: none;
+color: inherit;
+}
+ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+margin: 0;
+}
+h2 {
+position: relative;
+margin: 0 0 var(--mb-1);
+font-family: var(--title-font-russo);
+font-weight: var(--regular-font);
+font-size: clamp(26px, 2.6vw, 34px);
+line-height: 1.15;
+color: var(--color-ink);
+}
+h3 {
+position: relative;
+margin: 0 0 var(--mb-1);
+font-family: var(--title-font-russo);
+font-weight: var(--regular-font);
+font-size: 22px;
+line-height: 1.2;
+color: var(--color-ink);
+}
+p {
+margin: 0 0 20px;
+font-family: var(--main-font);
+font-size: var(--text-size);
+font-weight: var(--light-font);
+line-height: var(--line-height);
+color: var(--color-text);
+text-align: left;
+}
+strong {
+font-weight: var(--bold-font);
+color: var(--color-ink);
+}
+img {
+display: block;
+width: 100%;
+}
+.category {
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+margin: 0;
+}
+.category__item {
+margin: 0;
+padding: 6px 10px;
+font-family: var(--copyright-font);
+font-weight: var(--medium-font);
+font-size: 12px;
+line-height: 1.2;
+letter-spacing: .06em;
+text-transform: uppercase;
+}
+.category__item--black {
+color: var(--color-on-accent);
+background-color: var(--color-accent);
+}
+.category__item--white {
+color: var(--color-white);
+background-color: rgba(255, 255, 255, .16);
+}
+.container {
+margin: 0 auto;
+padding: 0 20px;
+max-width: 800px;
+}
+.container--lg {
+margin: 0 auto var(--mb-2);
+padding: 0 20px;
+max-width: 1100px;
+}
+.container::after,
+.content::after {
+content: "";
+display: table;
+clear: both;
+}
+.content {
+position: relative;
+margin: 0 auto;
+padding: 48px 0 24px;
+}
+.content p,
+.content li {
+font-weight: var(--light-font);
+font-size: 19px;
+line-height: 1.65;
+color: var(--color-ink);
+}
+.content p {
+margin: 0 0 22px;
+}
+.content__audio + p {
+font-size: 23px;
+line-height: 1.5;
+}
+.content h2 {
+margin: 40px 0 16px;
+font-size: clamp(26px, 2.6vw, 34px);
+line-height: 1.15;
+}
+.content h3 {
+margin: 28px 0 12px;
+font-size: 22px;
+line-height: 1.2;
+}
+.content ul,
+.content ol {
+margin: 0 0 22px;
+padding-left: 22px;
+list-style: disc;
+}
+.content li {
+margin-bottom: 6px;
+}
+.content a {
+color: var(--color-accent-text);
+text-decoration: underline;
+text-underline-offset: 2px;
+}
+.content strong {
+font-weight: var(--bold-font);
+color: var(--color-ink);
+}
+.content em {
+font-style: italic;
+}
+.image {
+position: relative;
+}
+.content__image--full {
+position: relative;
+margin: 32px 0 8px;
+}
+.content__image--left,
+.content__image--right {
+width: 42%;
+margin-top: 6px;
+margin-bottom: 16px;
+}
+.content__image--left {
+float: left;
+margin-right: 24px;
+}
+.content__image--right {
+float: right;
+margin-left: 24px;
+}
+.pic-caption {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 4px 16px;
+margin: 8px 0 28px;
+}
+.pic-caption span {
+font-weight: var(--regular-font);
+font-size: 14px;
+line-height: 1.45;
+color: var(--color-ink-2);
+}
+.pic-caption small {
+font-family: var(--copyright-font);
+font-weight: var(--light-font);
+font-size: 11px;
+line-height: 1.4;
+text-transform: uppercase;
+color: var(--color-muted);
+}
+.pic-caption a {
+color: inherit;
+text-decoration: underline;
+}
+.image__row {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 16px;
+}
+.image__row .content__image--full {
+margin: 0;
+}
+.content__video {
+width: 100%;
+margin: 32px 0;
+}
+.content__audio {
+display: flex;
+align-items: center;
+gap: 16px;
+margin-bottom: 36px;
+padding: 8px 8px 8px 22px;
+border-radius: 999px;
+background-color: #f1f3f4;
+}
+.content__audio span {
+position: relative;
+flex: none;
+padding-left: 18px;
+font-family: var(--copyright-font);
+font-weight: var(--medium-font);
+font-size: 13px;
+line-height: 1.2;
+letter-spacing: .08em;
+text-transform: uppercase;
+color: var(--color-ink);
+}
+.content__audio span::before {
+content: "";
+position: absolute;
+left: 0;
+top: 50%;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background-color: var(--color-accent);
+transform: translateY(-50%);
+}
+.content__audio amp-audio {
+flex: 1 1 auto;
+min-width: 0;
+}
+.content__slider-item {
+position: relative;
+}
+.carousel {
+margin: 40px auto 0;
+background-color: var(--color-ink);
+}
+.slide {
+position: relative;
+height: 100%;
+}
+.slide img {
+width: auto;
+max-width: 100%;
+height: 100%;
+margin: 0 auto;
+object-fit: contain;
+}
+.caption {
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+padding: 12px 16px;
+color: var(--color-white);
+background-color: rgba(8, 14, 22, .78);
+}
+.caption p {
+margin: 0 0 4px;
+font-size: 15px;
+line-height: 1.4;
+color: var(--color-white);
+}
+.caption small {
+font-family: var(--copyright-font);
+font-weight: var(--light-font);
+font-size: 11px;
+text-transform: uppercase;
+color: #c9d4dd;
+}
+.amp-carousel-button-prev,
+.amp-carousel-button-next {
+width: 46px;
+height: 46px;
+border: 0;
+border-radius: 50%;
+background-color: rgba(8, 14, 22, .7);
+}
+.amp-carousel-button-prev:hover,
+.amp-carousel-button-next:hover {
+background-color: var(--color-accent);
+}
+.carousel-preview {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+margin: 12px auto 40px;
+}
+.carousel-preview__item {
+width: 96px;
+height: 64px;
+object-fit: cover;
+opacity: .55;
+cursor: pointer;
+}
+.carousel-preview [option][selected] {
+opacity: 1;
+outline: 3px solid var(--color-accent);
+outline-offset: 2px;
+}
+amp-image-lightbox {
+background: rgba(0, 0, 0, .85);
+}
+.btn__close {
+position: absolute;
+right: 16px;
+top: 16px;
+width: 44px;
+height: 44px;
+border: 0;
+font-size: 18px;
+color: var(--color-black);
+background-color: var(--color-white);
+}
+.ad,
+.ad-half-page,
+.ad-half-page-horizontal,
+.ad-quoter-page,
+.ad-banner {
+position: relative;
+}
+.ad,
+.ad-full-page {
+width: 100%;
+height: 100vh;
+background-color: #e9eef2;
+}
+.ad--full a {
+position: absolute;
+left: 50%;
+top: 50%;
+display: block;
+width: 50%;
+height: 90%;
+transform: translate(-50%, -50%);
+}
+.ad-image {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+.ad-half-page {
+float: right;
+width: 45%;
+margin: 6px 0 16px 24px;
+}
+.ad-quoter-page {
+float: left;
+width: 40%;
+margin: 6px 24px 16px 0;
+}
+.ad-half-page img,
+.ad-quoter-page img {
+box-shadow: 0 6px 18px rgba(14, 22, 32, .18);
+}
+.ad-half-page-horizontal {
+display: block;
+clear: both;
+width: 100%;
+margin: 32px 0;
+padding: 12px 0;
+border-top: 1px solid var(--color-rule);
+border-bottom: 1px solid var(--color-rule);
+}
+.ad-half-page-image {
+width: 100%;
+height: 100%;
+}
+.quote {
+display: grid;
+grid-template-columns: 220px minmax(0, 1fr);
+gap: 28px;
+align-items: center;
+clear: both;
+margin: 40px 0;
+padding: 26px;
+background-color: var(--color-quote);
+}
+.quote__image img {
+width: 100%;
+height: 250px;
+object-fit: cover;
+}
+.quote__image small {
+display: block;
+margin-top: 6px;
+font-family: var(--copyright-font);
+font-weight: var(--light-font);
+font-size: 10px;
+text-transform: uppercase;
+color: var(--color-muted);
+}
+.quote__info:first-child {
+grid-column: 1 / -1;
+}
+.content .quote__info p {
+margin: 0 0 12px;
+font-family: var(--title-font-russo);
+font-weight: var(--regular-font);
+font-size: clamp(20px, 2vw, 26px);
+line-height: 1.28;
+}
+.quote__info strong {
+font-family: var(--copyright-font);
+font-weight: var(--medium-font);
+font-size: 14px;
+line-height: 1.4;
+color: var(--color-ink-2);
+}
+.container > div:not([class]),
+.item > div:not([class]) {
+clear: both;
+margin: 32px 0;
+padding: 24px 26px 4px;
+border-left: 4px solid var(--color-accent);
+background-color: var(--color-paper);
+}
+.container > div:not([class]) > h3,
+.item > div:not([class]) > h3 {
+margin: 0 0 12px;
+font-size: 20px;
+color: var(--color-ink);
+}
+.container > div:not([class]) ul {
+padding-left: 0;
+list-style: none;
+}
+.container > div:not([class]) li p {
+margin-bottom: 6px;
+font-size: 16px;
+}
+.content table {
+width: 100%;
+border-collapse: collapse;
+}
+.content div:not([class]) > div:not([class]) {
+width: 100%;
+margin-bottom: 20px;
+overflow-x: auto;
+}
+.content td,
+.content th {
+padding: 10px 12px;
+border-bottom: 1px solid var(--color-rule);
+font-size: 15px;
+line-height: 1.5;
+text-align: left;
+vertical-align: top;
+}
+.content th {
+font-weight: var(--bold-font);
+color: var(--color-ink);
+background-color: var(--color-paper);
+}
+.content ol {
+list-style: decimal;
+}
+.content td:first-child {
+width: 45%;
+font-family: var(--copyright-font);
+color: var(--color-ink-2);
+}
+.content__container {
+counter-reset: newsitem;
+}
+.item,
+.vessel__item {
+clear: both;
+margin-top: 40px;
+padding-top: 18px;
+border-top: 4px solid var(--color-ink);
+counter-increment: newsitem;
+}
+.item h2,
+.vessel__item h2 {
+margin-top: 6px;
+}
+.item h2::before,
+.vessel__item h2::before {
+content: counter(newsitem, decimal-leading-zero);
+display: block;
+margin-bottom: 8px;
+font-family: var(--copyright-font);
+font-weight: var(--medium-font);
+font-size: 13px;
+line-height: 1;
+letter-spacing: .08em;
+color: var(--color-accent-text);
+}
+.box {
+clear: both;
+max-width: 800px;
+margin: 8px auto 48px;
+padding: 0 20px;
+}
+.box__top h2,
+.content .box__top h2 {
+margin: 0;
+padding-top: 14px;
+border-top: 4px solid var(--color-ink);
+font-family: var(--copyright-font);
+font-weight: var(--medium-font);
+font-size: 12px;
+line-height: 1.3;
+letter-spacing: .1em;
+text-transform: uppercase;
+color: var(--color-muted);
+}
+.box__row {
+display: flex;
+align-items: flex-start;
+gap: 20px;
+padding: 18px 0;
+border-bottom: 1px solid var(--color-rule);
+}
+.box__image {
+position: relative;
+flex: none;
+width: 110px;
+}
+.box__image img {
+width: 110px;
+height: 130px;
+object-fit: cover;
+}
+.box__image small {
+display: block;
+margin-top: 4px;
+font-family: var(--copyright-font);
+font-weight: var(--light-font);
+font-size: 10px;
+color: var(--color-muted);
+}
+.box__info h3,
+.content .box__info h3 {
+margin: 0 0 6px;
+font-size: 21px;
+}
+.box__info p,
+.content .box__info p {
+margin: 0 0 8px;
+font-size: 15px;
+line-height: 1.55;
+color: var(--color-ink-2);
+}
+.stat {
+padding: 18px 0 8px;
+border-top: 1px solid var(--color-ink);
+}
+.stat__number {
+margin-bottom: 10px;
+font-family: var(--title-font-russo);
+font-size: 48px;
+line-height: 1;
+color: var(--color-accent-text);
+}
+.stat__text {
+margin: 0 0 16px;
+font-size: 17px;
+line-height: 1.6;
+color: var(--color-ink-2);
+}
+.hero {
+position: relative;
+overflow: hidden;
+color: var(--color-white);
+}
+.hero h1 {
+margin: 0;
+font-family: var(--title-font-russo);
+font-weight: var(--regular-font);
+font-size: clamp(34px, 4.6vw, 66px);
+line-height: 1.03;
+color: inherit;
+}
+.hero h1 span {
+display: block;
+}
+.hero__info {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+.hero__info p {
+max-width: 860px;
+margin: 0;
+font-weight: var(--light-font);
+font-size: clamp(17px, 1.5vw, 21px);
+line-height: 1.45;
+color: inherit;
+}
+.hero__info p span {
+font-family: var(--copyright-font);
+font-weight: var(--medium-font);
+font-size: 15px;
+line-height: 1.3;
+}
+.hero__copy {
+position: absolute;
+right: 16px;
+top: 14px;
+z-index: 3;
+max-width: 320px;
+text-align: right;
+font-family: var(--copyright-font);
+font-weight: var(--light-font);
+font-size: 11px;
+line-height: 1.2;
+text-transform: uppercase;
+color: #e8eef2;
+}
+.hero__copy p {
+margin: 0 0 4px;
+font-size: 11px;
+line-height: 1.3;
+text-transform: none;
+color: inherit;
+}
+.hero__copy small {
+font-size: 11px;
+}
+#multiple-syncd-self-recording-battery-powered-cameras .hero {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+min-height: 100vh;
+padding: 120px 48px 56px;
+background: url("https://images.marinelink.com/images/storage/w1900/fig1global-ocean-design-deployment.jpg") no-repeat;
+background-size: cover;
+background-position: center;
+background-color: #24323d;
+background-attachment: fixed;
+}
+#multiple-syncd-self-recording-battery-powered-cameras .hero::before {
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 1;
+height: 60%;
+background: linear-gradient(to top, rgba(8, 14, 22, .9), rgba(8, 14, 22, 0));
+}
+#multiple-syncd-self-recording-battery-powered-cameras .category,
+#multiple-syncd-self-recording-battery-powered-cameras .hero__info {
+position: relative;
+z-index: 2;
+width: 100%;
+max-width: 1180px;
+}
+#multiple-syncd-self-recording-battery-powered-cameras .category {
+margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+#multiple-syncd-self-recording-battery-powered-cameras .hero {
+padding: 120px 20px 32px;
+}
+}
+@supports (-webkit-touch-callout: none) {
+#multiple-syncd-self-recording-battery-powered-cameras .hero {
+background-attachment: scroll;
+}
+}
+@supports not (-webkit-touch-callout: none) {
+#multiple-syncd-self-recording-battery-powered-cameras .hero {
+background-attachment: fixed;
+}
+}
+@media print {
+body {
+-webkit-print-color-adjust: exact;
+}
+.toolbar {
+display: none;
+}
+.hero {
+min-height: 60vh;
+background-attachment: scroll;
+}
+}
+@media (max-width: 1000px) {
+.ad--full a {
+width: 60%;
+}
+}
+@media (max-width: 768px) {
+.ad--full a {
+left: 5px;
+right: 5px;
+top: 0;
+bottom: 0;
+margin: auto;
+width: 95%;
+height: 90%;
+transform: none;
+}
+.quote {
+grid-template-columns: 1fr;
+}
+.quote__image img {
+height: 220px;
+}
+.image__row {
+grid-template-columns: 1fr;
+}
+}
+@media (max-width: 600px) {
+.content {
+padding: 28px 0 16px;
+}
+.container {
+padding: 0 16px;
+}
+.content p,
+.content li {
+font-size: 17px;
+}
+.content__audio + p {
+font-size: 20px;
+}
+.content__image--left,
+.content__image--right {
+float: none;
+width: 100%;
+margin: 24px 0 8px;
+}
+.ad-half-page {
+width: 60%;
+}
+.content__audio {
+flex-direction: column;
+align-items: stretch;
+gap: 6px;
+padding: 14px 12px 8px;
+border-radius: 18px;
+}
+.content__audio span {
+margin-left: 6px;
+}
+.ad-quoter-page {
+width: 100%;
+margin: 0 0 16px;
+}
+.amp-carousel-button-prev,
+.amp-carousel-button-next {
+display: none;
+}
+.container > div:not([class]),
+.item > div:not([class]) {
+padding: 20px 18px 4px;
+}
+}
+@media (max-width: 450px) {
+.ad-half-page,
+.ad-quoter-page {
+float: none;
+width: 100%;
+margin: 24px 0;
+}
+}
+.toolbar {
+--max-height: calc(100vh / 2.8);
+--ratio: calc((300 + 5 + 6) / 320);
+--height: min(var(--max-height), 450px);
+--width: calc(var(--height) * var(--ratio));
+display: var(--display-me);
+position: fixed;
+bottom: 0;
+right: 5px;
+width: var(--width);
+max-width: calc(90% - 5px);
+padding: 3px;
+overflow: hidden;
+font-weight: bold;
+text-decoration: none;
+z-index: 10000;
+transition: .2s ease-in-out;
+}
+.message {
+margin: 10px 0 10px;
+text-decoration: underline;
+font-family: var(--title-font-bebas);
+}
+@media print {
+.toolbar {
+--display-me: none;
+}
+}
+.toolbar .sponsored {
+margin-bottom: 10px;
+font-family: var(--title-font-russo);
+}
+.toolbar__wrapper {
+padding: 5px;
+border: 3px solid var(--color-black);
+border-radius: 4px;
+background-color: var(--color-white);
+color: var(--color-black);
+text-align: center;
+}
+body.amp-shadow .hide-in-the-shadows,
+body.amp-shadow .toolbar {
+display: none;
+}
+
+</style>
+</head>
+
+<body>
+  <article id="multiple-syncd-self-recording-battery-powered-cameras">
+    <section class="hero">
+      <!-- <div class="category">
+        <p class="category__item category__item--black">Tech File</p>
+        <p class="category__item category__item--white">Cranes</p>
+      </div> -->
+      <div class="hero__info">
+        <h1><span>Multiple Sync’d Self-Recording, Battery-Powered Cameras</span></h1>
+        <p><span>By Kevin Hardy, MTR Columnist, President, Global Ocean Design LLC, and Jake Johnson, Business
+            Development, DeepWater Exploration (DWE)</span></p>
+      </div>
+      <div class="hero__copy">
+        <p>Figure 1: Global Ocean Design Nanolander deployment off San Diego, CA. An untethered ocean lander integrates
+          an array of exploreHD cameras providing 360° horizontal visual coverage. Camera 1 top left, Camera 2 top
+          right, Camera 3 lower left, Camera 4 lower right.</p>
+        <small>Photos courtesy of Global Ocean Design</small>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <div class="content__audio">
+          <span>Listen to this article</span>
+          <amp-audio data-vars-track-id="multiple-syncd-self-recording-battery-powered-cameras audio"
+            layout="fixed-height" height="40"
+            src="https://audio4magazines.blob.core.windows.net/articles/marine-technology/202608/multiple-syncd-self-recording-battery-powered-cameras.mp3"
+            title="Multiple Sync’d Self-Recording, Battery-Powered Cameras">
+          </amp-audio>
+        </div>
+        <p>A still or video camera provides an important context for a collected sample or recorded sensor data. But
+          even with a wide-angle lens, nominally spec’d at 63°, only a small fraction of a 360° surrounding view can be
+          imaged. Imagine, though, a panoramic view of the seafloor surrounding a lander with time synched images from
+          multiple cameras.</p>
+        <p>Perhaps those cameras are arrayed in pairs, ocular distance apart, providing 3D views in multiple directions.
+          With a stereo visual headset—also known as a stereoscopic virtual reality (VR) or mixed-reality (MR)
+          headset—each camera’s image is displayed on dual independent displays, feeding a slightly different image to
+          each eye. This creates realistic 3D depth perception and immersive spatial awareness.</p>
+        <p>Costs have likewise been a constraint. Many researchers struggle with small budgets and look for solutions
+          using low-cost cameras such as GoPro, Raspberry Pi, or Arduino. (See Lander Lab #9, Marine Technology
+          Reporter, Sept/Oct 2023.) Reduced size leads to reduced costs.</p>
+        <p>DeepWater Exploration (<a href="https://dwe.ai/" target="_blank">www.dwe.ai</a>), a San Diego based company,
+          has taken on these challenges and design aspirations.</p>
+        <p>Their application of artificial intelligence, edge processing, reduced power demands, and increased digital
+          storage capacity has led to imaging systems able to deploy for entire seasons, making intelligent real-time
+          decisions in situ, recording terabytes of usable data.</p>
+        <p>Computer vision, especially underwater, is only as good as the raw image feed. Distorted imagery, high
+          latency (the time it takes to capture, compress, and write the file), and dark frames (light sensitivity) turn
+          even the most sophisticated AI models into guessing machines.</p>
+        <p>For decades, the marine industry got by with “dry” cameras housed in waterproof enclosures or bulky
+          industrial cameras placed behind thick dome ports which inherently warped images. That worked fine when a
+          human pilot could compensate, but it’s a whole other obstacle to train a machine to understand distorted
+          views.</p>
+        <p>When used by autonomous systems, those optical flaws compound fast. Distortion throws off visual odometry,
+          and chromatic aberration hinders feature tracking and object detection. In a two-knot current, a rolling
+          shutter camera sensor skews targets with the “jello effect.” Add 100-200ms of latency, and real-time
+          navigation and obstacle avoidance becomes unreliable.</p>
+        <p>DeepWater Exploration (DWE) started because a handful of UCSD engineering students, all veterans of ROV and
+          AUV competitions, hit a wall with off-the-shelf hardware. With industry IP cameras priced well beyond their
+          team budget, they did what any self-respecting broke engineering student would do: build their own camera from
+          the ground up.</p>
+        <p>In a 2-bedroom apartment in La Jolla, California, they assembled the first custom PCB, machined a housing
+          shaped around it, and applied their now patented lens technology. This was the first working prototype of the
+          exploreHD.</p>
+        <div class="content__image--full">
+          <img src="https://images.marinelink.com/images/storage/w1400/fig2dwe-explorehd-series.jpg" alt="">
+        </div>
+        <div class="pic-caption">
+          <span>Figure 2: Lineup of exploreHD Cameras, ranging from base model to full-depth titanium. </span>
+          <small>Photo courtesy of DeepWater Exploration.</small>
+        </div>
+        <p>What started as a solution for their next competition immediately gained interest from commercial operators,
+          research teams, and defense groups. Three years later, over 3,000 exploreHD cameras have now been shipped and
+          deployed worldwide to 600+ organizations across 50 countries.</p>
+        <p>Today, DWE hardware ranges from 400-meter ratings down to 11,000-meter full-ocean depth. The stellarHD series
+          came next for high-speed computer vision, followed this year by the explore3D stereo camera, pushing their
+          capabilities into spatial perception beyond vision alone. Across every model, the core architecture remains
+          the same as the original exploreHD. </p>
+        <h2>Pain Points of Legacy Cameras</h2>
+        <p>Autonomous subsea operations consistently hit five major optical pain points, each of which have been
+          measured and repeated:</p>
+        <h3>1. Geometric Distortion</h3>
+        <p>Standard dome ports and poorly calibrated dry lenses routinely cause 8-18% trajectory error in underwater
+          visual SLAM (Simultaneous Localization and Mapping), even after heavy software correction (ref: ISPRS Annals
+          2023).</p>
+        <p>In open water, a vehicle drifting off course is manageable. Under polar ice or in a deep trench, that
+          compound drift can turn a multi-million-dollar asset into a permanent seabed feature.</p>
+        <p>DWE’s Aquagon wet hemispherical lens fixes this by removing the water-dome-air interface entirely.</p>
+        <div class="content__image--full">
+          <img src="https://images.marinelink.com/images/storage/w1400/fig3aquagon-lens.jpg" alt="">
+        </div>
+        <div class="pic-caption">
+          <span>Figure 3: DWE Aquagon Underwater Lens </span>
+          <small>Photo courtesy of DeepWater Exploration.</small>
+        </div>
+        <h3>2. Low-Light Performance</h3>
+        <p>Below 600-800m, older STARVIS sensors, Sony's trademark for back-illuminated pixel technology used in CMOS
+          image sensors, start to struggle. In low-light environments, successful feature matching drops to 20-25% or
+          less (ref: Frontiers in Marine Science 2023). </p>
+        <p>Vehicles surfacing with poor imagery can mean lost science, or failed missions. </p>
+        <p>DWE utilizes back-illuminated Sony sensors paired with custom low-light pipeline tuning for clean color
+          imagery.</p>
+        <h3>3. Latency</h3>
+        <p>Latency above 80ms drives collision rates above 60% during dynamic obstacle-avoidance. (ref: Science Robotics
+          2020 - the same latency vs reactive performance curve widely cited across IEEE and ICRA research).</p>
+        <p>Instead of pushing video through IP network stacks, DWE engineered their imaging pipeline around direct USB
+          connectivity which keeps glass-to-glass latency under 65ms.</p>
+        <h3>4. Power Draw</h3>
+        <p>Legacy IP-based cameras carry extra circuit boards, full network stacks, and inefficient power circuitry that
+          pull 8 to 15W continuous at full resolution. </p>
+        <p>DWE stripped out that extra hardware, even removing indicator LEDs on the internal PCB, to reduce active
+          power draw down to 1W for exploreHD and 1.5W for stellarHD cameras. When idle, the cameras run off &lt;0.001
+          W, allowing them to sleep for months until triggered to snap a frame. </p>
+        <p>Lower power from sensors means the difference between a 30-day lander deployment and a months-long run.</p>
+        <h3>5. Rolling Shutter</h3>
+        <p>Rolling shutter in realistic motion introduces 10-30% higher position error in visual odometry compared to
+          global shutter (ref: Monocular Visual Odometry with a Rolling Shutter Camera, 2017). </p>
+        <p>In strong current or fast vehicle maneuvers, SLAM diverges and visual targets get smeared.</p>
+        <p>DWE designed the stellarHD series with global shutter at 60 FPS, paired with frame synchronization and strobe
+          light triggers, to keep frames crisp during high-speed surveys.</p>
+        <h2>Making Scalable Vision</h2>
+        <p>Good optics are only part of the equation. Scaling them through a modular and open ecosystem is what unlocks
+          new capabilities.</p>
+        <p>DWE cameras are tiny, about the size of a golf ball, meaning they can fit almost anywhere. You can clamp one
+          to a manipulator arm for close-up views, attach them to a docking head for alignment, or line them along the
+          perimeter of a payload skid to eliminate blind spots.</p>
+        <p>Software setup is simple. Similar to basic webcams, DWE cameras show up as standard UVC devices over USB 2.0.
+          Plug them in and they work on Linux, Windows, or macOS without custom drivers or proprietary wrappers.</p>
+        <p>Furthermore, multi-camera setups do not multiply system complexity. You just add extra units as needed. For a
+          self-recording deep-sea lander or long-endurance platform, a DWE multiplexer board lets you run up to seven
+          cameras through a single Raspberry Pi, and logs all feeds to an SSD on battery power.</p>
+        <p>Upgrading a work-class ROV built with an IP-based architecture doesn’t mean a full overhaul. DWE bridged the
+          USB-to-IP gap with their Subsea Vision Computer (SVC), which takes multiple USB camera feeds and outputs them
+          across a single ethernet stream. This lets teams swap in low-power imaging without tearing out existing cable
+          infrastructure.</p>
+        <p>DWE provides open-source software for camera configuration so engineers can route streams directly into ROS
+          nodes or their existing software stacks.</p>
+        <p>Standardizing everything on modular USB allows for universal adoption, usable by student teams to commercial
+          operators in the field.</p>
+        <h2>Each Vertical Industry in Every Ocean</h2>
+        <h3>Science:</h3>
+        <p>Deep-sea research requires sensor payloads that handle extreme depth without driving up project costs.</p>
+        <p>In a joint project between NTNU and Northeastern University (arXiv 2506.06476, June 2025), researchers
+          mounted a three-camera stellarHD rig on the Minerva II ROV to generate real-time 3D SLAM maps around the
+          Hercules shipwreck in the Trondheim Fjord.</p>
+        <div class="content__image--full">
+          <img src="https://images.marinelink.com/images/storage/w1400/fig4dwe-lajollakelpforest.jpg" alt="">
+        </div>
+        <div class="pic-caption">
+          <span>Figure 4: La Jolla Kelp Forest captured by a DWE exploreHD camera </span>
+          <small>Photo courtesy of Phil Zerofski, Scripps Institution of Oceanography/UCSD.</small>
+        </div>
+        <p>At JAMSTEC (Japan Agency for Marine-Earth Science and Technology), researchers have adopted the
+          titanium-housed exploreHD Challenger for their upcoming seafloor-docked vehicles.</p>
+        <h3>Commercial:</h3>
+        <p>Subsea asset inspection continues to shift away from heavy support vessels towards smaller, nimble field
+          crews.</p>
+        <p>In 2025, Blue Robotics selected the exploreHD camera for “The Reef,” their curated marketplace of innovative
+          products to enhance the BlueROV2 and BlueBoat.</p>
+        <p>Up in the North Sea, Tethys Robotics standardizes exploreHD cameras across its Mermaid ROV fleet for
+          portable, autonomous wind-farm inspections.</p>
+        <p>During surface operations around the United Kingdom, Online Oceans utilizes swarms of the Scout USV for
+          long-endurance ocean surveys, each equipped with an array of exploreHD cameras to monitor the horizon.</p>
+        <h3>Defense:</h3>
+        <div class="content__image--left">
+          <div class="image">
+            <img src="https://images.marinelink.com/images/storage/w1000/fig5explorehd-seasats-mission.jpg" alt="">
+          </div>
+          <div class="pic-caption">
+            <span>Figure 5: Lightfish USV with mounted exploreHD camera during EOD exercise in the High North</span>
+            <small>Photo courtesy of Seasats.</small>
+          </div>
+        </div>
+        <p>Mass-produced autonomous surface and subsurface fleets require low-cost optical payloads designed for long
+          deployments.</p>
+        <p>Seasats, based in San Diego, CA, uses multiple exploreHD cameras on their Lightfish and Quickfish USVs to
+          give operators complete visual coverage above and below the waterline. Their missions range from five-month
+          Pacific transits to long-endurance runs in arctic conditions.</p>
+        <p>HavocAI standardizes exploreHD cameras across its Rampage USV fleet, and utilizes the modular hardware to
+          retrofit other existing hulls as they’ve added more autonomous vessels to their lineup since 2025.</p>
+        <p>Ocean Aero adopted DWE hardware on their fleet of Triton AUSVs, the uniquely hybrid platform capable of both
+          long-term surface sailing and evasive submerging, which needed sensors that could survive repeated dives.</p>
+        <br><br>
+        <h2>Future for DWE </h2>
+        <p>As subsea vehicles become more affordable across the board, sensors remain one of the main cost bottlenecks.
+          When sensor costs drop, entire platforms become cheaper, more accessible, and easier to deploy.</p>
+        <aside class="ad-half-page-horizontal">
+          <a href="http://www.deepocean.com/" target="_blank">
+            <img src="https://images.marinelink.com/images/storage/w1200/deepoceanengineeringemagmtraug2026.jpg"
+              alt="Deep Ocean Engineering, Inc." class="ad-image" />
+          </a>
+        </aside>
+        <p>DWE’s current focus is expanding from single-camera video into stereo vision with the explore3D. Bringing
+          real-time 3D perception down to standard USB payloads cuts the cost of spatial awareness, giving
+          observation-class vehicles advanced survey capabilities traditionally reserved for high-end commercial
+          systems.</p>
+        <h2>Acknowledgements</h2>
+        <p>Thanks to Jake Johnson, DeepWater Exploration, for his significant help in writing and editing this article.
+          The story benefitted from his academic training and natural gift of composition. The authors express their
+          gratitude to the entire DWE team, and especially the founders Jiajer Ho, Brandon Stevens, and Kunal Singla for
+          paving the way of DWE’s journey. The DWE team thanks all friends and partners who’ve supported along the way,
+          especially Kevin Hardy from Global Ocean Design who’s been there since the beginning.</p>
+        <div>
+          <p><strong>“Lander Lab”</strong> is a hands-on column of Ocean Lander technologies and strategies, a unique
+            class of unmanned
+            undersea vehicles, and the people who make them. It is meant to serve the global ocean lander community in
+            the manner of Make Magazine and other DIY communities.</p>
+          <p>Comments on this article, or suggestions for other stories of interest are welcome. Ocean lander groups are
+            encouraged to write in about their work. Please feel free to contact <a
+              href="mailto:khardy@marinelink.com">Kevin Hardy</a>.</p>
+          <p>Thanks for reading.</p>
+        </div>
+      </div>
+    </section>
+
+  <div class="toolbar" amp-fx="float-in-bottom">
+        <div class="toolbar__wrapper">
+            <a data-vars-track-id="MTR-202608" href="/marine-technology/202608/contents.html">
+                <amp-img width="300" height="140" layout="responsive"
+                    src="https://images.marinelink.com/images/storage/w300/mtrlogo.jpg"
+                    alt=""></amp-img>
+                <div class="message">August 2026</div>
+            </a>
+            <div class="sponsored">This issue sponsored by</div>
+            <a href="http://www.oceansight.com/" target="_blank">
+                <img src="https://images.marinelink.com/images/storage/w500/oceansightemagscrollingbannerad300x250aug2026.jpg" alt="OceanSight" class="ad-image" />
+              </a>
+        </div>
+    </div>
+</article>
+<amp-next-page class="hide-in-the-shadows">
+        <script type="application/json">
+            [{
+                "image": "https://images.marinelink.com/images/storage/w300/mtrlogo.jpg",
+                "title": "Contents",
+                "url": "/marine-technology/202608/contents.html"
+            }]
+        </script>
+    </amp-next-page>
+</body>
+
+</html>
