@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>E-Magazines v2 — Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Preview index for the v2 redesign (not part of the magazine templates) */
+:root { --ink: #0b1622; --text: #334155; --muted: #64748b; --rule: #e2e8f0; --paper: #f8fafc; --accent: #0474b6; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Inter", Arial, sans-serif; color: var(--text); background: #fff; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 72px 24px 120px; }
+.eyebrow { font: 600 12px/1 "Inter", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+h1 { margin: 14px 0 14px; font: 800 clamp(36px, 5vw, 56px)/1.05 "Archivo", sans-serif; letter-spacing: -.025em; color: var(--ink); }
+.lead { max-width: 720px; margin: 0; font-size: 18px; line-height: 1.6; color: var(--muted); }
+h2 { margin: 72px 0 8px; padding-top: 24px; border-top: 2px solid var(--ink); font: 800 26px/1.2 "Archivo", sans-serif; letter-spacing: -.02em; color: var(--ink); }
+.sub { margin: 0 0 24px; font-size: 15px; color: var(--muted); }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+a.card { display: flex; flex-direction: column; gap: 8px; padding: 20px 22px; border: 1px solid var(--rule); border-radius: 12px; text-decoration: none; transition: border-color .2s, box-shadow .2s; }
+a.card:hover { border-color: var(--accent); box-shadow: 0 10px 28px rgba(11, 22, 34, .08); }
+a.card small { font: 600 11px/1.3 "Inter", sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+a.card b { font: 700 18px/1.3 "Archivo", sans-serif; color: var(--ink); }
+a.card span { font-size: 14px; line-height: 1.5; color: var(--muted); }
+a.issue { padding: 24px; background: var(--paper); }
+a.issue b { font-size: 22px; }
+.note { margin-top: 72px; padding: 20px 22px; border-radius: 12px; background: var(--paper); font-size: 14px; line-height: 1.6; color: var(--muted); }
+@media (max-width: 900px) { .grid, .grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .grid, .grid--4 { grid-template-columns: 1fr; } .wrap { padding: 48px 20px 96px; } }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <span class="eyebrow">E-Magazines · Redesign v2 preview</span>
+  <h1>Real issues, new design</h1>
+  <p class="lead">All four test issues rebuilt from their original files: real articles, authors, photos, ads and videos. Headlines in Archivo, text in Inter. Every link below opens a working AMP page.</p>
+
+  <h2>Issues</h2>
+  <p class="sub">Cover, table of contents (lead story first), playlist and masthead.</p>
+  <div class="grid grid--4">
+    <a class="card issue" href="maritime-reporter/202609/"><small>September 2026</small><b>Maritime Reporter &amp; Engineering News</b></a>
+    <a class="card issue" href="marine-news/202610/"><small>October 2026</small><b>Marine News</b></a>
+    <a class="card issue" href="marine-technology/202608/"><small>August 2026</small><b>Marine Technology Reporter</b></a>
+    <a class="card issue" href="offshore-engineer/202609/"><small>September 2026</small><b>Offshore Engineer</b></a>
+  </div>
+
+  <h2>Article covers</h2>
+  <p class="sub">One example of each cover type.</p>
+  <div class="grid">
+    <a class="card" href="marine-news/202610/the-scripps-award-sets-a-precedent-small-us-shipyards-cannot-survive/"><small>Video · full screen, autoplay</small><b>Op-Ed: The Scripps Award Sets a Precedent Small U.S. Shipyards Cannot Survive</b><span>Marine News</span></a>
+    <a class="card" href="marine-news/202610/marad-designation-lifts-corn-belt-ports/"><small>Video · full screen, autoplay</small><b>MarAd Designation Lifts Corn Belt Ports</b><span>Marine News</span></a>
+    <a class="card" href="marine-news/202610/the-markets-impacting-the-revival-of-us-nava-and-commercial-shipbuilding/"><small>Photo · full screen</small><b>“Déjà vu all over again”</b><span>Marine News</span></a>
+    <a class="card" href="offshore-engineer/202609/true-north-greater-accuracy/"><small>Photo · full screen</small><b>True North, Greater Accuracy</b><span>Offshore Engineer</span></a>
+    <a class="card" href="marine-news/202610/all-in-all-good-all-for-one/"><small>Split · text and image</small><b>“All In, All Good, All for One”</b><span>Marine News</span></a>
+    <a class="card" href="marine-news/202610/wybur-tools/"><small>Partner · product focus</small><b>Wybur Tools</b><span>Marine News</span></a>
+    <a class="card" href="marine-news/202610/propanes-port-play/"><small>Type only · no image</small><b>Propane’s Port Play</b><span>Marine News</span></a>
+    <a class="card" href="marine-technology/202608/people-company-updates/"><small>Section header</small><b>People &amp; Company Updates</b><span>Marine Technology Reporter</span></a>
+    <a class="card" href="offshore-engineer/202609/products/"><small>Section page</small><b>Products</b><span>Offshore Engineer</span></a>
+  </div>
+
+  <h2>Article elements</h2>
+  <p class="sub">Slider, quotes, fact boxes, tables, video, about the author and ads in real articles.</p>
+  <div class="grid">
+    <a class="card" href="offshore-engineer/202609/thermoplastic-composite-pipe-enables-fast-tracked-pipeline-replacement-offshore-egypt/"><small>Slider</small><b>Thermoplastic Composite Pipe Enables Fast-Tracked Pipeline Replacement</b><span>Offshore Engineer</span></a>
+    <a class="card" href="marine-news/202610/interferry-at-50/"><small>YouTube video card</small><b>Interferry at 50</b><span>Marine News</span></a>
+    <a class="card" href="marine-news/202610/marad-designation-lifts-corn-belt-ports/"><small>Pull quote</small><b>MarAd Designation Lifts Corn Belt Ports</b><span>Marine News</span></a>
+    <a class="card" href="offshore-engineer/202609/when-contractors-collide/"><small>Fact boxes</small><b>When Contractors Collide</b><span>Offshore Engineer</span></a>
+    <a class="card" href="offshore-engineer/202609/the-business-of-offshore-co2-storage/"><small>Table</small><b>The Business of Offshore CO₂ Storage</b><span>Offshore Engineer</span></a>
+    <a class="card" href="marine-technology/202608/exploring-s-102-and-the-future-of-maritime-navigation/"><small>Image pair · half-page ad</small><b>Exploring S-102 and the Future of Maritime Navigation</b><span>Marine Technology Reporter</span></a>
+    <a class="card" href="marine-news/202610/advanced-propulsion-and-control-for-modern-fleet-operations/"><small>Full-page ad</small><b>Advanced Propulsion and Control for Modern Fleet Operations</b><span>Marine News</span></a>
+    <a class="card" href="marine-news/202610/recent-changes-in-us-at-sea-interdiction-of-illicit-narcotics/"><small>About the author</small><b>Recent Changes in U.S. At-Sea Interdiction of Illicit Narcotics</b><span>Marine News</span></a>
+    <a class="card" href="marine-technology/202608/vessel-and-vehicle-announcements/"><small>Numbered news items</small><b>Vessel &amp; Vehicle Announcements</b><span>Marine Technology Reporter</span></a>
+  </div>
+
+  <h2>Pages</h2>
+  <p class="sub">Editorial, authors, marketplace and the compact contents shown after every article.</p>
+  <div class="grid grid--4">
+    <a class="card" href="marine-news/202610/editorial/"><small>Editorial</small><b>Editor card and text</b><span>Marine News</span></a>
+    <a class="card" href="marine-technology/202608/authors-and-contributors/"><small>Authors &amp; Contributors</small><b>Editorial Board and authors</b><span>Marine Technology Reporter</span></a>
+    <a class="card" href="marine-news/202610/marketplace/"><small>Marketplace</small><b>Ads by category</b><span>Marine News</span></a>
+    <a class="card" href="marine-technology/202608/contents.html"><small>Compact contents</small><b>Opened from the banner month</b><span>Marine Technology Reporter</span></a>
+  </div>
+
+  <p class="note">Some photos stay empty: 177 of 334 image files are not on images.marinelink.com yet (the server returns “not found” for them). They will appear as soon as the files are uploaded; the page markup already points to them.</p>
+</main>
+</body>
+</html>
